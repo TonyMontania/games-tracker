@@ -2,25 +2,16 @@ let games = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        // Cargar juegos
         const response = await fetch('games.json');
-        if (!response.ok) throw new Error('Error al cargar los juegos');
+        if (!response.ok) throw new Error('Network response was not ok');
         games = await response.json();
-        
-        // Inicializar componentes
         initFilters();
         displayGames(games);
         setupThemeToggle();
-        
-        console.log('Tracker cargado correctamente');
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Error loading games:', error);
         document.getElementById('games-list').innerHTML = `
-            <div class="error">
-                Error al cargar los datos. Verifica la consola para más detalles.
-                <br><br>
-                ${error.message}
-            </div>
+            <div class="error">Error loading games. Please try again later.</div>
         `;
     }
 });
@@ -30,36 +21,31 @@ function initFilters() {
     const generations = [...new Set(games.map(game => game.generation))];
     
     const filtersHTML = `
-        <div class="filter-group">
-            <select id="console-filter" class="filter-select">
-                <option value="">Todas las consolas</option>
-                ${consoles.map(c => `<option value="${c}">${c}</option>`).join('')}
-            </select>
-        </div>
-        <div class="filter-group">
-            <select id="generation-filter" class="filter-select">
-                <option value="">Todas las generaciones</option>
-                ${generations.map(g => `<option value="${g}">${g}</option>`).join('')}
-            </select>
-        </div>
+        <select id="console-filter" class="filter-select">
+            <option value="">Todas las consolas</option>
+            ${consoles.map(c => `<option value="${c}">${c}</option>`).join('')}
+        </select>
+        <select id="generation-filter" class="filter-select">
+            <option value="">Todas las generaciones</option>
+            ${generations.map(g => `<option value="${g}">${g}</option>`).join('')}
+        </select>
         <button id="reset-filters" class="filter-button">Resetear Filtros</button>
     `;
     
     document.getElementById('filters-container').innerHTML = filtersHTML;
     
-    // Event listeners
     document.getElementById('console-filter').addEventListener('change', filterGames);
     document.getElementById('generation-filter').addEventListener('change', filterGames);
     document.getElementById('reset-filters').addEventListener('click', resetFilters);
 }
 
 function filterGames() {
-    const consoleFilter = document.getElementById('console-filter').value;
-    const generationFilter = document.getElementById('generation-filter').value;
+    const consoleValue = document.getElementById('console-filter').value;
+    const generationValue = document.getElementById('generation-filter').value;
     
     const filteredGames = games.filter(game => {
-        return (!consoleFilter || game.console === consoleFilter) &&
-               (!generationFilter || game.generation === generationFilter);
+        return (!consoleValue || game.console === consoleValue) &&
+               (!generationValue || game.generation === generationValue);
     });
     
     displayGames(filteredGames);
@@ -75,51 +61,31 @@ function displayGames(gamesToDisplay) {
     const container = document.getElementById('games-list');
     container.innerHTML = '';
     
-    if (!gamesToDisplay || gamesToDisplay.length === 0) {
-        gameEl.innerHTML = `
-            <h3>${game.title}</h3>
-            <div class="game-meta">${game.console} · ${game.generation}</div>
-            <img src="assets/${game.image}" alt="${game.title}" loading="lazy">
-            <div class="progress-options">
-                ${game.categories.map(cat => `
-                    <label>
-                        <input type="checkbox" 
-                                data-game="${game.id}" 
-                                data-category="${cat.id}"
-                                ${isCompleted(game.id, cat.id) ? 'checked' : ''}>
-                        ${cat.name}
-                    </label>
-                `).join('')}
-            </div>
-        `;
-        return;
-    }
-    
     gamesToDisplay.forEach(game => {
+        const completedCategories = game.categories.filter(cat => isCompleted(game.id, cat.id)).length;
+        const allCompleted = completedCategories === game.categories.length;
+        
         const gameEl = document.createElement('div');
-        gameEl.className = 'game-card';
-        
-        // Verificar si todos los logros están completados
-        const allCompleted = game.categories.every(cat => isCompleted(game.id, cat.id));
-        if (allCompleted) gameEl.classList.add('completed');
-        
+        gameEl.className = `game-card ${allCompleted ? 'all-completed' : ''}`;
         gameEl.innerHTML = `
             <h3>${game.title}</h3>
             <div class="game-meta">
-                <span class="console-badge">${game.console}</span>
-                <span class="generation-badge">${game.generation} Gen</span>
+                <span>${game.console}</span>
+                <span>${game.generation}</span>
+                <span>${game.year}</span>
             </div>
-            <img src="assets/${game.image}" alt="${game.title}" onerror="this.style.display='none'">
+            <img src="assets/${game.image}" alt="${game.title}">
+            ${allCompleted ? '<div class="completed-badge">Completed!</div>' : ''}
             <div class="progress-options">
                 ${game.categories.map(cat => `
                     <label>
                         <input type="checkbox" 
+                               class="emerald-checkbox"
                                data-game="${game.id}" 
                                data-category="${cat.id}"
-                               ${isCompleted(game.id, cat.id) ? 'checked' : ''}>
-                        ${cat.name}
-                        ${isCompleted(game.id, cat.id) ? 
-                          '<img src="assets/emerald.png" class="achievement-badge" alt="Completed">' : ''}
+                               ${isCompleted(game.id, cat.id) ? 'checked' : ''}
+                               style="background-image: url('assets/${isCompleted(game.id, cat.id) ? 'emerald-green.png' : 'emerald-grey.png'}')">
+                        <span>${cat.name}</span>
                     </label>
                 `).join('')}
             </div>
@@ -127,9 +93,24 @@ function displayGames(gamesToDisplay) {
         container.appendChild(gameEl);
     });
     
-    // Agregar event listeners a los checkboxes
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', updateProgress);
+    document.querySelectorAll('.progress-options input').forEach(checkbox => {
+        checkbox.addEventListener('change', function(e) {
+            const gameId = e.target.dataset.game;
+            const categoryId = e.target.dataset.category;
+            const completed = e.target.checked;
+            
+            let progress = JSON.parse(localStorage.getItem('sonicProgress')) || {};
+            if (!progress[gameId]) progress[gameId] = {};
+            progress[gameId][categoryId] = completed;
+            
+            localStorage.setItem('sonicProgress', JSON.stringify(progress));
+            
+            // Actualizar la imagen de la esmeralda
+            e.target.style.backgroundImage = `url('assets/${completed ? 'emerald-green.png' : 'emerald-grey.png'})`;
+            
+            // Actualizar el estado "Completed" del juego
+            displayGames(games);
+        });
     });
 }
 
@@ -143,17 +124,7 @@ function updateProgress(e) {
     progress[gameId][categoryId] = completed;
     
     localStorage.setItem('sonicProgress', JSON.stringify(progress));
-    
-    // Actualizar visualización
-    const gameCard = e.target.closest('.game-card');
-    const allChecked = Array.from(gameCard.querySelectorAll('input[type="checkbox"]'))
-                          .every(checkbox => checkbox.checked);
-    
-    if (allChecked) {
-        gameCard.classList.add('completed');
-    } else {
-        gameCard.classList.remove('completed');
-    }
+    displayGames(games);
 }
 
 function isCompleted(gameId, categoryId) {

@@ -2,8 +2,9 @@
     {
         "id": "sonic1",
         "title": "Sonic the Hedgehog",
-        "console": "Mega Drive",
-        "generation": "4th",
+        "console": "Sega Mega Drive/Genesis",
+        "generation": "4th Gen",
+        "year": "1991",
         "image": "sonic1.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
@@ -14,8 +15,9 @@
     {
         "id": "sonic2",
         "title": "Sonic the Hedgehog 2",
-        "console": "Mega Drive",
-        "generation": "4th",
+        "console": "Sega Mega Drive/Genesis",
+        "generation": "4th Gen",
+        "year": "1992",
         "image": "sonic2.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
@@ -26,8 +28,9 @@
     {
         "id": "sonic3",
         "title": "Sonic the Hedgehog 3 & Knuckles",
-        "console": "Mega Drive",
-        "generation": "4th",
+        "console": "Sega Mega Drive/Genesis",
+        "generation": "4th Gen",
+        "year": "1994",
         "image": "sonic3.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
@@ -38,13 +41,14 @@
     {
         "id": "sonic_cd",
         "title": "Sonic CD",
-        "console": "Sega CD",
-        "generation": "4th",
+        "console": "Sega Mega-CD",
+        "generation": "4th Gen",
+        "year": "1994",
         "image": "sonic_cd.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "good_ending", "name": "Good Ending"},
-            {"id": "all_time_stones", "name": "All Time Stones"}
+            {"id": "all_chaos", "name": "All Chaos Emeralds"},
+            {"id": "hyper_sonic", "name": "Clear as Hyper Sonic"}
         ]
     }
 ]

@@ -4,6 +4,9 @@
     --card-bg: #f8f8f8;
     --primary-color: #0066cc;
     --secondary-color: #ffd700;
+    --emerald-gray: #aaaaaa;
+    --emerald-green: #00cc66;
+    --border-color: #ddd;
 }
 
 [data-theme="dark"] {
@@ -12,52 +15,135 @@
     --card-bg: #2d2d2d;
     --primary-color: #4da6ff;
     --secondary-color: #ffcc00;
+    --emerald-gray: #666666;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
-    transition: all 0.3s ease;
 }
 
 .container {
-    background-color: var(--card-bg);
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 2.5em;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.game-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.game-card.all-completed {
+    border-color: var(--secondary-color);
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.game-card h3 {
+    color: var(--primary-color);
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.game-meta {
+    font-size: 1em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game-meta span:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.game-card img {
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Checkboxes como esmeraldas */
+.progress-options {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.emerald-checkbox {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.emerald-checkbox:hover {
+    transform: scale(1.1);
+}
+
+.progress-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
 }
 
 .filters-container {
-    background-color: var(--card-bg);
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
     flex-wrap: wrap;
-    border: 1px solid var(--primary-color);
 }
 
 .filter-select {
     padding: 8px 12px;
     border: 2px solid var(--primary-color);
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-size: 16px;
-    flex-grow: 1;
+    font-size: 1em;
+    min-width: 180px;
 }
 
 .filter-button {
@@ -65,11 +151,10 @@ h1 {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    flex-grow: 1;
+    font-size: 1em;
+    transition: all 0.3s;
 }
 
 .filter-button:hover {
@@ -77,94 +162,29 @@ h1 {
     color: #333;
 }
 
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.game-card {
-    border: 2px solid var(--primary-color);
-    padding: 15px;
-    border-radius: 8px;
-    background-color: var(--card-bg);
-    transition: transform 0.3s;
-}
-
-.game-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.game-card h3 {
-    color: var(--primary-color);
-    margin-top: 0;
-    border-bottom: 1px solid var(--primary-color);
-    padding-bottom: 5px;
-}
-
-.game-card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-.progress-options {
-    margin-top: 10px;
-}
-
-.progress-options label {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    cursor: pointer;
-}
-
-.progress-options input[type="checkbox"] {
-    margin-right: 10px;
-    accent-color: var(--primary-color);
-}
-
-.achievement-badge {
-    width: 20px;
-    height: 20px;
-    margin-left: 8px;
-    vertical-align: middle;
-}
-
 .theme-toggle {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
-    cursor: pointer;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     font-size: 1.2em;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
     z-index: 100;
 }
 
-.game-card.completed {
-    border-color: var(--secondary-color);
-    background-color: rgba(255, 215, 0, 0.1);
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .games-grid {
         grid-template-columns: 1fr;
     }
     
-    .filters-container {
-        flex-direction: column;
+    .game-card img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
     }
 }
