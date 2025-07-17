@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0066cc;
+    text-align: center;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.progress-options {
+    margin-top: 10px;
+}
+
+.progress-options label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.achievement-badge {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Agregar al game-card */
+.game-card.completed {
+    border: 2px solid gold;
+    background-color: #f8f8f8;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f8f8f8;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.game-card {
+    background-color: var(--card-bg);
+}
+
+/* Botón de toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--card-bg);
+}
