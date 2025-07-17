@@ -4,6 +4,7 @@
     --card-bg: #f8f8f8;
     --primary-color: #0066cc;
     --secondary-color: #ffd700;
+    --border-color: #ddd;
 }
 
 [data-theme="dark"] {
@@ -12,13 +13,15 @@
     --card-bg: #2d2d2d;
     --primary-color: #4da6ff;
     --secondary-color: #ffcc00;
+    --border-color: #444;
 }
 
+/* Estilos base */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    max-width: 1200px;
+    max-width: 1400px; /* Ancho máximo más grande */
     margin: 0 auto;
     padding: 20px;
     transition: all 0.3s ease;
@@ -35,41 +38,138 @@ h1 {
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
+/* Grid compacto - 6-7 juegos por fila en pantallas grandes */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 10px 0;
+}
+
+/* Tarjetas de juego compactas */
+.game-card {
+    border: 2px solid var(--primary-color);
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.game-card h3 {
+    color: var(--primary-color);
+    margin: 8px 0 4px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.game-meta {
+    font-size: 12px;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+/* Imágenes más pequeñas */
+.game-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    margin: 0 auto;
+}
+
+/* Estilos para los checkboxes como esmeraldas */
+.progress-options {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.progress-options label {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    cursor: pointer;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.progress-options input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 3px;
+    background-color: #ddd;
+    cursor: pointer;
+    position: relative;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+}
+
+.progress-options input[type="checkbox"]:checked {
+    background-color: #00cc66;
+    border-color: #008040;
+}
+
+.progress-options input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    left: 5px;
+    top: 2px;
+}
+
+/* Filtros */
 .filters-container {
     background-color: var(--card-bg);
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     margin-bottom: 20px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid var(--primary-color);
 }
 
 .filter-select {
-    padding: 8px 12px;
+    padding: 6px 10px;
     border: 2px solid var(--primary-color);
     border-radius: 4px;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-size: 16px;
-    flex-grow: 1;
+    font-size: 14px;
+    min-width: 150px;
 }
 
 .filter-button {
-    padding: 8px 16px;
+    padding: 6px 12px;
     background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    flex-grow: 1;
+    font-size: 14px;
+    transition: all 0.3s;
 }
 
 .filter-button:hover {
@@ -77,135 +177,34 @@ h1 {
     color: #333;
 }
 
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Más compacto */
-    gap: 15px;
-}
-
-.game-card {
-    border: 2px solid var(--primary-color);
-    padding: 15px;
-    border-radius: 8px;
-    background-color: var(--card-bg);
-    transition: transform 0.3s;
-}
-
-.game-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.game-card h3 {
-    color: var(--primary-color);
-    margin-top: 0;
-    border-bottom: 1px solid var(--primary-color);
-    padding-bottom: 5px;
-}
-
-.game-card img {
-    width: 150px; /* Tamaño fijo para uniformidad */
-    height: 150px;
-    object-fit: cover; /* Asegura que las imágenes mantengan proporciones */
-    border-radius: 8px;
-    border: 2px solid #0066cc;
-}
-
-.progress-options {
-    margin-top: 10px;
-}
-
-.progress-options label {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    cursor: pointer;
-}
-
-/* Estilo personalizado para los checkboxes (esmeraldas) */
-.progress-options input[type="checkbox"] {
-    appearance: none; /* Oculta el checkbox default */
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #555; /* Gris cuando no está seleccionado */
-    border-radius: 4px;
-    background-color: #ddd; /* Fondo gris */
-    cursor: pointer;
-    position: relative;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-.progress-options input[type="checkbox"]:checked {
-    background-color: #00cc66; /* Verde esmeralda al activar */
-    border-color: #008040;
-}
-
-/* Efecto adicional para las esmeraldas */
-.progress-options input[type="checkbox"]:checked::after {
-    content: "✓";
-    color: white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* Ajuste de texto y alineación */
-.progress-options label {
-    font-size: 14px; /* Texto más compacto */
-    margin: 5px 0;
-    align-items: center;
-}
-
-/* Estilo para la info de consola/generación */
-.game-meta {
-    font-size: 12px;
-    color: #666;
-    margin: 5px 0;
-}
-
-.achievement-badge {
-    width: 20px;
-    height: 20px;
-    margin-left: 8px;
-    vertical-align: middle;
-}
-
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    font-size: 1.2em;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 100;
-}
-
-.game-card.completed {
-    border-color: var(--secondary-color);
-    background-color: rgba(255, 215, 0, 0.1);
-}
-
-@media (max-width: 600px) {
+/* Modo responsive */
+@media (max-width: 768px) {
     .games-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     }
     
-    .filters-container {
-        flex-direction: column;
+    .game-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    .game-card {
+        padding: 8px;
+    }
+    
+    .game-card img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .progress-options label {
+        font-size: 12px;
     }
 }
