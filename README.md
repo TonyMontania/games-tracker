@@ -1,6 +1,6 @@
 # 🚀 Sonic Series Progress Tracker 
 
-![Banner](assets/banner.png) <!-- Puedes crear o buscar un banner estilo Sonic -->
+![Banner](assets/banner.gif) <!-- Puedes crear o buscar un banner estilo Sonic -->
 
 A progress tracker to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
 
