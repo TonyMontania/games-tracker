@@ -150,3 +150,18 @@ function setupThemeToggle() {
         localStorage.setItem('theme', newTheme);
     });
 }
+
+document.getElementById('export-button').addEventListener('click', exportProgress);
+
+function exportProgress() {
+    const progressData = JSON.parse(localStorage.getItem('sonicProgress')) || {};
+    const dataStr = JSON.stringify(progressData, null, 2);
+    const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+    
+    const exportFileDefaultName = `sonic-tracker-progress-${new Date().toISOString().slice(0,10)}.json`;
+    
+    const linkElement = document.createElement('a');
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
+}
