@@ -76,7 +76,22 @@ function displayGames(gamesToDisplay) {
     container.innerHTML = '';
     
     if (!gamesToDisplay || gamesToDisplay.length === 0) {
-        container.innerHTML = '<div class="no-games">No se encontraron juegos con estos filtros</div>';
+        gameEl.innerHTML = `
+            <h3>${game.title}</h3>
+            <div class="game-meta">${game.console} · ${game.generation}</div>
+            <img src="assets/${game.image}" alt="${game.title}" loading="lazy">
+            <div class="progress-options">
+                ${game.categories.map(cat => `
+                    <label>
+                        <input type="checkbox" 
+                                data-game="${game.id}" 
+                                data-category="${cat.id}"
+                                ${isCompleted(game.id, cat.id) ? 'checked' : ''}>
+                        ${cat.name}
+                    </label>
+                `).join('')}
+            </div>
+        `;
         return;
     }
     
