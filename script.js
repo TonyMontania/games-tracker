@@ -3,57 +3,52 @@ let games = [];
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch('games.json');
-        if (!response.ok) throw new Error('Network response was not ok');
+        if (!response.ok) throw new Error('Unable to load game list');
         games = await response.json();
         initFilters();
         displayGames(games);
         setupThemeToggle();
+        
+        // Event Listeners
+        document.getElementById('export-button').addEventListener('click', exportProgress);
+        document.getElementById('import-button').addEventListener('click', importProgress);
+        
     } catch (error) {
-        console.error('Error loading games:', error);
+        console.error('Error:', error);
         document.getElementById('games-list').innerHTML = `
-            <div class="error">Error loading games. Please try again later.</div>
+            <div class="error">Error loading games. Reload the page.</div>
         `;
     }
 });
 
 function initFilters() {
-    const consoles = [...new Set(games.map(game => game.console))];
-    const generations = [...new Set(games.map(game => game.generation))];
-    
     const filtersHTML = `
         <select id="console-filter" class="filter-select">
-            <option value="">All Consoles</option>
-            ${consoles.map(c => `<option value="${c}">${c}</option>`).join('')}
+            <option value="">All consoles</option>
+            ${[...new Set(games.flatMap(g => Array.isArray(g.console) ? g.console : [g.console]))]
+                .map(c => `<option value="${c}">${c}</option>`).join('')}
         </select>
-        <select id="generation-filter" class="filter-select">
-            <option value="">All Generations</option>
-            ${generations.map(g => `<option value="${g}">${g}</option>`).join('')}
-        </select>
-        <button id="reset-filters" class="filter-button">Reset Filters</button>
+        <button id="reset-filters" class="filter-button">Reset filters</button>
+        <button id="import-button" class="filter-button">Import JSON</button>
+        <button id="export-button" class="filter-button">Export JSON</button>
     `;
-    
     document.getElementById('filters-container').innerHTML = filtersHTML;
     
     document.getElementById('console-filter').addEventListener('change', filterGames);
-    document.getElementById('generation-filter').addEventListener('change', filterGames);
     document.getElementById('reset-filters').addEventListener('click', resetFilters);
 }
 
 function filterGames() {
     const consoleValue = document.getElementById('console-filter').value;
-    const generationValue = document.getElementById('generation-filter').value;
-    
-    const filteredGames = games.filter(game => {
-        return (!consoleValue || game.console === consoleValue) &&
-               (!generationValue || game.generation === generationValue);
+    const filtered = games.filter(game => {
+        const consoles = Array.isArray(game.console) ? game.console : [game.console];
+        return !consoleValue || consoles.includes(consoleValue);
     });
-    
-    displayGames(filteredGames);
+    displayGames(filtered);
 }
 
 function resetFilters() {
     document.getElementById('console-filter').value = '';
-    document.getElementById('generation-filter').value = '';
     filterGames();
 }
 
@@ -62,19 +57,17 @@ function displayGames(gamesToDisplay) {
     container.innerHTML = '';
     
     gamesToDisplay.forEach(game => {
-        const completedCategories = game.categories.filter(cat => isCompleted(game.id, cat.id)).length;
-        const allCompleted = completedCategories === game.categories.length;
-        
+        const allCompleted = game.categories.every(cat => isCompleted(game.id, cat.id));
         const gameEl = document.createElement('div');
         gameEl.className = `game-card ${allCompleted ? 'all-completed' : ''}`;
         gameEl.innerHTML = `
             <h3>${game.title}</h3>
             <div class="game-meta">
-                <span>${game.console}</span>
-                <span>${game.generation}</span>
+                <span>${Array.isArray(game.console) ? game.console.join(" | ") : game.console}</span>
                 <span>${game.year}</span>
+                <span>${game.generation}</span>
             </div>
-            <img src="assets/${game.image}" alt="${game.title}">
+            <img src="assets/covers/${game.image}" alt="${game.title}" onerror="this.src='assets/no-image.png'">
             ${allCompleted ? '<div class="completed-badge">Completed!</div>' : ''}
             <div class="progress-options">
                 ${game.categories.map(cat => `
@@ -83,8 +76,7 @@ function displayGames(gamesToDisplay) {
                                class="emerald-checkbox"
                                data-game="${game.id}" 
                                data-category="${cat.id}"
-                               ${isCompleted(game.id, cat.id) ? 'checked' : ''}
-                               style="background-image: url('assets/${isCompleted(game.id, cat.id) ? 'emerald-green.png' : 'emerald-grey.png'}')">
+                               ${isCompleted(game.id, cat.id) ? 'checked' : ''}>
                         <span>${cat.name}</span>
                     </label>
                 `).join('')}
@@ -94,23 +86,7 @@ function displayGames(gamesToDisplay) {
     });
     
     document.querySelectorAll('.progress-options input').forEach(checkbox => {
-        checkbox.addEventListener('change', function(e) {
-            const gameId = e.target.dataset.game;
-            const categoryId = e.target.dataset.category;
-            const completed = e.target.checked;
-            
-            let progress = JSON.parse(localStorage.getItem('sonicProgress')) || {};
-            if (!progress[gameId]) progress[gameId] = {};
-            progress[gameId][categoryId] = completed;
-            
-            localStorage.setItem('sonicProgress', JSON.stringify(progress));
-            
-            // Actualizar la imagen de la esmeralda
-            e.target.style.backgroundImage = `url('assets/${completed ? 'emerald-green.png' : 'emerald-grey.png'})`;
-            
-            // Actualizar el estado "Completed" del juego
-            displayGames(games);
-        });
+        checkbox.addEventListener('change', updateProgress);
     });
 }
 
@@ -129,7 +105,56 @@ function updateProgress(e) {
 
 function isCompleted(gameId, categoryId) {
     const progress = JSON.parse(localStorage.getItem('sonicProgress')) || {};
-    return progress[gameId] && progress[gameId][categoryId];
+    return !!progress[gameId]?.[categoryId];
+}
+
+function exportProgress() {
+    const progress = JSON.parse(localStorage.getItem('sonicProgress')) || {};
+    const dataStr = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(progress, null, 2))}`;
+    const downloadAnchor = document.createElement('a');
+    downloadAnchor.setAttribute('href', dataStr);
+    downloadAnchor.setAttribute('download', `sonic-progress-${new Date().toISOString().slice(0,10)}.json`);
+    downloadAnchor.click();
+    showToast('✅ Progress exported', 'success');
+}
+
+function importProgress() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    
+    input.onchange = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        try {
+            const data = JSON.parse(await file.text());
+            if (!data || typeof data !== 'object') throw new Error('Invalid file');
+            
+            const isValid = Object.values(data).every(gameProgress => 
+                typeof gameProgress === 'object' && !Array.isArray(gameProgress)
+            );
+            
+            if (!isValid) throw new Error('Incorrect file structure');
+            
+            localStorage.setItem('sonicProgress', JSON.stringify(data));
+            displayGames(games);
+            showToast('✅ Progress imported correctly', 'success');
+        } catch (error) {
+            console.error('Import error:', error);
+            showToast(`❌ Error while importing: ${error.message}`, 'error');
+        }
+    };
+    
+    input.click();
+}
+
+function showToast(message, type = 'info') {
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 3000);
 }
 
 function setupThemeToggle() {
@@ -142,26 +167,9 @@ function setupThemeToggle() {
     }
     
     toggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? '' : 'dark';
-        
+        const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? '' : 'dark';
         document.documentElement.setAttribute('data-theme', newTheme);
         toggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
         localStorage.setItem('theme', newTheme);
     });
-}
-
-document.getElementById('export-button').addEventListener('click', exportProgress);
-
-function exportProgress() {
-    const progressData = JSON.parse(localStorage.getItem('sonicProgress')) || {};
-    const dataStr = JSON.stringify(progressData, null, 2);
-    const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-    
-    const exportFileDefaultName = `sonic-tracker-progress-${new Date().toISOString().slice(0,10)}.json`;
-    
-    const linkElement = document.createElement('a');
-    linkElement.setAttribute('href', dataUri);
-    linkElement.setAttribute('download', exportFileDefaultName);
-    linkElement.click();
 }

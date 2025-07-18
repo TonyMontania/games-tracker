@@ -73,12 +73,20 @@ h1 {
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 4px;
+}
+
+.game-meta span {
+    display: inline-flex;
+    align-items: center;
 }
 
 .game-meta span:not(:last-child)::after {
     content: "|";
     margin-left: 10px;
+    margin-right: 10px;
     color: var(--primary-color);
 }
 
@@ -91,7 +99,6 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Checkboxes como esmeraldas */
 .progress-options {
     margin-top: 15px;
     text-align: center;
@@ -102,22 +109,51 @@ h1 {
 }
 
 .emerald-checkbox {
-    width: 30px;
-    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('assets/emeralds/emerald-grey.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 10px;
     cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
+    transition: all 0.3s ease;
     border: none;
     background-color: transparent;
-    margin-right: 10px;
-    transition: transform 0.2s;
+    outline: none;
+}
+
+.emerald-checkbox:checked {
+    background-image: url('assets/emeralds/emerald-green.png');
+    animation: pulse 0.5s;
 }
 
 .emerald-checkbox:hover {
     transform: scale(1.1);
+    filter: drop-shadow(0 0 4px rgba(0, 204, 102, 0.5));
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.progress-options label span {
+    color: var(--text-color);
+    font-size: 0.95em;
+    transition: all 0.3s;
+    position: relative;
+    top: -1px;
+}
+
+.emerald-checkbox:checked + span {
+    color: var(--emerald-green);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 204, 102, 0.2);
 }
 
 .progress-options label {
@@ -173,6 +209,17 @@ h1 {
     color: white;
 }
 
+#import-button {
+    background-color: var(--secondary-color);
+    color: #333;
+    margin-left: 10px;
+}
+
+#import-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .theme-toggle {
     position: fixed;
     bottom: 20px;
@@ -197,5 +244,11 @@ h1 {
         width: 100%;
         height: auto;
         max-height: 400px;
+    }
+
+    /* Ajuste para móviles: reduce espacio entre separadores */
+    .game-meta span:not(:last-child)::after {
+        margin-left: 6px;
+        margin-right: 6px;
     }
 }
