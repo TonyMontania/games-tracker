@@ -16,13 +16,15 @@ A progress tracker that saves locally to complete all the games of the Sonic the
 3. Your progress is automatically saved with localStorage.
 
 ## 📦 Games included
-| Game | Console | Year |
-|-------|---------|-----|
-| Sonic 1 | Mega Drive | 1991 |
-| Sonic 2 | Mega Drive | 1992 |
-| Sonic 3 & Knuckles | Mega Drive | 1994 |
-| Sonic CD | Sega CD | 1993 |
-| ... | ... | ... |
+-	2D Platformer
+-	3D Action-Adventure
+-	Puzzle, Sporting and Party Games
+-	Racing Games and Vehicle Simulators
+-	Entertainment and Creative
+-	Fighting Games
+-	Adventure/RPG Games
+-	Mobile Games
+-	Board Games
 
 ## 🎨 Screenshoots
 <img src="assets/github/screenshot1.png" width="400"> <img src="assets/github/screenshot2.png" width="400">
