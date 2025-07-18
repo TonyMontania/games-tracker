@@ -22,14 +22,14 @@ function initFilters() {
     
     const filtersHTML = `
         <select id="console-filter" class="filter-select">
-            <option value="">Todas las consolas</option>
+            <option value="">All Consoles</option>
             ${consoles.map(c => `<option value="${c}">${c}</option>`).join('')}
         </select>
         <select id="generation-filter" class="filter-select">
-            <option value="">Todas las generaciones</option>
+            <option value="">All Generations</option>
             ${generations.map(g => `<option value="${g}">${g}</option>`).join('')}
         </select>
-        <button id="reset-filters" class="filter-button">Resetear Filtros</button>
+        <button id="reset-filters" class="filter-button">Reset Filters</button>
     `;
     
     document.getElementById('filters-container').innerHTML = filtersHTML;
