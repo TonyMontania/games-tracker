@@ -2,7 +2,7 @@
 
 ![Banner](assets/banner.gif) <!-- Puedes crear o buscar un banner estilo Sonic -->
 
-A progress tracker to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
+A progress tracker that saves locally to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
 
 ## 🎮 Features.
 - ✅ Track completion per game
@@ -13,7 +13,7 @@ A progress tracker to complete all the games of the Sonic the Hedgehog saga. Mar
 ## 🛠️ How to Use
 1. Visit [the tracker page](https://tonymontania.github.io/sonic-tracker/)
 2. Check the games you have completed
-3. Your progress is automatically saved!
+3. Your progress is automatically saved with localStorage.
 
 ## 📦 Games included
 | Game | Console | Year |
