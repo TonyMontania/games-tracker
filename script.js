@@ -135,7 +135,14 @@ function updateProgress(e) {
     progress[gameId][categoryId] = completed;
     
     localStorage.setItem('sonicProgress', JSON.stringify(progress));
-    displayGames(games);
+    
+    const checkbox = e.target;
+    checkbox.disabled = true;
+    setTimeout(() => {
+        checkbox.disabled = false;
+    }, 300);
+    
+    applyCombinedFilters();
 }
 
 function isCompleted(gameId, categoryId) {

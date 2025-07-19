@@ -2,7 +2,7 @@
     {
         "id": "sonic_1_16bit",
         "title": "Sonic the Hedgehog (16-bit)",
-        "console": ["Sega Genesis/Mega Drive", "Nintendo Game Boy", "Nintendo Game Boy Advance", "PC", "Nintendo 3DS", "iOS", "Android", "Amazon Fire TV", "Apple TV", "Nintendo Switch"],
+        "console": ["Sega Genesis/Mega Drive", "Nintendo Game Boy", "Nintendo Game Boy Advance", "Windows", "Nintendo 3DS", "iOS", "Android", "Amazon Fire TV", "Apple TV", "Nintendo Switch"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1991",
@@ -17,7 +17,7 @@
     {
         "id": "sonic_1_8bit",
         "title": "Sonic the Hedgehog (8-bit)",
-        "console": "Sega Master System",
+        "console": ["Sega Master System", "Sega Game Gear", "Nintendo 3DS"],
         "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1991",
@@ -31,7 +31,7 @@
     {
         "id": "sonic_2_16bit",
         "title": "Sonic the Hedgehog 2 (16-bit)",
-        "console": "Sega Genesis/Mega Drive",
+        "console": ["Sega Genesis/Mega Drive", "Android", "iOS", "Nintendo 3DS"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1992",
@@ -47,7 +47,7 @@
     {
         "id": "sonic_2_8bit",
         "title": "Sonic the Hedgehog 2 (8-bit)",
-        "console": "Sega Master System",
+        "console": ["Sega Master System", "Sega Game Gear", "Nintendo 3DS"],
         "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1992",
@@ -61,7 +61,7 @@
     {
         "id": "sonic_cd",
         "title": "Sonic CD",
-        "console": "Sega CD",
+        "console": ["Sega CD/Mega CD", "Windows", "Android", "PlayStation 3", "Xbox 360", "iOS", "Windows Phone", "Apple TV"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1993",
@@ -77,7 +77,7 @@
     {
         "id": "sonic_spinball_16bit",
         "title": "Sonic the Hedgehog Spinball (16-bit)",
-        "console": "Sega Genesis/Mega Drive",
+        "console": ["Sega Genesis/Mega Drive", "Sega Game Gear", "Sega Master System", "Windows", "Nintendo Game Boy Advance"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1993",
@@ -91,7 +91,7 @@
     {
         "id": "sonic_spinball_8bit",
         "title": "Sonic the Hedgehog Spinball (8-bit)",
-        "console": "Sega Master System",
+        "console": ["Sega Game Gear", "Sega Master System"],
         "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1993",
@@ -118,7 +118,7 @@
     {
         "id": "sonic_3",
         "title": "Sonic the Hedgehog 3",
-        "console": "Sega Genesis/Mega Drive",
+        "console": ["Sega Genesis/Mega Drive", "Windows"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1994",
@@ -134,7 +134,7 @@
     {
         "id": "sonic_knuckles",
         "title": "Sonic & Knuckles",
-        "console": "Sega Genesis/Mega Drive",
+        "console": ["Sega Genesis/Mega Drive", "Windows", "Nintendo Wii", "Xbox 360", "Steam"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1994",
@@ -191,7 +191,7 @@
     {
         "id": "tails_adventure",
         "title": "Tails Adventure",
-        "console": "Sega Game Gear",
+        "console": ["Sega Game Gear", "Nintendo 3DS"],
         "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1995",
@@ -212,13 +212,14 @@
         "image": "sonic_labyrinth.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "all_emeralds", "name": "All Chaos Emeralds"}
+            {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
+            {"id": "speedrun", "name": "Complete Speedrun Challenge"}
         ]
     },
     {
         "id": "sonic_blast",
         "title": "Sonic Blast",
-        "console": "Sega Game Gear",
+        "console": ["Sega Game Gear", "Sega Master System"],
         "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1996",
@@ -232,7 +233,7 @@
     {
         "id": "sonic_advance",
         "title": "Sonic Advance",
-        "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "console": ["Nintendo Game Boy Advance", "N-Gage", "Android"],
         "category": "2d_platformer",
         "generation": "6th Gen",
         "year": "2001",
@@ -247,7 +248,7 @@
     {
         "id": "sonic_advance_2",
         "title": "Sonic Advance 2",
-        "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "console": "Nintendo Game Boy Advance",
         "category": "2d_platformer",
         "generation": "6th Gen",
         "year": "2002",
@@ -263,7 +264,7 @@
     {
         "id": "sonic_advance_3",
         "title": "Sonic Advance 3",
-        "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "console": "Nintendo Game Boy Advance",
         "category": "2d_platformer",
         "generation": "6th Gen",
         "year": "2004",
@@ -339,7 +340,7 @@
     {
         "id": "sonic_4_ep1",
         "title": "Sonic the Hedgehog 4: Episode I",
-        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "iOS", "Android"],
+        "console": ["iOS", "Nintendo Wii", "PlayStation 3", "Xbox 360", "Windows Phone", "Windows", "Android", "BlackBerry PlayBook", "Ouya"],
         "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2010",
@@ -354,7 +355,7 @@
     {
         "id": "sonic_colors_ds",
         "title": "Sonic Colors (DS)",
-        "console": "Nintendo DS",
+        "console": ["Nintendo Wii", "Nintendo DS"],
         "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2010",
@@ -383,7 +384,7 @@
     {
         "id": "sonic_4_ep2",
         "title": "Sonic the Hedgehog 4: Episode II",
-        "console": ["PlayStation 3", "Xbox 360", "iOS", "Android"],
+        "console": ["Windows", "PlayStation 3", "Xbox 360", "Android", "iOS"],
         "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2012",
@@ -440,7 +441,7 @@
     {
         "id": "sonic_mania",
         "title": "Sonic Mania",
-        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "Windows"],
         "category": "2d_platformer",
         "generation": "8th Gen",
         "year": "2017",
@@ -456,7 +457,7 @@
     {
         "id": "sonic_mania_plus",
         "title": "Sonic Mania Plus",
-        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "Windows"],
         "category": "2d_platformer",
         "generation": "8th Gen",
         "year": "2018",
@@ -473,7 +474,7 @@
     {
         "id": "sonic_superstars",
         "title": "Sonic Superstars",
-        "console": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch", "PC"],
+        "console": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch", "Windows", "Xbox One", "PlayStation 4"],
         "category": "2d_platformer",
         "generation": "9th Gen",
         "year": "2023",
@@ -503,7 +504,7 @@
     {
         "id": "sonic_3d_blast",
         "title": "Sonic 3D Blast",
-        "console": ["Sega Genesis/Mega Drive", "Sega Saturn"],
+        "console": ["Sega Genesis/Mega Drive", "Sega Saturn", "Windows"],
         "category": "3d_action_adventure",
         "generation": "5th Gen",
         "year": "1996",
@@ -517,7 +518,7 @@
     {
         "id": "sonic_adventure",
         "title": "Sonic Adventure",
-        "console": "Sega Dreamcast",
+        "console": ["Sega Dreamcast", "Nintendo GameCube", "Windows", "Xbox 360", "PlayStation 3"],
         "category": "3d_action_adventure",
         "generation": "6th Gen",
         "year": "1998",
@@ -532,7 +533,7 @@
     {
         "id": "sonic_adventure_2",
         "title": "Sonic Adventure 2",
-        "console": ["Sega Dreamcast", "Nintendo GameCube"],
+        "console": ["Sega Dreamcast", "Nintendo GameCube", "PlayStation 3", "Xbox 360", "Windows"],
         "category": "3d_action_adventure",
         "generation": "6th Gen",
         "year": "2001",
@@ -547,7 +548,7 @@
     {
         "id": "sonic_heroes",
         "title": "Sonic Heroes",
-        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox"],
+        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox", "Windows"],
         "category": "3d_action_adventure",
         "generation": "6th Gen",
         "year": "2003",
@@ -562,7 +563,7 @@
     {
         "id": "shadow_hedgehog",
         "title": "Shadow the Hedgehog",
-        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox"],
+        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox", "PlayStation 3"],
         "category": "3d_action_adventure",
         "generation": "6th Gen",
         "year": "2005",
@@ -606,7 +607,7 @@
     {
         "id": "sonic_unleashed",
         "title": "Sonic Unleashed",
-        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii"],
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "PlayStation 2", "Mobile"],
         "category": "3d_action_adventure",
         "generation": "7th Gen",
         "year": "2008",
@@ -634,8 +635,8 @@
         ]
     },
     {
-        "id": "sonic_colors_hd",
-        "title": "Sonic Colors (HD)",
+        "id": "sonic_colors",
+        "title": "Sonic Colors",
         "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "Nintendo Switch"],
         "category": "3d_action_adventure",
         "generation": "7th Gen",
@@ -651,7 +652,7 @@
     {
         "id": "sonic_generations",
         "title": "Sonic Generations",
-        "console": ["PlayStation 3", "Xbox 360", "PC"],
+        "console": ["PlayStation 3", "Xbox 360", "Windows"],
         "category": "3d_action_adventure",
         "generation": "7th Gen",
         "year": "2011",
@@ -666,7 +667,7 @@
     {
         "id": "sonic_lost_world",
         "title": "Sonic Lost World",
-        "console": ["Nintendo Wii U", "PC", "Nintendo 3DS"],
+        "console": ["Nintendo Wii U", "Windows", "Nintendo 3DS"],
         "category": "3d_action_adventure",
         "generation": "8th Gen",
         "year": "2013",
@@ -696,7 +697,7 @@
     {
         "id": "sonic_forces",
         "title": "Sonic Forces",
-        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "Windows"],
         "category": "3d_action_adventure",
         "generation": "8th Gen",
         "year": "2017",
@@ -711,7 +712,8 @@
     {
         "id": "sonic_frontiers",
         "title": "Sonic Frontiers",
-        "console": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch", "PC"],
+        "console": ["PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One", "Nintendo Switch", "Windows"],
+        "category": "3d_action_adventure",
         "generation": "9th Gen",
         "year": "2022",
         "image": "sonic_frontiers.png",
@@ -726,7 +728,8 @@
     {
         "id": "shadow_generations",
         "title": "Shadow Generations",
-        "console": ["PlayStation 5", "Xbox Series X/S", "PC"],
+        "console": ["PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One", "Steam", "Epic Game Store"],
+        "category": "3d_action_adventure",
         "generation": "9th Gen",
         "year": "2024",
         "image": "shadow_generations.png",
@@ -735,6 +738,662 @@
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
             {"id": "all_skills", "name": "Unlock All Skills"}
+        ]
+    },
+    {
+        "id": "sonic_eraser",
+        "title": "Sonic Eraser",
+        "console": "Sega Game Gear",
+        "category": "puzzle_sporting_party",
+        "generation": "3rd Gen",
+        "year": "1991",
+        "image": "sonic_eraser.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "max_score", "name": "Achieve Max Score"},
+            {"id": "all_levels", "name": "Complete All Levels"}
+        ]
+    },
+    {
+        "id": "mean_bean_machine",
+        "title": "Dr. Robotnik's Mean Bean Machine",
+        "console": ["Sega Genesis/Mega Drive", "Sega Game Gear", "Sega Master System", "Windows", "Nintendo Switch"],
+        "category": "puzzle_sporting_party",
+        "generation": "4th Gen",
+        "year": "1993",
+        "image": "mean_bean_machine.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story Mode"},
+            {"id": "all_characters", "name": "Defeat All Characters"},
+            {"id": "perfect_victory", "name": "Achieve Perfect Victory"},
+            {"id": "max_chain", "name": "Perform Max Chain Combo"}
+        ]
+    },
+    {
+        "id": "sonic_gameworld",
+        "title": "Sonic the Hedgehog's Gameworld",
+        "console": "Sega Pico",
+        "category": "puzzle_sporting_party",
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "sonic_gameworld.png",
+        "categories": [
+            {"id": "all_minigames", "name": "Complete All Mini-Games"},
+            {"id": "perfect_scores", "name": "Perfect Scores in All Games"},
+            {"id": "all_stickers", "name": "Collect All Stickers"},
+            {"id": "creative_mode", "name": "Complete Creative Challenges"}
+        ]
+    },
+    {
+        "id": "sonic_shuffle",
+        "title": "Sonic Shuffle",
+        "console": "Sega Dreamcast",
+        "category": "puzzle_sporting_party",
+        "generation": "6th Gen",
+        "year": "2000",
+        "image": "sonic_shuffle.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story Mode"},
+            {"id": "all_characters", "name": "Win With All Characters"},
+            {"id": "all_boards", "name": "Master All Game Boards"},
+            {"id": "perfect_game", "name": "Achieve Perfect Game"}
+        ]
+    },
+    {
+        "id": "sonic_pinball_party",
+        "title": "Sonic Pinball Party",
+        "console": "Nintendo Game Boy Advance",
+        "category": "puzzle_sporting_party",
+        "generation": "6th Gen",
+        "year": "2003",
+        "image": "sonic_pinball_party.png",
+        "categories": [
+            {"id": "clear_all", "name": "Clear All Tables"},
+            {"id": "high_score", "name": "Achieve High Score"},
+            {"id": "all_bonuses", "name": "Unlock All Bonuses"},
+            {"id": "perfect_game", "name": "Perfect Game"}
+        ]
+    },
+    {
+        "id": "sega_superstars",
+        "title": "Sega Superstars",
+        "console": "PlayStation 2",
+        "category": "puzzle_sporting_party",
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "sega_superstars.png",
+        "categories": [
+            {"id": "clear_all", "name": "Complete All Games"},
+            {"id": "all_stars", "name": "Unlock All Stars"},
+            {"id": "perfect_scores", "name": "Get Perfect Scores"}
+        ]
+    },
+    {
+        "id": "mario_sonic_2008",
+        "title": "Mario & Sonic at the Olympic Games",
+        "console": ["Nintendo Wii", "Nintendo DS"],
+        "category": "puzzle_sporting_party",
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "mario_sonic_2008.png",
+        "categories": [
+            {"id": "all_events", "name": "Complete All Events"},
+            {"id": "gold_medals", "name": "Win Gold in All Events"},
+            {"id": "all_characters", "name": "Play With All Characters"},
+            {"id": "records", "name": "Set All Records"}
+        ]
+    },
+    {
+        "id": "sega_superstars_tennis",
+        "title": "Sega Superstars Tennis",
+        "console": ["Nintendo Wii", "PlayStation 2", "Xbox 360", "Nintendo DS"],
+        "category": "puzzle_sporting_party",
+        "generation": "7th Gen",
+        "year": "2008",
+        "image": "sega_superstars_tennis.png",
+        "categories": [
+            {"id": "clear_career", "name": "Complete Career Mode"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_courts", "name": "Unlock All Courts"},
+            {"id": "perfect_match", "name": "Win Perfect Match"}
+        ]
+    },
+    {
+        "id": "mario_sonic_2010",
+        "title": "Mario & Sonic at the Olympic Winter Games",
+        "console": ["Nintendo Wii", "Nintendo DS"],
+        "category": "puzzle_sporting_party",
+        "generation": "7th Gen",
+        "year": "2009",
+        "image": "mario_sonic_2010.png",
+        "categories": [
+            {"id": "all_events", "name": "Complete All Winter Events"},
+            {"id": "gold_medals", "name": "Win Gold in All Events"},
+            {"id": "all_outfits", "name": "Unlock All Outfits"},
+            {"id": "dream_events", "name": "Complete All Dream Events"}
+        ]
+    },
+    {
+        "id": "mario_sonic_2012",
+        "title": "Mario & Sonic at the London 2012 Olympic Games",
+        "console": ["Nintendo Wii", "Nintendo 3DS"],
+        "category": "puzzle_sporting_party",
+        "generation": "7th Gen",
+        "year": "2011",
+        "image": "mario_sonic_2012.png",
+        "categories": [
+            {"id": "olympic_events", "name": "Complete All Olympic Events"},
+            {"id": "all_gold", "name": "All Gold Medals"},
+            {"id": "all_episodes", "name": "Complete All Episodes"},
+            {"id": "all_cards", "name": "Collect All Cards"}
+        ]
+    },
+    {
+        "id": "mario_sonic_2014",
+        "title": "Mario & Sonic at the Sochi 2014 Olympic Winter Games",
+        "console": ["Nintendo Wii U", "Nintendo 3DS"],
+        "category": "puzzle_sporting_party",
+        "generation": "8th Gen",
+        "year": "2013",
+        "image": "mario_sonic_2014.png",
+        "categories": [
+            {"id": "all_events", "name": "Complete All Events"},
+            {"id": "legendary", "name": "Legendary Difficulty Complete"},
+            {"id": "all_miis", "name": "Unlock All Mii Outfits"},
+            {"id": "perfect_scores", "name": "Achieve Perfect Scores"}
+        ]
+    },
+    {
+        "id": "mario_sonic_2016",
+        "title": "Mario & Sonic at the Rio 2016 Olympic Games",
+        "console": ["Nintendo Wii U", "Nintendo 3DS", "Arcade"],
+        "category": "puzzle_sporting_party",
+        "generation": "8th Gen",
+        "year": "2016",
+        "image": "mario_sonic_2016.png",
+        "categories": [
+            {"id": "complete_games", "name": "Complete All Games"},
+            {"id": "all_gold", "name": "All Gold Medals"},
+            {"id": "all_plus", "name": "Complete All Plus Events"},
+            {"id": "all_costumes", "name": "Unlock All Costumes"}
+        ]
+    },
+    {
+        "id": "sega_heroes",
+        "title": "SEGA Heroes",
+        "console": ["iOS", "Android"],
+        "category": "puzzle_sporting_party",
+        "generation": "Mobile",
+        "year": "2018",
+        "image": "sega_heroes.png",
+        "categories": [
+            {"id": "max_level", "name": "Reach Max Level"},
+            {"id": "all_heroes", "name": "Collect All Heroes"},
+            {"id": "all_events", "name": "Complete All Events"},
+            {"id": "ultimate_team", "name": "Create Ultimate Team"}
+        ]
+    },
+    {
+        "id": "mario_sonic_2020",
+        "title": "Mario & Sonic at the Olympic Games Tokyo 2020",
+        "console": ["Nintendo Switch", "Arcade"],
+        "category": "puzzle_sporting_party",
+        "generation": "8th Gen",
+        "year": "2019",
+        "image": "mario_sonic_2020.png",
+        "categories": [
+            {"id": "all_events", "name": "Complete All Events"},
+            {"id": "olympic_plus", "name": "Complete Olympic Plus"},
+            {"id": "all_outfits", "name": "Unlock All Outfits"},
+            {"id": "all_stamps", "name": "Collect All Stamps"}
+        ]
+    },
+    {
+        "id": "murder_sonic",
+        "title": "The Murder of Sonic the Hedgehog",
+        "console": ["Windows", "macOS"],
+        "category": "puzzle_sporting_party",
+        "generation": "9th Gen",
+        "year": "2023",
+        "image": "murder_sonic.png",
+        "categories": [
+            {"id": "clear_story", "name": "Complete Story"},
+            {"id": "all_endings", "name": "Discover All Endings"},
+            {"id": "all_clues", "name": "Find All Clues"},
+            {"id": "perfect_run", "name": "Perfect Investigation"}
+        ]
+    },
+    {
+        "id": "waku_waku",
+        "title": "Waku Waku Sonic Patrol Car",
+        "console": "Sega arcade",
+        "category": "racing_vehicle",
+        "generation": "Arcade",
+        "year": "1991",
+        "image": "waku_waku.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Missions"},
+            {"id": "perfect_score", "name": "Achieve Perfect Score"},
+            {"id": "all_characters", "name": "Play All Characters"}
+        ]
+    },
+    {
+        "id": "cosmo_fighter",
+        "title": "SegaSonic Cosmo Fighter",
+        "console": "Sega arcade",
+        "category": "racing_vehicle",
+        "generation": "Arcade",
+        "year": "1993",
+        "image": "cosmo_fighter.png",
+        "categories": [
+            {"id": "clear_stages", "name": "Clear All Stages"},
+            {"id": "no_continue", "name": "Clear Without Continuing"},
+            {"id": "max_score", "name": "Achieve Max Score"}
+        ]
+    },
+    {
+        "id": "sonic_drift",
+        "title": "Sonic Drift",
+        "console": "Sega Game Gear",
+        "category": "racing_vehicle",
+        "generation": "3rd Gen",
+        "year": "1994",
+        "image": "sonic_drift.png",
+        "categories": [
+            {"id": "win_circuit", "name": "Win All Circuits"},
+            {"id": "all_characters", "name": "Win With All Characters"},
+            {"id": "perfect_laps", "name": "Complete Perfect Laps"}
+        ]
+    },
+    {
+        "id": "sonic_drift_2",
+        "title": "Sonic Drift 2",
+        "console": "Sega Game Gear",
+        "category": "racing_vehicle",
+        "generation": "3rd Gen",
+        "year": "1995",
+        "image": "sonic_drift_2.png",
+        "categories": [
+            {"id": "grand_prix", "name": "Win Grand Prix"},
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_emeralds", "name": "Collect All Emeralds"}
+        ]
+    },
+    {
+        "id": "sonic_r",
+        "title": "Sonic R",
+        "console": ["Sega Saturn", "Windows"],
+        "category": "racing_vehicle",
+        "generation": "5th Gen",
+        "year": "1997",
+        "image": "sonic_r.png",
+        "categories": [
+            {"id": "all_tracks", "name": "Win All Tracks"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_emblems", "name": "Collect All Emblems"},
+            {"id": "perfect_time", "name": "Set Perfect Time Trials"}
+        ]
+    },
+    {
+        "id": "sonic_riders",
+        "title": "Sonic Riders",
+        "console": ["PlayStation 2", "GameCube", "Xbox"],
+        "category": "racing_vehicle",
+        "generation": "6th Gen",
+        "year": "2006",
+        "image": "sonic_riders.png",
+        "categories": [
+            {"id": "story_mode", "name": "Complete Story Mode"},
+            {"id": "all_gears", "name": "Unlock All Extreme Gears"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "s_rank", "name": "S-Rank All Races"}
+        ]
+    },
+    {
+        "id": "sonic_riders_zero",
+        "title": "Sonic Riders: Zero Gravity",
+        "console": ["PlayStation 2", "Wii"],
+        "category": "racing_vehicle",
+        "generation": "7th Gen",
+        "year": "2008",
+        "image": "sonic_riders_zero.png",
+        "categories": [
+            {"id": "complete_story", "name": "Complete Story Mode"},
+            {"id": "all_gears", "name": "Unlock All Gears"},
+            {"id": "all_skills", "name": "Master All Skills"},
+            {"id": "perfect_race", "name": "Perfect Race (No Damage)"}
+        ]
+    },
+    {
+        "id": "allstars_racing",
+        "title": "Sonic & Sega All-Stars Racing",
+        "console": ["PlayStation 3", "Xbox 360", "Wii", "Windows", "DS"],
+        "category": "racing_vehicle",
+        "generation": "7th Gen",
+        "year": "2010",
+        "image": "allstars_racing.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_vehicles", "name": "Unlock All Vehicles"},
+            {"id": "perfect_lap", "name": "Achieve Perfect Lap"}
+        ]
+    },
+    {
+        "id": "transformed",
+        "title": "Sonic & All-Stars Racing Transformed",
+        "console": ["PlayStation 3", "Xbox 360", "Wii U", "Windows", "Vita", "3DS"],
+        "category": "racing_vehicle",
+        "generation": "7th Gen",
+        "year": "2012",
+        "image": "transformed.png",
+        "categories": [
+            {"id": "world_tour", "name": "Complete World Tour"},
+            {"id": "all_stars", "name": "Unlock All-Star Moves"},
+            {"id": "all_vehicles", "name": "Unlock All Vehicles"},
+            {"id": "platinum", "name": "Get All Platinum Medals"}
+        ]
+    },
+    {
+        "id": "team_sonic",
+        "title": "Team Sonic Racing",
+        "console": ["PlayStation 4", "Xbox One", "Switch", "Windows"],
+        "category": "racing_vehicle",
+        "generation": "8th Gen",
+        "year": "2019",
+        "image": "team_sonic.png",
+        "categories": [
+            {"id": "story_complete", "name": "Complete Story Mode"},
+            {"id": "all_mods", "name": "Unlock All Mods"},
+            {"id": "all_custom", "name": "Unlock All Customization"},
+            {"id": "ultimate_team", "name": "Build Ultimate Team"}
+        ]
+    },
+    {
+        "id": "speed_battle",
+        "title": "Sonic Forces: Speed Battle",
+        "console": ["iOS", "Android"],
+        "category": "racing_vehicle",
+        "generation": "Mobile",
+        "year": "2017",
+        "image": "speed_battle.png",
+        "categories": [
+            {"id": "max_level", "name": "Reach Max Level"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "legendary", "name": "Legendary Rank"},
+            {"id": "perfect_run", "name": "Perfect Race (No Hits)"}
+        ]
+    },
+    {
+        "id": "crossworlds",
+        "title": "Sonic Racing: CrossWorlds",
+        "console": ["PlayStation 5", "Xbox Series X/S", "Windows"],
+        "category": "racing_vehicle",
+        "generation": "9th Gen",
+        "year": "2025",
+        "image": "crossworlds.png",
+        "categories": [
+            {"id": "complete_campaign", "name": "Complete Campaign"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_tracks", "name": "Master All Tracks"},
+            {"id": "ultimate_build", "name": "Create Ultimate Vehicle"}
+        ]
+    },
+    {
+        "id": "wacky_worlds",
+        "title": "Wacky Worlds Creativity Studio",
+        "console": "Sega Pico",
+        "category": "entertainment_creative",
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "wacky_worlds.png",
+        "categories": [
+            {"id": "complete_projects", "name": "Complete All Projects"},
+            {"id": "all_stickers", "name": "Collect All Stickers"},
+            {"id": "custom_worlds", "name": "Create 5 Custom Worlds"},
+            {"id": "perfect_design", "name": "Achieve Perfect Design Score"}
+        ]
+    },
+    {
+        "id": "tails_music",
+        "title": "Tails and the Music Maker",
+        "console": "Sega Pico",
+        "category": "entertainment_creative",
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "tails_music.png",
+        "categories": [
+            {"id": "complete_songs", "name": "Complete All Songs"},
+            {"id": "perfect_score", "name": "Perfect Score on All Tracks"},
+            {"id": "custom_tracks", "name": "Create 3 Custom Tracks"},
+            {"id": "all_instruments", "name": "Unlock All Instruments"}
+        ]
+    },
+    {
+        "id": "sonic_schoolhouse",
+        "title": "Sonic's Schoolhouse",
+        "console": "Windows",
+        "category": "entertainment_creative",
+        "generation": "5th Gen",
+        "year": "1996",
+        "image": "sonic_schoolhouse.png",
+        "categories": [
+            {"id": "complete_subjects", "name": "Master All Subjects"},
+            {"id": "all_grades", "name": "Achieve A+ in All Tests"},
+            {"id": "all_items", "name": "Collect All School Items"},
+            {"id": "speedrun", "name": "Complete School Day Speedrun"}
+        ]
+    },
+    {
+        "id": "sonic_x",
+        "title": "Sonic X",
+        "console": "Leapster",
+        "category": "entertainment_creative",
+        "generation": "6th Gen",
+        "year": "2005",
+        "image": "sonic_x.png",
+        "categories": [
+            {"id": "complete_episodes", "name": "Complete All Episodes"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_scores", "name": "Perfect Scores in All Activities"},
+            {"id": "creative_mode", "name": "Complete Creative Challenges"}
+        ]
+    },
+    {
+        "id": "sonic_hedgehog_2008",
+        "title": "Sonic the Hedgehog (2008)",
+        "console": "iOS",
+        "category": "entertainment_creative",
+        "generation": "Mobile",
+        "year": "2008",
+        "image": "sonic_2008_mobile.png",
+        "categories": [
+            {"id": "complete_levels", "name": "Complete All Levels"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_runs", "name": "Perfect Runs on All Stages"},
+            {"id": "custom_levels", "name": "Create 3 Custom Levels"}
+        ]
+    },
+    {
+        "id": "sonic_fighters",
+        "title": "Sonic the Fighters",
+        "console": ["Sega Arcade", "GameCube", "PlayStation 3", "Xbox 360"],
+        "category": "fighting",
+        "generation": "Arcade",
+        "year": "1996",
+        "image": "sonic_fighters.png",
+        "categories": [
+            {"id": "arcade_clear", "name": "Clear Arcade Mode"},
+            {"id": "all_characters", "name": "Unlock All Fighters"},
+            {"id": "perfect_victory", "name": "Perfect Victory (No Damage)"},
+            {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
+            {"id": "survival_10", "name": "10 Wins in Survival Mode"}
+        ]
+    },
+    {
+        "id": "sonic_battle",
+        "title": "Sonic Battle",
+        "console": "Game Boy Advance",
+        "category": "fighting",
+        "generation": "6th Gen",
+        "year": "2003",
+        "image": "sonic_battle.png",
+        "categories": [
+            {"id": "story_complete", "name": "Complete Story Mode"},
+            {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
+            {"id": "max_level", "name": "Max Level All Characters"},
+            {"id": "all_skills", "name": "Unlock All Battle Skills"},
+            {"id": "all_chao", "name": "Complete All Chao Challenges"},
+            {"id": "versus_master", "name": "Win 50 VS Matches"}
+        ]
+    },
+    {
+        "id": "sonic_dash",
+        "title": "Sonic Dash",
+        "console": ["iOS", "Android"],
+        "category": "mobile",
+        "generation": "Mobile",
+        "year": "2013",
+        "image": "sonic_dash.png",
+        "categories": [
+            {"id": "max_rank", "name": "Reach Max Rank"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "complete_events", "name": "Complete All Special Events"},
+            {"id": "infinite_run", "name": "10K+ Meters in Endless Mode"},
+            {"id": "all_red_rings", "name": "Collect All Red Star Rings"}
+        ]
+    },
+    {
+        "id": "sonic_runners",
+        "title": "Sonic Runners",
+        "console": ["iOS", "Android"],
+        "category": "mobile",
+        "generation": "Mobile",
+        "year": "2015",
+        "image": "sonic_runners.png",
+        "categories": [
+            {"id": "story_complete", "name": "Complete Story Mode"},
+            {"id": "all_buddies", "name": "Collect All Buddies"},
+            {"id": "max_level", "name": "Max Level Team"},
+            {"id": "all_chao", "name": "Hatch All Chao Types"},
+            {"id": "s_rank", "name": "S-Rank All Stages"}
+        ]
+    },
+    {
+        "id": "dash_2_boom",
+        "title": "Sonic Dash 2: Sonic Boom",
+        "console": ["iOS", "Android"],
+        "category": "mobile",
+        "generation": "Mobile",
+        "year": "2015",
+        "image": "dash_2_boom.png",
+        "categories": [
+            {"id": "all_heroes", "name": "Unlock All Boom Characters"},
+            {"id": "max_level", "name": "Max Level Character"},
+            {"id": "complete_zones", "name": "Complete All Zones"},
+            {"id": "all_skins", "name": "Collect All Character Skins"},
+            {"id": "marathon", "name": "15K+ Meters Run"}
+        ]
+    },
+    {
+        "id": "runners_adventure",
+        "title": "Sonic Runners Adventure",
+        "console": ["iOS", "Android"],
+        "category": "mobile",
+        "generation": "Mobile",
+        "year": "2017",
+        "image": "runners_adventure.png",
+        "categories": [
+            {"id": "story_complete", "name": "Complete All Islands"},
+            {"id": "three_stars", "name": "3 Stars All Levels"},
+            {"id": "all_characters", "name": "Unlock All Team Members"},
+            {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
+            {"id": "perfect_run", "name": "Perfect Run (No Damage)"}
+        ]
+    },
+    {
+        "id": "sonic_rumble",
+        "title": "Sonic Rumble",
+        "console": ["iOS", "Android"],
+        "category": "mobile",
+        "generation": "Mobile",
+        "year": "2025",
+        "image": "sonic_rumble.png",
+        "categories": [
+            {"id": "battle_pass", "name": "Complete Battle Pass"},
+            {"id": "all_outfits", "name": "Collect All Outfits"},
+            {"id": "max_level", "name": "Max Player Level"},
+            {"id": "all_arenas", "name": "Win in All Battle Arenas"},
+            {"id": "ultimate_victory", "name": "Win 100 Matches"}
+        ]
+    },
+    {
+    "id": "sonic_chronicles",
+    "title": "Sonic Chronicles: The Dark Brotherhood",
+    "console": "Nintendo DS",
+    "category": "adventure_rpg",
+    "generation": "7th Gen",
+    "year": "2008",
+    "image": "sonic_chronicles.png",
+    "categories": [
+        {"id": "main_story", "name": "Complete Main Story"},
+        {"id": "all_sidequests", "name": "Finish All Side Quests"},
+        {"id": "max_level", "name": "Reach Level 99 with All Characters"},
+        {"id": "all_recipes", "name": "Discover All Chao Recipes"},
+        {"id": "all_characters", "name": "Recruit All Party Members"},
+        {"id": "ultimate_gear", "name": "Obtain All Ultimate Gear"},
+        {"id": "bestiary", "name": "Complete Enemy Bestiary"},
+        {"id": "all_powermoves", "name": "Learn All Powermoves"},
+        {"id": "hidden_bosses", "name": "Defeat All Secret Bosses"},
+        {"id": "perfect_ending", "name": "Achieve Perfect Ending"}
+    ]
+    },
+    {
+        "id": "sonic_3d_chess",
+        "title": "Sonic the Hedgehog 3D Chess",
+        "console": "Physical Board Game",
+        "category": "board",
+        "generation": "Tabletop",
+        "year": "2010",
+        "image": "sonic_chess.png",
+        "categories": [
+            {"id": "all_pieces", "name": "Play Using All Character Pieces"},
+            {"id": "win_streak", "name": "5-Game Win Streak"},
+            {"id": "different_strats", "name": "Win With 3 Different Strategies"},
+            {"id": "speed_chess", "name": "Win in Under 10 Minutes"},
+            {"id": "team_victory", "name": "Win Team Match (2v2)"}
+        ]
+    },
+    {
+        "id": "sonic_monopoly",
+        "title": "Monopoly: Sonic the Hedgehog Collector's Edition",
+        "console": "Physical Board Game",
+        "category": "board",
+        "generation": "Tabletop",
+        "year": "2012",
+        "image": "sonic_monopoly.png",
+        "categories": [
+            {"id": "full_monopoly", "name": "Complete Full Monopoly Game"},
+            {"id": "all_properties", "name": "Own All Properties Simultaneously"},
+            {"id": "quick_win", "name": "Win in Under 90 Minutes"},
+            {"id": "all_tokens", "name": "Play Using All Character Tokens"},
+            {"id": "perfect_trades", "name": "Win Without Trading Properties"}
+        ]
+    },
+    {
+        "id": "sonic_boom_monopoly",
+        "title": "Sonic Boom Monopoly",
+        "console": "Physical Board Game",
+        "category": "board",
+        "generation": "Tabletop",
+        "year": "2015",
+        "image": "boom_monopoly.png",
+        "categories": [
+            {"id": "boom_rules", "name": "Complete Game With Boom Rules"},
+            {"id": "all_booms", "name": "Trigger All Boom Events"},
+            {"id": "upgrade_all", "name": "Fully Upgrade 3 Boom Properties"},
+            {"id": "no_rent", "name": "Win Without Paying Rent"},
+            {"id": "speedrun", "name": "Win in Under 1 Hour"}
         ]
     }
 ]
