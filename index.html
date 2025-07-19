@@ -8,12 +8,32 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <h1>SONIC SERIES PROGRESS TRACKER</h1>
-        <div id="filters-container" class="filters-container"></div>
-        <div id="games-list" class="games-grid"></div>
+    <div class="main-layout">
+        <div class="sidebar">
+            <h3>CATEGORIES</h3>
+            <div class="category-buttons" id="categories-container">
+                <button class="category-btn active" data-category="all">All Games</button>
+                <button class="category-btn" data-category="2d_platformer">2D Platformer</button>
+                <button class="category-btn" data-category="3d_action_adventure">3D Action-Adventure</button>
+                <button class="category-btn" data-category="adventure_rpg">Adventure/RPG Games</button>
+                <button class="category-btn" data-category="board">Board Games</button>
+                <button class="category-btn" data-category="entertainment_creative">Entertainment and Creative</button>
+                <button class="category-btn" data-category="fighting">Fighting Games</button>
+                <button class="category-btn" data-category="mobile">Mobile Games</button>
+                <button class="category-btn" data-category="puzzle_sporting_party">Puzzle, Sporting and Party Games</button>
+                <button class="category-btn" data-category="racing_vehicle">Racing Games and Vehicle Simulators</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <h1>SONIC SERIES PROGRESS TRACKER</h1>
+                <div id="filters-container" class="filters-container"></div>
+                <h2 class="current-category">All Games</h2>
+                <div id="games-list" class="games-grid"></div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
     </div>
-    <button id="theme-toggle" class="theme-toggle">🌙</button>
     <script src="script.js"></script>
 </body>
 </html>

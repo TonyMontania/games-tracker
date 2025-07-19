@@ -2,7 +2,8 @@
     {
         "id": "sonic_1_16bit",
         "title": "Sonic the Hedgehog (16-bit)",
-        "console": "Sega Genesis",
+        "console": ["Sega Genesis/Mega Drive", "Nintendo Game Boy", "Nintendo Game Boy Advance", "PC", "Nintendo 3DS", "iOS", "Android", "Amazon Fire TV", "Apple TV", "Nintendo Switch"],
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1991",
         "image": "sonic_1_16bit.png",
@@ -17,6 +18,7 @@
         "id": "sonic_1_8bit",
         "title": "Sonic the Hedgehog (8-bit)",
         "console": "Sega Master System",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1991",
         "image": "sonic_1_8bit.png",
@@ -29,7 +31,8 @@
     {
         "id": "sonic_2_16bit",
         "title": "Sonic the Hedgehog 2 (16-bit)",
-        "console": ["Sega Genesis", "Sega Mega Drive"],
+        "console": "Sega Genesis/Mega Drive",
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1992",
         "image": "sonic_2_16bit.png",
@@ -45,6 +48,7 @@
         "id": "sonic_2_8bit",
         "title": "Sonic the Hedgehog 2 (8-bit)",
         "console": "Sega Master System",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1992",
         "image": "sonic_2_8bit.png",
@@ -58,6 +62,7 @@
         "id": "sonic_cd",
         "title": "Sonic CD",
         "console": "Sega CD",
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1993",
         "image": "sonic_cd.png",
@@ -72,7 +77,8 @@
     {
         "id": "sonic_spinball_16bit",
         "title": "Sonic the Hedgehog Spinball (16-bit)",
-        "console": "Sega Genesis",
+        "console": "Sega Genesis/Mega Drive",
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1993",
         "image": "sonic_spinball_16bit.png",
@@ -86,6 +92,7 @@
         "id": "sonic_spinball_8bit",
         "title": "Sonic the Hedgehog Spinball (8-bit)",
         "console": "Sega Master System",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1993",
         "image": "sonic_spinball_8bit.png",
@@ -98,6 +105,7 @@
         "id": "sonic_chaos",
         "title": "Sonic Chaos",
         "console": "Sega Master System",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1993",
         "image": "sonic_chaos.png",
@@ -110,7 +118,8 @@
     {
         "id": "sonic_3",
         "title": "Sonic the Hedgehog 3",
-        "console": "Sega Genesis",
+        "console": "Sega Genesis/Mega Drive",
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1994",
         "image": "sonic_3.png",
@@ -125,7 +134,8 @@
     {
         "id": "sonic_knuckles",
         "title": "Sonic & Knuckles",
-        "console": "Sega Genesis",
+        "console": "Sega Genesis/Mega Drive",
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1994",
         "image": "sonic_knuckles.png",
@@ -141,6 +151,7 @@
         "id": "sonic_triple_trouble",
         "title": "Sonic the Hedgehog Triple Trouble",
         "console": "Sega Game Gear",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1994",
         "image": "sonic_triple_trouble.png",
@@ -154,6 +165,7 @@
         "id": "knuckles_chaotix",
         "title": "Knuckles' Chaotix",
         "console": "Sega 32X",
+        "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1995",
         "image": "knuckles_chaotix.png",
@@ -167,6 +179,7 @@
         "id": "tails_skypatrol",
         "title": "Tails' Skypatrol",
         "console": "Sega Game Gear",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1995",
         "image": "tails_skypatrol.png",
@@ -179,6 +192,7 @@
         "id": "tails_adventure",
         "title": "Tails Adventure",
         "console": "Sega Game Gear",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1995",
         "image": "tails_adventure.png",
@@ -192,6 +206,7 @@
         "id": "sonic_labyrinth",
         "title": "Sonic Labyrinth",
         "console": "Sega Game Gear",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1995",
         "image": "sonic_labyrinth.png",
@@ -204,6 +219,7 @@
         "id": "sonic_blast",
         "title": "Sonic Blast",
         "console": "Sega Game Gear",
+        "category": "2d_platformer",
         "generation": "3rd Gen",
         "year": "1996",
         "image": "sonic_blast.png",
@@ -217,6 +233,7 @@
         "id": "sonic_advance",
         "title": "Sonic Advance",
         "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "category": "2d_platformer",
         "generation": "6th Gen",
         "year": "2001",
         "image": "sonic_advance.png",
@@ -231,6 +248,7 @@
         "id": "sonic_advance_2",
         "title": "Sonic Advance 2",
         "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "category": "2d_platformer",
         "generation": "6th Gen",
         "year": "2002",
         "image": "sonic_advance_2.png",
@@ -246,6 +264,7 @@
         "id": "sonic_advance_3",
         "title": "Sonic Advance 3",
         "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "category": "2d_platformer",
         "generation": "6th Gen",
         "year": "2004",
         "image": "sonic_advance_3.png",
@@ -260,6 +279,7 @@
         "id": "sonic_rush",
         "title": "Sonic Rush",
         "console": "Nintendo DS",
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2005",
         "image": "sonic_rush.png",
@@ -276,6 +296,7 @@
         "id": "sonic_rivals",
         "title": "Sonic Rivals",
         "console": "Sony PSP",
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2006",
         "image": "sonic_rivals.png",
@@ -289,6 +310,7 @@
         "id": "sonic_rush_adventure",
         "title": "Sonic Rush Adventure",
         "console": "Nintendo DS",
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2007",
         "image": "sonic_rush_adventure.png",
@@ -304,6 +326,7 @@
         "id": "sonic_rivals_2",
         "title": "Sonic Rivals 2",
         "console": "Sony PSP",
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2007",
         "image": "sonic_rivals_2.png",
@@ -317,6 +340,7 @@
         "id": "sonic_4_ep1",
         "title": "Sonic the Hedgehog 4: Episode I",
         "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "iOS", "Android"],
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2010",
         "image": "sonic_4_ep1.png",
@@ -331,6 +355,7 @@
         "id": "sonic_colors_ds",
         "title": "Sonic Colors (DS)",
         "console": "Nintendo DS",
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2010",
         "image": "sonic_colors_ds.png",
@@ -344,6 +369,7 @@
         "id": "sonic_generations_3ds",
         "title": "Sonic Generations (3DS)",
         "console": "Nintendo 3DS",
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2011",
         "image": "sonic_generations_3ds.png",
@@ -358,6 +384,7 @@
         "id": "sonic_4_ep2",
         "title": "Sonic the Hedgehog 4: Episode II",
         "console": ["PlayStation 3", "Xbox 360", "iOS", "Android"],
+        "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2012",
         "image": "sonic_4_ep2.png",
@@ -372,6 +399,7 @@
         "id": "sonic_jump",
         "title": "Sonic Jump",
         "console": ["iOS", "Android"],
+        "category": "2d_platformer",
         "generation": "Mobile",
         "year": "2012",
         "image": "sonic_jump.png",
@@ -385,6 +413,7 @@
         "id": "sonic_boom_shattered",
         "title": "Sonic Boom: Shattered Crystal",
         "console": "Nintendo 3DS",
+        "category": "2d_platformer",
         "generation": "8th Gen",
         "year": "2014",
         "image": "sonic_boom_shattered.png",
@@ -398,6 +427,7 @@
         "id": "sonic_boom_fire",
         "title": "Sonic Boom: Fire & Ice",
         "console": "Nintendo 3DS",
+        "category": "2d_platformer",
         "generation": "8th Gen",
         "year": "2016",
         "image": "sonic_boom_fire.png",
@@ -411,6 +441,7 @@
         "id": "sonic_mania",
         "title": "Sonic Mania",
         "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "category": "2d_platformer",
         "generation": "8th Gen",
         "year": "2017",
         "image": "sonic_mania.png",
@@ -426,6 +457,7 @@
         "id": "sonic_mania_plus",
         "title": "Sonic Mania Plus",
         "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "category": "2d_platformer",
         "generation": "8th Gen",
         "year": "2018",
         "image": "sonic_mania_plus.png",
@@ -442,6 +474,7 @@
         "id": "sonic_superstars",
         "title": "Sonic Superstars",
         "console": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch", "PC"],
+        "category": "2d_platformer",
         "generation": "9th Gen",
         "year": "2023",
         "image": "sonic_superstars.png",
@@ -451,6 +484,257 @@
             {"id": "all_medals", "name": "All Gold Medals"},
             {"id": "all_chars", "name": "Clear with All Characters"},
             {"id": "super_forms", "name": "Unlock All Super Forms"}
+        ]
+    },
+    {
+        "id": "sega_sonic",
+        "title": "SegaSonic the Hedgehog",
+        "console": "Sega Arcade",
+        "category": "3d_action_adventure",
+        "generation": "Arcade",
+        "year": "1993",
+        "image": "sega_sonic.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_continues", "name": "No Continue Run"},
+            {"id": "all_characters", "name": "Play All Characters"}
+        ]
+    },
+    {
+        "id": "sonic_3d_blast",
+        "title": "Sonic 3D Blast",
+        "console": ["Sega Genesis/Mega Drive", "Sega Saturn"],
+        "category": "3d_action_adventure",
+        "generation": "5th Gen",
+        "year": "1996",
+        "image": "sonic_3d_blast.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_flickies", "name": "Rescue All Flickies"}
+        ]
+    },
+    {
+        "id": "sonic_adventure",
+        "title": "Sonic Adventure",
+        "console": "Sega Dreamcast",
+        "category": "3d_action_adventure",
+        "generation": "6th Gen",
+        "year": "1998",
+        "image": "sonic_adventure.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear All Stories"},
+            {"id": "all_emblems", "name": "Get All Emblems"},
+            {"id": "chao_karate", "name": "Win Chao Karate"},
+            {"id": "max_chao", "name": "Max Stat Chao"}
+        ]
+    },
+    {
+        "id": "sonic_adventure_2",
+        "title": "Sonic Adventure 2",
+        "console": ["Sega Dreamcast", "Nintendo GameCube"],
+        "category": "3d_action_adventure",
+        "generation": "6th Gen",
+        "year": "2001",
+        "image": "sonic_adventure_2.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Hero/Dark Stories"},
+            {"id": "all_A_ranks", "name": "All A Ranks"},
+            {"id": "all_chao", "name": "Complete Chao Garden"},
+            {"id": "green_hill", "name": "Unlock Green Hill"}
+        ]
+    },
+    {
+        "id": "sonic_heroes",
+        "title": "Sonic Heroes",
+        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox"],
+        "category": "3d_action_adventure",
+        "generation": "6th Gen",
+        "year": "2003",
+        "image": "sonic_heroes.png",
+        "categories": [
+            {"id": "clear_team", "name": "Clear All Teams"},
+            {"id": "all_A_ranks", "name": "All A Ranks"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "super_forms", "name": "Unlock Super Forms"}
+        ]
+    },
+    {
+        "id": "shadow_hedgehog",
+        "title": "Shadow the Hedgehog",
+        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox"],
+        "category": "3d_action_adventure",
+        "generation": "6th Gen",
+        "year": "2005",
+        "image": "shadow_hedgehog.png",
+        "categories": [
+            {"id": "all_endings", "name": "All Story Endings"},
+            {"id": "all_weapons", "name": "Unlock All Weapons"},
+            {"id": "all_A_ranks", "name": "All A Ranks"},
+            {"id": "super_shadow", "name": "Unlock Super Shadow"}
+        ]
+    },
+    {
+        "id": "sonic_2006",
+        "title": "Sonic the Hedgehog (2006)",
+        "console": ["PlayStation 3", "Xbox 360"],
+        "category": "3d_action_adventure",
+        "generation": "7th Gen",
+        "year": "2006",
+        "image": "sonic_2006.png",
+        "categories": [
+            {"id": "clear_stories", "name": "Clear All Stories"},
+            {"id": "all_s_ranks", "name": "All S Ranks"},
+            {"id": "all_silver", "name": "All Silver Medals"}
+        ]
+    },
+    {
+        "id": "secret_rings",
+        "title": "Sonic and the Secret Rings",
+        "console": "Nintendo Wii",
+        "category": "3d_action_adventure",
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "secret_rings.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story Mode"},
+            {"id": "all_skills", "name": "Unlock All Skills"},
+            {"id": "all_artifacts", "name": "All Artifacts"},
+            {"id": "max_ring", "name": "Max Ring Level"}
+        ]
+    },
+    {
+        "id": "sonic_unleashed",
+        "title": "Sonic Unleashed",
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii"],
+        "category": "3d_action_adventure",
+        "generation": "7th Gen",
+        "year": "2008",
+        "image": "sonic_unleashed.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_s_ranks", "name": "All S Ranks"},
+            {"id": "all_moon_medals", "name": "All Moon Medals"},
+            {"id": "all_sun_medals", "name": "All Sun Medals"}
+        ]
+    },
+    {
+        "id": "black_knight",
+        "title": "Sonic and the Black Knight",
+        "console": "Nintendo Wii",
+        "category": "3d_action_adventure",
+        "generation": "7th Gen",
+        "year": "2009",
+        "image": "black_knight.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_weapons", "name": "All Weapons"},
+            {"id": "all_books", "name": "All Story Books"},
+            {"id": "knight_style", "name": "Max Knight Style"}
+        ]
+    },
+    {
+        "id": "sonic_colors_hd",
+        "title": "Sonic Colors (HD)",
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "Nintendo Switch"],
+        "category": "3d_action_adventure",
+        "generation": "7th Gen",
+        "year": "2010",
+        "image": "sonic_colors_hd.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Game"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_s_ranks", "name": "All S Ranks"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+        ]
+    },
+    {
+        "id": "sonic_generations",
+        "title": "Sonic Generations",
+        "console": ["PlayStation 3", "Xbox 360", "PC"],
+        "category": "3d_action_adventure",
+        "generation": "7th Gen",
+        "year": "2011",
+        "image": "sonic_generations.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_s_ranks", "name": "All S Ranks"},
+            {"id": "all_art", "name": "Unlock All Art"}
+        ]
+    },
+    {
+        "id": "sonic_lost_world",
+        "title": "Sonic Lost World",
+        "console": ["Nintendo Wii U", "PC", "Nintendo 3DS"],
+        "category": "3d_action_adventure",
+        "generation": "8th Gen",
+        "year": "2013",
+        "image": "sonic_lost_world.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_ranks", "name": "All Zeta/Zazz Ranks"},
+            {"id": "all_bonuses", "name": "All Bonus Stages"}
+        ]
+    },
+    {
+        "id": "sonic_boom_lyric",
+        "title": "Sonic Boom: Rise of Lyric",
+        "console": "Nintendo Wii U",
+        "category": "3d_action_adventure",
+        "generation": "8th Gen",
+        "year": "2014",
+        "image": "sonic_boom_lyric.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_artifacts", "name": "All Artifacts"},
+            {"id": "all_trophies", "name": "All Trophies"},
+            {"id": "all_upgrades", "name": "All Character Upgrades"}
+        ]
+    },
+    {
+        "id": "sonic_forces",
+        "title": "Sonic Forces",
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "category": "3d_action_adventure",
+        "generation": "8th Gen",
+        "year": "2017",
+        "image": "sonic_forces.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_s_ranks", "name": "All S Ranks"},
+            {"id": "all_avatars", "name": "Unlock All Avatar Items"}
+        ]
+    },
+    {
+        "id": "sonic_frontiers",
+        "title": "Sonic Frontiers",
+        "console": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch", "PC"],
+        "generation": "9th Gen",
+        "year": "2022",
+        "image": "sonic_frontiers.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_skills", "name": "Max Skill Tree"},
+            {"id": "all_cyberspace", "name": "S Rank All Cyberspace"},
+            {"id": "all_fishing", "name": "Complete Fishing Log"}
+        ]
+    },
+    {
+        "id": "shadow_generations",
+        "title": "Shadow Generations",
+        "console": ["PlayStation 5", "Xbox Series X/S", "PC"],
+        "generation": "9th Gen",
+        "year": "2024",
+        "image": "shadow_generations.png",
+        "categories": [
+            {"id": "clear_story", "name": "Clear Story"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_s_ranks", "name": "All S Ranks"},
+            {"id": "all_skills", "name": "Unlock All Skills"}
         ]
     }
 ]

@@ -4,29 +4,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch('games.json');
         if (!response.ok) throw new Error('Unable to load game list');
-        games = await response.json();
+        const data = await response.json();
+        
+        games = Array.isArray(data) ? data : Object.values(data).flat();
+        
         initFilters();
         displayGames(games);
         setupThemeToggle();
         
-        // Event Listeners
         document.getElementById('export-button').addEventListener('click', exportProgress);
         document.getElementById('import-button').addEventListener('click', importProgress);
         
     } catch (error) {
         console.error('Error:', error);
         document.getElementById('games-list').innerHTML = `
-            <div class="error">Error loading games. Reload the page.</div>
+            <div class="error">Error loading games: ${error.message}</div>
         `;
     }
 });
 
 function initFilters() {
+    const allConsoles = [...new Set(games.flatMap(g => 
+        Array.isArray(g.console) ? g.console : [g.console]
+    ))].sort((a, b) => a.localeCompare(b));
+
     const filtersHTML = `
         <select id="console-filter" class="filter-select">
             <option value="">All consoles</option>
-            ${[...new Set(games.flatMap(g => Array.isArray(g.console) ? g.console : [g.console]))]
-                .map(c => `<option value="${c}">${c}</option>`).join('')}
+            ${allConsoles.map(c => `<option value="${c}">${c}</option>`).join('')}
         </select>
         <button id="reset-filters" class="filter-button">Reset filters</button>
         <button id="import-button" class="filter-button">Import JSON</button>
@@ -36,20 +41,51 @@ function initFilters() {
     
     document.getElementById('console-filter').addEventListener('change', filterGames);
     document.getElementById('reset-filters').addEventListener('click', resetFilters);
+    
+    document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const category = this.dataset.category;
+            filterByCategory(category);
+        });
+    });
+}
+
+function filterByCategory(category) {
+    const categoryName = category === 'all' ? 'All Games' : 
+        document.querySelector(`.category-btn[data-category="${category}"]`).textContent;
+    
+    document.querySelector('.current-category').textContent = categoryName;
+    
+    applyCombinedFilters();
+}
+
+function applyCombinedFilters() {
+    const consoleValue = document.getElementById('console-filter').value;
+    const activeCategory = document.querySelector('.category-btn.active')?.dataset.category || 'all';
+    
+    const filtered = games.filter(game => {
+        const categoryMatch = activeCategory === 'all' || game.category === activeCategory;
+        
+        const consoles = Array.isArray(game.console) ? game.console : [game.console];
+        const consoleMatch = !consoleValue || consoles.includes(consoleValue);
+        
+        return categoryMatch && consoleMatch;
+    });
+    
+    displayGames(filtered);
 }
 
 function filterGames() {
-    const consoleValue = document.getElementById('console-filter').value;
-    const filtered = games.filter(game => {
-        const consoles = Array.isArray(game.console) ? game.console : [game.console];
-        return !consoleValue || consoles.includes(consoleValue);
-    });
-    displayGames(filtered);
+    applyCombinedFilters();
 }
 
 function resetFilters() {
     document.getElementById('console-filter').value = '';
-    filterGames();
+    document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector('.category-btn[data-category="all"]').classList.add('active');
+    applyCombinedFilters();
 }
 
 function displayGames(gamesToDisplay) {
@@ -64,8 +100,7 @@ function displayGames(gamesToDisplay) {
             <h3>${game.title}</h3>
             <div class="game-meta">
                 <span>${Array.isArray(game.console) ? game.console.join(" | ") : game.console}</span>
-                <span>${game.year}</span>
-                <span>${game.generation}</span>
+                <span class="year-gen">${game.year} | ${game.generation}</span>
             </div>
             <img src="assets/covers/${game.image}" alt="${game.title}" onerror="this.src='assets/no-image.png'">
             ${allCompleted ? '<div class="completed-badge">Completed!</div>' : ''}
@@ -73,10 +108,10 @@ function displayGames(gamesToDisplay) {
                 ${game.categories.map(cat => `
                     <label>
                         <input type="checkbox" 
-                               class="emerald-checkbox"
-                               data-game="${game.id}" 
-                               data-category="${cat.id}"
-                               ${isCompleted(game.id, cat.id) ? 'checked' : ''}>
+                                class="emerald-checkbox"
+                                data-game="${game.id}" 
+                                data-category="${cat.id}"
+                                ${isCompleted(game.id, cat.id) ? 'checked' : ''}>
                         <span>${cat.name}</span>
                     </label>
                 `).join('')}
