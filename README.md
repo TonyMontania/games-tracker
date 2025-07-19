@@ -28,6 +28,7 @@ A progress tracker that saves locally to complete all the games of the Sonic the
 
 ## 🎨 Screenshoots
 <img src="assets/github/screenshot1.png" width="400"> <img src="assets/github/screenshot2.png" width="400">
+<img src="assets/github/screenshot3.png" width="400"> <img src="assets/github/screenshot4.png" width="400">
 
 ## 🛠️ Technologies
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
