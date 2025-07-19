@@ -11,7 +11,11 @@
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "all_bonus", "name": "All Bonus Stages"}
+            {"id": "all_bonus", "name": "All Bonus Stages"},
+            {"id": "no_death_run", "name": "Clear Game Without Dying"},
+            {"id": "speedrun", "name": "Beat the Game in Under 30 Minutes"},
+            {"id": "hidden_1up", "name": "Find All Hidden 1-Ups"},
+            {"id": "perfect_zone", "name": "Perfect Score in Green Hill Zone"}
         ]
     },
     {
@@ -25,7 +29,11 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "Complete All Special Stages"},
+            {"id": "no_continues", "name": "Clear Without Using Continues"},
+            {"id": "max_lives", "name": "Collect 99 Lives"},
+            {"id": "hidden_areas", "name": "Discover All Hidden Areas"}
         ]
     },
     {
@@ -41,7 +49,10 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
             {"id": "all_bonus", "name": "All Bonus Stages"},
-            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "deathless", "name": "Clear Game Without Dying"},
+            {"id": "hidden_palace", "name": "Find Hidden Palace Zone"},
+            {"id": "speedrun", "name": "Beat the Game in Under 1 Hour"}
         ]
     },
     {
@@ -55,7 +66,11 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "Complete All Special Stages"},
+            {"id": "max_score", "name": "Achieve Maximum Score"},
+            {"id": "no_damage", "name": "Clear a Zone Without Taking Damage"},
+            {"id": "hidden_items", "name": "Find All Hidden Items"}
         ]
     },
     {
@@ -71,7 +86,10 @@
             {"id": "all_stones", "name": "All Time Stones"},
             {"id": "good_ending", "name": "Good Ending"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "all_past", "name": "Visit All Past Versions"}
+            {"id": "all_past", "name": "Visit All Past Versions"},
+            {"id": "all_futures", "name": "Create All Good Futures"},
+            {"id": "no_hit", "name": "Clear a Zone Without Being Hit"},
+            {"id": "speedrun", "name": "Beat the Game in Under 45 Minutes"}
         ]
     },
     {
@@ -85,7 +103,10 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "high_score", "name": "Max Score"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bosses", "name": "Defeat All Bosses Perfectly"},
+            {"id": "no_ball_loss", "name": "Complete a Level Without Losing the Ball"},
+            {"id": "hidden_exits", "name": "Find All Hidden Exits"}
         ]
     },
     {
@@ -98,7 +119,10 @@
         "image": "sonic_spinball_8bit.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "high_score", "name": "Max Score"}
+            {"id": "high_score", "name": "Max Score"},
+            {"id": "all_bonus", "name": "Complete All Bonus Stages"},
+            {"id": "no_miss", "name": "Clear a Level Without Missing the Ball"},
+            {"id": "hidden_items", "name": "Find All Hidden Items"}
         ]
     },
     {
@@ -112,7 +136,10 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "Complete All Special Stages"},
+            {"id": "no_continues", "name": "Clear Without Using Continues"},
+            {"id": "max_lives", "name": "Collect 99 Lives"}
         ]
     },
     {
@@ -128,7 +155,10 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
             {"id": "super_sonic", "name": "Unlock Super Sonic"},
-            {"id": "all_bonus", "name": "All Bonus Stages"}
+            {"id": "all_bonus", "name": "All Bonus Stages"},
+            {"id": "hyper_sonic", "name": "Unlock Hyper Sonic (Debug Mode)"},
+            {"id": "all_shields", "name": "Collect All Shield Types"},
+            {"id": "no_save", "name": "Clear Without Saving"}
         ]
     },
     {
@@ -144,7 +174,10 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
             {"id": "super_sonic", "name": "Unlock Super Sonic"},
-            {"id": "super_knuckles", "name": "Unlock Super Knuckles"}
+            {"id": "super_knuckles", "name": "Unlock Super Knuckles"},
+            {"id": "all_bonus", "name": "All Bonus Stages"},
+            {"id": "lock_on", "name": "Complete with Sonic 3 Lock-On"},
+            {"id": "no_damage", "name": "Clear a Zone Without Damage"}
         ]
     },
     {
@@ -158,7 +191,11 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "Complete All Special Stages"},
+            {"id": "no_continues", "name": "Clear Without Using Continues"},
+            {"id": "hidden_areas", "name": "Find All Hidden Areas"},
+            {"id": "max_lives", "name": "Collect 99 Lives"}
         ]
     },
     {
@@ -172,7 +209,10 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "all_special", "name": "All Special Stages"}
+            {"id": "all_special", "name": "All Special Stages"},
+            {"id": "all_characters", "name": "Play All Character Combos"},
+            {"id": "no_continues", "name": "Clear Without Continues"},
+            {"id": "hidden_continues", "name": "Find All Hidden Continues"}
         ]
     },
     {
@@ -185,7 +225,10 @@
         "image": "tails_skypatrol.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "perfect", "name": "Perfect Run"}
+            {"id": "perfect", "name": "Perfect Run (No Damage)"},
+            {"id": "all_rings", "name": "Collect 100 Rings in a Stage"},
+            {"id": "speedrun", "name": "Clear Under 30 Minutes"},
+            {"id": "hidden_items", "name": "Find All Hidden Items"}
         ]
     },
     {
@@ -199,21 +242,26 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_items", "name": "All Items"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_upgrades", "name": "Unlock All Upgrades"},
+            {"id": "no_damage", "name": "Clear a Stage Without Damage"},
+            {"id": "hidden_rooms", "name": "Discover All Secret Rooms"}
         ]
     },
     {
         "id": "sonic_labyrinth",
         "title": "Sonic Labyrinth",
         "console": "Sega Game Gear",
-        "category": "2d_platformer",
+        "category": ["2d_platformer", "puzzle_sporting_party"],
         "generation": "3rd Gen",
         "year": "1995",
         "image": "sonic_labyrinth.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
-            {"id": "speedrun", "name": "Complete Speedrun Challenge"}
+            {"id": "speedrun", "name": "Complete Speedrun Challenge"},
+            {"id": "no_spikes", "name": "Clear a Stage Without Touching Spikes"},
+            {"id": "hidden_exits", "name": "Find All Hidden Exits"}
         ]
     },
     {
@@ -227,7 +275,10 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_rings", "name": "100 Rings"}
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "Complete All Special Stages"},
+            {"id": "no_continues", "name": "Clear Without Continues"},
+            {"id": "hidden_1ups", "name": "Find All Hidden 1-Ups"}
         ]
     },
     {
@@ -242,7 +293,9 @@
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "all_chars", "name": "Clear with All Characters"}
+            {"id": "all_chars", "name": "Clear with All Characters"},
+            {"id": "all_A_ranks", "name": "Get A Rank in All Stages"},
+            {"id": "hidden_springs", "name": "Find All Hidden Springs"}
         ]
     },
     {
@@ -258,7 +311,9 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
             {"id": "all_chars", "name": "Clear with All Characters"},
-            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "all_A_ranks", "name": "A Rank All Stages"},
+            {"id": "hidden_red_rings", "name": "Find All Hidden Red Rings"}
         ]
     },
     {
@@ -273,7 +328,10 @@
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "all_teams", "name": "Clear with All Teams"}
+            {"id": "all_teams", "name": "Clear with All Teams"},
+            {"id": "all_A_ranks", "name": "A Rank All Stages"},
+            {"id": "hidden_chao", "name": "Find All Hidden Chao"},
+            {"id": "max_team_level", "name": "Max Level a Team"}
         ]
     },
     {
@@ -290,7 +348,9 @@
             {"id": "all_sol_emeralds", "name": "All Sol Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
             {"id": "super_sonic", "name": "Unlock Super Sonic"},
-            {"id": "super_blaze", "name": "Unlock Burning Blaze"}
+            {"id": "super_blaze", "name": "Unlock Burning Blaze"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_red_rings", "name": "Find All Hidden Red Rings"}
         ]
     },
     {
@@ -302,9 +362,11 @@
         "year": "2006",
         "image": "sonic_rivals.png",
         "categories": [
-            {"id": "clear", "name": "Clear Story Mode"},
+            {"id": "clear_story", "name": "Clear Story Mode"},
             {"id": "all_cards", "name": "Collect All Cards"},
-            {"id": "all_chars", "name": "Unlock All Characters"}
+            {"id": "all_chars", "name": "Unlock All Characters"},
+            {"id": "all_tracks", "name": "Win All Race Tracks"},
+            {"id": "no_hit", "name": "Win a Race Without Being Hit"}
         ]
     },
     {
@@ -320,7 +382,9 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_sol_emeralds", "name": "All Sol Emeralds"},
             {"id": "all_materials", "name": "All Ship Materials"},
-            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_islands", "name": "Discover All Hidden Islands"}
         ]
     },
     {
@@ -332,9 +396,11 @@
         "year": "2007",
         "image": "sonic_rivals_2.png",
         "categories": [
-            {"id": "clear", "name": "Clear Story Mode"},
+            {"id": "clear_story", "name": "Clear Story Mode"},
             {"id": "all_cards", "name": "Collect All Cards"},
-            {"id": "all_chars", "name": "Unlock All Characters"}
+            {"id": "all_chars", "name": "Unlock All Characters"},
+            {"id": "all_emblems", "name": "Collect All Emblems"},
+            {"id": "no_continue", "name": "Clear Story Without Continuing"}
         ]
     },
     {
@@ -349,7 +415,9 @@
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "no_damage", "name": "Clear a Zone Without Damage"}
         ]
     },
     {
@@ -363,7 +431,9 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_red_rings", "name": "All Red Rings"},
-            {"id": "all_emeralds", "name": "All Chaos Emeralds"}
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_wisps", "name": "Find All Hidden Wisps"}
         ]
     },
     {
@@ -378,7 +448,9 @@
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_art", "name": "Unlock All Art"}
+            {"id": "all_art", "name": "Unlock All Art"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_doors", "name": "Find All Hidden Doors"}
         ]
     },
     {
@@ -393,7 +465,9 @@
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_rings", "name": "100 Rings"},
-            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "no_damage", "name": "Clear a Zone Without Damage"}
         ]
     },
     {
@@ -407,7 +481,9 @@
         "categories": [
             {"id": "clear", "name": "Complete All Zones"},
             {"id": "all_chars", "name": "Unlock All Characters"},
-            {"id": "max_level", "name": "Max Level"}
+            {"id": "max_level", "name": "Max Level"},
+            {"id": "all_red_rings", "name": "Collect All Red Star Rings"},
+            {"id": "infinite_climb", "name": "Reach Zone 100+ in Endless Mode"}
         ]
     },
     {
@@ -421,7 +497,9 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_crystals", "name": "All Crystal Shards"},
-            {"id": "all_art", "name": "Unlock All Art"}
+            {"id": "all_art", "name": "Unlock All Art"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_areas", "name": "Find All Hidden Areas"}
         ]
     },
     {
@@ -435,7 +513,9 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_artifacts", "name": "All Artifacts"},
-            {"id": "all_chars", "name": "Max All Characters"}
+            {"id": "all_chars", "name": "Max All Characters"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_paths", "name": "Discover All Hidden Paths"}
         ]
     },
     {
@@ -451,7 +531,9 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_medals", "name": "All Gold Medals"},
             {"id": "super_sonic", "name": "Unlock Super Sonic"},
-            {"id": "true_ending", "name": "Get True Ending"}
+            {"id": "true_ending", "name": "Get True Ending"},
+            {"id": "all_S_ranks", "name": "S Rank All Zones"},
+            {"id": "hidden_monitors", "name": "Find All Hidden Monitors"}
         ]
     },
     {
@@ -468,7 +550,9 @@
             {"id": "all_medals", "name": "All Gold Medals"},
             {"id": "super_sonic", "name": "Unlock Super Sonic"},
             {"id": "super_mighty", "name": "Unlock Super Mighty"},
-            {"id": "super_ray", "name": "Unlock Super Ray"}
+            {"id": "super_ray", "name": "Unlock Super Ray"},
+            {"id": "all_S_ranks", "name": "S Rank All Zones"},
+            {"id": "hidden_plus", "name": "Find All Plus Mode Secrets"}
         ]
     },
     {
@@ -484,7 +568,9 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_medals", "name": "All Gold Medals"},
             {"id": "all_chars", "name": "Clear with All Characters"},
-            {"id": "super_forms", "name": "Unlock All Super Forms"}
+            {"id": "super_forms", "name": "Unlock All Super Forms"},
+            {"id": "all_S_ranks", "name": "S Rank All Stages"},
+            {"id": "hidden_pearls", "name": "Find All Hidden Pearls"}
         ]
     },
     {
@@ -498,7 +584,9 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_continues", "name": "No Continue Run"},
-            {"id": "all_characters", "name": "Play All Characters"}
+            {"id": "all_characters", "name": "Play All Characters"},
+            {"id": "max_score", "name": "Achieve Max Score"},
+            {"id": "hidden_paths", "name": "Discover All Hidden Paths"}
         ]
     },
     {
@@ -512,7 +600,9 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "all_flickies", "name": "Rescue All Flickies"}
+            {"id": "all_flickies", "name": "Rescue All Flickies"},
+            {"id": "all_bonus", "name": "Complete All Bonus Stages"},
+            {"id": "no_damage", "name": "Clear a Zone Without Damage"}
         ]
     },
     {
@@ -527,7 +617,9 @@
             {"id": "clear_story", "name": "Clear All Stories"},
             {"id": "all_emblems", "name": "Get All Emblems"},
             {"id": "chao_karate", "name": "Win Chao Karate"},
-            {"id": "max_chao", "name": "Max Stat Chao"}
+            {"id": "max_chao", "name": "Max Stat Chao"},
+            {"id": "all_A_ranks", "name": "A Rank All Stages"},
+            {"id": "hidden_chao", "name": "Find All Hidden Chao Gardens"}
         ]
     },
     {
@@ -542,7 +634,9 @@
             {"id": "clear_story", "name": "Clear Hero/Dark Stories"},
             {"id": "all_A_ranks", "name": "All A Ranks"},
             {"id": "all_chao", "name": "Complete Chao Garden"},
-            {"id": "green_hill", "name": "Unlock Green Hill"}
+            {"id": "green_hill", "name": "Unlock Green Hill"},
+            {"id": "all_emblems", "name": "Collect All 180 Emblems"},
+            {"id": "max_chao_stats", "name": "Raise a Chao with Max Stats"}
         ]
     },
     {
@@ -557,7 +651,8 @@
             {"id": "clear_team", "name": "Clear All Teams"},
             {"id": "all_A_ranks", "name": "All A Ranks"},
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
-            {"id": "super_forms", "name": "Unlock Super Forms"}
+            {"id": "super_forms", "name": "Unlock Super Forms"},
+            {"id": "hidden_doors", "name": "Find All Hidden Team Blast Doors"}
         ]
     },
     {
@@ -572,7 +667,8 @@
             {"id": "all_endings", "name": "All Story Endings"},
             {"id": "all_weapons", "name": "Unlock All Weapons"},
             {"id": "all_A_ranks", "name": "All A Ranks"},
-            {"id": "super_shadow", "name": "Unlock Super Shadow"}
+            {"id": "super_shadow", "name": "Unlock Super Shadow"},
+            {"id": "hidden_arks", "name": "Find All Hidden Ark Levels"}
         ]
     },
     {
@@ -586,14 +682,15 @@
         "categories": [
             {"id": "clear_stories", "name": "Clear All Stories"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
-            {"id": "all_silver", "name": "All Silver Medals"}
+            {"id": "all_silver", "name": "All Silver Medals"},
+            {"id": "hidden_missions", "name": "Complete All Hidden Missions"}
         ]
     },
     {
         "id": "secret_rings",
         "title": "Sonic and the Secret Rings",
         "console": "Nintendo Wii",
-        "category": "3d_action_adventure",
+        "category": ["3d_action_adventure", "puzzle_sporting_party"],
         "generation": "7th Gen",
         "year": "2007",
         "image": "secret_rings.png",
@@ -601,7 +698,8 @@
             {"id": "clear_story", "name": "Clear Story Mode"},
             {"id": "all_skills", "name": "Unlock All Skills"},
             {"id": "all_artifacts", "name": "All Artifacts"},
-            {"id": "max_ring", "name": "Max Ring Level"}
+            {"id": "max_ring", "name": "Max Ring Level"},
+            {"id": "hidden_tales", "name": "Find All Hidden Tales"}
         ]
     },
     {
@@ -616,7 +714,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
             {"id": "all_moon_medals", "name": "All Moon Medals"},
-            {"id": "all_sun_medals", "name": "All Sun Medals"}
+            {"id": "all_sun_medals", "name": "All Sun Medals"},
+            {"id": "hidden_chips", "name": "Find All Hidden Gaia Chips"}
         ]
     },
     {
@@ -631,7 +730,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_weapons", "name": "All Weapons"},
             {"id": "all_books", "name": "All Story Books"},
-            {"id": "knight_style", "name": "Max Knight Style"}
+            {"id": "knight_style", "name": "Max Knight Style"},
+            {"id": "hidden_scrolls", "name": "Find All Hidden Scrolls"}
         ]
     },
     {
@@ -646,7 +746,8 @@
             {"id": "clear_story", "name": "Clear Game"},
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
-            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "hidden_wisps", "name": "Find All Hidden Wisps"}
         ]
     },
     {
@@ -661,7 +762,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
-            {"id": "all_art", "name": "Unlock All Art"}
+            {"id": "all_art", "name": "Unlock All Art"},
+            {"id": "hidden_doors", "name": "Find All Hidden Doors"}
         ]
     },
     {
@@ -676,7 +778,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_ranks", "name": "All Zeta/Zazz Ranks"},
-            {"id": "all_bonuses", "name": "All Bonus Stages"}
+            {"id": "all_bonuses", "name": "All Bonus Stages"},
+            {"id": "hidden_capsules", "name": "Find All Hidden Capsules"}
         ]
     },
     {
@@ -691,7 +794,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_artifacts", "name": "All Artifacts"},
             {"id": "all_trophies", "name": "All Trophies"},
-            {"id": "all_upgrades", "name": "All Character Upgrades"}
+            {"id": "all_upgrades", "name": "All Character Upgrades"},
+            {"id": "hidden_echidna", "name": "Find All Hidden Echidna Artifacts"}
         ]
     },
     {
@@ -706,7 +810,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
-            {"id": "all_avatars", "name": "Unlock All Avatar Items"}
+            {"id": "all_avatars", "name": "Unlock All Avatar Items"},
+            {"id": "hidden_phantom", "name": "Find All Hidden Phantom Ruby Pieces"}
         ]
     },
     {
@@ -722,7 +827,8 @@
             {"id": "all_emeralds", "name": "All Chaos Emeralds"},
             {"id": "all_skills", "name": "Max Skill Tree"},
             {"id": "all_cyberspace", "name": "S Rank All Cyberspace"},
-            {"id": "all_fishing", "name": "Complete Fishing Log"}
+            {"id": "all_fishing", "name": "Complete Fishing Log"},
+            {"id": "hidden_koco", "name": "Find All Hidden Koco"}
         ]
     },
     {
@@ -737,7 +843,8 @@
             {"id": "clear_story", "name": "Clear Story"},
             {"id": "all_red_rings", "name": "All Red Rings"},
             {"id": "all_s_ranks", "name": "All S Ranks"},
-            {"id": "all_skills", "name": "Unlock All Skills"}
+            {"id": "all_skills", "name": "Unlock All Skills"},
+            {"id": "hidden_shadow", "name": "Find All Hidden Shadow Artifacts"}
         ]
     },
     {
@@ -751,7 +858,8 @@
         "categories": [
             {"id": "clear", "name": "Clear Game"},
             {"id": "max_score", "name": "Achieve Max Score"},
-            {"id": "all_levels", "name": "Complete All Levels"}
+            {"id": "all_levels", "name": "Complete All Levels"},
+            {"id": "no_mistakes", "name": "Clear a Level Without Mistakes"}
         ]
     },
     {
@@ -766,14 +874,15 @@
             {"id": "clear_story", "name": "Clear Story Mode"},
             {"id": "all_characters", "name": "Defeat All Characters"},
             {"id": "perfect_victory", "name": "Achieve Perfect Victory"},
-            {"id": "max_chain", "name": "Perform Max Chain Combo"}
+            {"id": "max_chain", "name": "Perform Max Chain Combo"},
+            {"id": "hidden_beans", "name": "Find All Hidden Beans"}
         ]
     },
     {
         "id": "sonic_gameworld",
         "title": "Sonic the Hedgehog's Gameworld",
         "console": "Sega Pico",
-        "category": "puzzle_sporting_party",
+        "category": ["puzzle_sporting_party", "entertainment_creative"],
         "generation": "4th Gen",
         "year": "1994",
         "image": "sonic_gameworld.png",
@@ -796,7 +905,8 @@
             {"id": "clear_story", "name": "Clear Story Mode"},
             {"id": "all_characters", "name": "Win With All Characters"},
             {"id": "all_boards", "name": "Master All Game Boards"},
-            {"id": "perfect_game", "name": "Achieve Perfect Game"}
+            {"id": "perfect_game", "name": "Achieve Perfect Game"},
+            {"id": "hidden_precioustones", "name": "Find All Hidden Precious Stones"}
         ]
     },
     {
@@ -811,7 +921,8 @@
             {"id": "clear_all", "name": "Clear All Tables"},
             {"id": "high_score", "name": "Achieve High Score"},
             {"id": "all_bonuses", "name": "Unlock All Bonuses"},
-            {"id": "perfect_game", "name": "Perfect Game"}
+            {"id": "perfect_game", "name": "Perfect Game"},
+            {"id": "hidden_sonic", "name": "Find All Hidden Sonic Characters"}
         ]
     },
     {
@@ -840,7 +951,8 @@
             {"id": "all_events", "name": "Complete All Events"},
             {"id": "gold_medals", "name": "Win Gold in All Events"},
             {"id": "all_characters", "name": "Play With All Characters"},
-            {"id": "records", "name": "Set All Records"}
+            {"id": "records", "name": "Set All Records"},
+            {"id": "hidden_olympians", "name": "Find All Hidden Olympians"}
         ]
     },
     {
@@ -855,14 +967,15 @@
             {"id": "clear_career", "name": "Complete Career Mode"},
             {"id": "all_characters", "name": "Unlock All Characters"},
             {"id": "all_courts", "name": "Unlock All Courts"},
-            {"id": "perfect_match", "name": "Win Perfect Match"}
+            {"id": "perfect_match", "name": "Win Perfect Match"},
+            {"id": "hidden_eggs", "name": "Find All Hidden Easter Eggs"}
         ]
     },
     {
         "id": "mario_sonic_2010",
         "title": "Mario & Sonic at the Olympic Winter Games",
         "console": ["Nintendo Wii", "Nintendo DS"],
-        "category": "puzzle_sporting_party",
+        "category": ["puzzle_sporting_party", "adventure_rpg"],
         "generation": "7th Gen",
         "year": "2009",
         "image": "mario_sonic_2010.png",
@@ -870,14 +983,15 @@
             {"id": "all_events", "name": "Complete All Winter Events"},
             {"id": "gold_medals", "name": "Win Gold in All Events"},
             {"id": "all_outfits", "name": "Unlock All Outfits"},
-            {"id": "dream_events", "name": "Complete All Dream Events"}
+            {"id": "dream_events", "name": "Complete All Dream Events"},
+            {"id": "hidden_snowflakes", "name": "Find All Hidden Snowflakes"}
         ]
     },
     {
         "id": "mario_sonic_2012",
         "title": "Mario & Sonic at the London 2012 Olympic Games",
         "console": ["Nintendo Wii", "Nintendo 3DS"],
-        "category": "puzzle_sporting_party",
+        "category": ["puzzle_sporting_party", "adventure_rpg"],
         "generation": "7th Gen",
         "year": "2011",
         "image": "mario_sonic_2012.png",
@@ -885,7 +999,8 @@
             {"id": "olympic_events", "name": "Complete All Olympic Events"},
             {"id": "all_gold", "name": "All Gold Medals"},
             {"id": "all_episodes", "name": "Complete All Episodes"},
-            {"id": "all_cards", "name": "Collect All Cards"}
+            {"id": "all_cards", "name": "Collect All Cards"},
+            {"id": "hidden_bigben", "name": "Find All Hidden Big Ben Secrets"}
         ]
     },
     {
@@ -900,7 +1015,8 @@
             {"id": "all_events", "name": "Complete All Events"},
             {"id": "legendary", "name": "Legendary Difficulty Complete"},
             {"id": "all_miis", "name": "Unlock All Mii Outfits"},
-            {"id": "perfect_scores", "name": "Achieve Perfect Scores"}
+            {"id": "perfect_scores", "name": "Achieve Perfect Scores"},
+            {"id": "hidden_russians", "name": "Find All Hidden Russian Characters"}
         ]
     },
     {
@@ -915,14 +1031,15 @@
             {"id": "complete_games", "name": "Complete All Games"},
             {"id": "all_gold", "name": "All Gold Medals"},
             {"id": "all_plus", "name": "Complete All Plus Events"},
-            {"id": "all_costumes", "name": "Unlock All Costumes"}
+            {"id": "all_costumes", "name": "Unlock All Costumes"},
+            {"id": "hidden_rio", "name": "Find All Hidden Rio Secrets"}
         ]
     },
     {
         "id": "sega_heroes",
         "title": "SEGA Heroes",
         "console": ["iOS", "Android"],
-        "category": "puzzle_sporting_party",
+        "category": ["puzzle_sporting_party", "adventure_rpg"],
         "generation": "Mobile",
         "year": "2018",
         "image": "sega_heroes.png",
@@ -930,14 +1047,15 @@
             {"id": "max_level", "name": "Reach Max Level"},
             {"id": "all_heroes", "name": "Collect All Heroes"},
             {"id": "all_events", "name": "Complete All Events"},
-            {"id": "ultimate_team", "name": "Create Ultimate Team"}
+            {"id": "ultimate_team", "name": "Create Ultimate Team"},
+            {"id": "hidden_pixels", "name": "Find All Hidden Pixel Art"}
         ]
     },
     {
         "id": "mario_sonic_2020",
         "title": "Mario & Sonic at the Olympic Games Tokyo 2020",
         "console": ["Nintendo Switch", "Arcade"],
-        "category": "puzzle_sporting_party",
+        "category": ["puzzle_sporting_party", "adventure_rpg"],
         "generation": "8th Gen",
         "year": "2019",
         "image": "mario_sonic_2020.png",
@@ -945,7 +1063,8 @@
             {"id": "all_events", "name": "Complete All Events"},
             {"id": "olympic_plus", "name": "Complete Olympic Plus"},
             {"id": "all_outfits", "name": "Unlock All Outfits"},
-            {"id": "all_stamps", "name": "Collect All Stamps"}
+            {"id": "all_stamps", "name": "Collect All Stamps"},
+            {"id": "hidden_tokyo", "name": "Find All Hidden Tokyo Secrets"}
         ]
     },
     {
@@ -960,7 +1079,8 @@
             {"id": "clear_story", "name": "Complete Story"},
             {"id": "all_endings", "name": "Discover All Endings"},
             {"id": "all_clues", "name": "Find All Clues"},
-            {"id": "perfect_run", "name": "Perfect Investigation"}
+            {"id": "perfect_run", "name": "Perfect Investigation"},
+            {"id": "hidden_easter", "name": "Find All Hidden Easter Eggs"}
         ]
     },
     {
@@ -986,9 +1106,11 @@
         "year": "1993",
         "image": "cosmo_fighter.png",
         "categories": [
-            {"id": "clear_stages", "name": "Clear All Stages"},
-            {"id": "no_continue", "name": "Clear Without Continuing"},
-            {"id": "max_score", "name": "Achieve Max Score"}
+            {"id": "arcade_clear", "name": "Clear Arcade Mode"},
+            {"id": "all_characters", "name": "Unlock All Fighters"},
+            {"id": "perfect_victory", "name": "Perfect Victory (No Damage)"},
+            {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
+            {"id": "survival_10", "name": "10 Wins in Survival Mode"}
         ]
     },
     {
@@ -1113,7 +1235,7 @@
         "id": "speed_battle",
         "title": "Sonic Forces: Speed Battle",
         "console": ["iOS", "Android"],
-        "category": "racing_vehicle",
+        "category": ["racing_vehicle", "mobile"],
         "generation": "Mobile",
         "year": "2017",
         "image": "speed_battle.png",
@@ -1234,7 +1356,7 @@
         "id": "sonic_battle",
         "title": "Sonic Battle",
         "console": "Game Boy Advance",
-        "category": "fighting",
+        "category": ["fighting", "adventure_rpg"],
         "generation": "6th Gen",
         "year": "2003",
         "image": "sonic_battle.png",
@@ -1243,8 +1365,7 @@
             {"id": "all_emeralds", "name": "Collect All Chaos Emeralds"},
             {"id": "max_level", "name": "Max Level All Characters"},
             {"id": "all_skills", "name": "Unlock All Battle Skills"},
-            {"id": "all_chao", "name": "Complete All Chao Challenges"},
-            {"id": "versus_master", "name": "Win 50 VS Matches"}
+            {"id": "all_chao", "name": "Complete All Chao Challenges"}
         ]
     },
     {

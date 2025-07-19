@@ -37,6 +37,7 @@ function initFilters() {
         <button id="import-button" class="filter-button">Import JSON</button>
         <button id="export-button" class="filter-button">Export JSON</button>
     `;
+    
     document.getElementById('filters-container').innerHTML = filtersHTML;
     
     document.getElementById('console-filter').addEventListener('change', filterGames);
@@ -66,11 +67,12 @@ function applyCombinedFilters() {
     const activeCategory = document.querySelector('.category-btn.active')?.dataset.category || 'all';
     
     const filtered = games.filter(game => {
-        const categoryMatch = activeCategory === 'all' || game.category === activeCategory;
-        
+        const categories = Array.isArray(game.category) ? game.category : [game.category];
+        const categoryMatch = activeCategory === 'all' || categories.includes(activeCategory);
+    
         const consoles = Array.isArray(game.console) ? game.console : [game.console];
         const consoleMatch = !consoleValue || consoles.includes(consoleValue);
-        
+    
         return categoryMatch && consoleMatch;
     });
     
@@ -96,11 +98,16 @@ function displayGames(gamesToDisplay) {
         const allCompleted = game.categories.every(cat => isCompleted(game.id, cat.id));
         const gameEl = document.createElement('div');
         gameEl.className = `game-card ${allCompleted ? 'all-completed' : ''}`;
+        
+        const consolesDisplay = Array.isArray(game.console) ? game.console.join(" | ") : game.console;
+        const categoriesDisplay = Array.isArray(game.category) ? game.category.join(", ") : game.category;
+        
         gameEl.innerHTML = `
             <h3>${game.title}</h3>
             <div class="game-meta">
-                <span>${Array.isArray(game.console) ? game.console.join(" | ") : game.console}</span>
+                <span>${consolesDisplay}</span>
                 <span class="year-gen">${game.year} | ${game.generation}</span>
+                <span class="game-categories">${categoriesDisplay}</span>
             </div>
             <img src="assets/covers/${game.image}" alt="${game.title}" onerror="this.src='assets/no-image.png'">
             ${allCompleted ? '<div class="completed-badge">Completed!</div>' : ''}

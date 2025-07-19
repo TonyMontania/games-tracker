@@ -110,6 +110,29 @@ h1 {
     margin-bottom: 15px;
 }
 
+.game-meta {
+    font-size: 1em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.game-categories {
+    font-size: 0.75em;
+    background: rgba(0, 102, 204, 0.1);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
 .progress-options {
     margin-top: 15px;
     text-align: center;
