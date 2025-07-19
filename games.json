@@ -1,26 +1,57 @@
 [
     {
         "id": "sonic_1_16bit",
-        "title": "Sonic the Hedgehog",
+        "title": "Sonic the Hedgehog (16-bit)",
         "console": "Sega Genesis",
         "generation": "4th Gen",
         "year": "1991",
         "image": "sonic_1_16bit.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "all_emeralds", "name": "All Chaos Emeralds"}
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "All Bonus Stages"}
+        ]
+    },
+    {
+        "id": "sonic_1_8bit",
+        "title": "Sonic the Hedgehog (8-bit)",
+        "console": "Sega Master System",
+        "generation": "3rd Gen",
+        "year": "1991",
+        "image": "sonic_1_8bit.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"}
         ]
     },
     {
         "id": "sonic_2_16bit",
-        "title": "Sonic the Hedgehog 2",
+        "title": "Sonic the Hedgehog 2 (16-bit)",
         "console": ["Sega Genesis", "Sega Mega Drive"],
         "generation": "4th Gen",
         "year": "1992",
         "image": "sonic_2_16bit.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "all_emeralds", "name": "All Chaos Emeralds"}
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_bonus", "name": "All Bonus Stages"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+        ]
+    },
+    {
+        "id": "sonic_2_8bit",
+        "title": "Sonic the Hedgehog 2 (8-bit)",
+        "console": "Sega Master System",
+        "generation": "3rd Gen",
+        "year": "1992",
+        "image": "sonic_2_8bit.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"}
         ]
     },
     {
@@ -32,7 +63,394 @@
         "image": "sonic_cd.png",
         "categories": [
             {"id": "clear", "name": "Clear Game"},
-            {"id": "all_stones", "name": "All Time Stones"}
+            {"id": "all_stones", "name": "All Time Stones"},
+            {"id": "good_ending", "name": "Good Ending"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_past", "name": "Visit All Past Versions"}
+        ]
+    },
+    {
+        "id": "sonic_spinball_16bit",
+        "title": "Sonic the Hedgehog Spinball (16-bit)",
+        "console": "Sega Genesis",
+        "generation": "4th Gen",
+        "year": "1993",
+        "image": "sonic_spinball_16bit.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "high_score", "name": "Max Score"},
+            {"id": "all_rings", "name": "100 Rings"}
+        ]
+    },
+    {
+        "id": "sonic_spinball_8bit",
+        "title": "Sonic the Hedgehog Spinball (8-bit)",
+        "console": "Sega Master System",
+        "generation": "3rd Gen",
+        "year": "1993",
+        "image": "sonic_spinball_8bit.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "high_score", "name": "Max Score"}
+        ]
+    },
+    {
+        "id": "sonic_chaos",
+        "title": "Sonic Chaos",
+        "console": "Sega Master System",
+        "generation": "3rd Gen",
+        "year": "1993",
+        "image": "sonic_chaos.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"}
+        ]
+    },
+    {
+        "id": "sonic_3",
+        "title": "Sonic the Hedgehog 3",
+        "console": "Sega Genesis",
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "sonic_3.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "all_bonus", "name": "All Bonus Stages"}
+        ]
+    },
+    {
+        "id": "sonic_knuckles",
+        "title": "Sonic & Knuckles",
+        "console": "Sega Genesis",
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "sonic_knuckles.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "super_knuckles", "name": "Unlock Super Knuckles"}
+        ]
+    },
+    {
+        "id": "sonic_triple_trouble",
+        "title": "Sonic the Hedgehog Triple Trouble",
+        "console": "Sega Game Gear",
+        "generation": "3rd Gen",
+        "year": "1994",
+        "image": "sonic_triple_trouble.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"}
+        ]
+    },
+    {
+        "id": "knuckles_chaotix",
+        "title": "Knuckles' Chaotix",
+        "console": "Sega 32X",
+        "generation": "4th Gen",
+        "year": "1995",
+        "image": "knuckles_chaotix.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_special", "name": "All Special Stages"}
+        ]
+    },
+    {
+        "id": "tails_skypatrol",
+        "title": "Tails' Skypatrol",
+        "console": "Sega Game Gear",
+        "generation": "3rd Gen",
+        "year": "1995",
+        "image": "tails_skypatrol.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "perfect", "name": "Perfect Run"}
+        ]
+    },
+    {
+        "id": "tails_adventure",
+        "title": "Tails Adventure",
+        "console": "Sega Game Gear",
+        "generation": "3rd Gen",
+        "year": "1995",
+        "image": "tails_adventure.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_items", "name": "All Items"},
+            {"id": "all_rings", "name": "100 Rings"}
+        ]
+    },
+    {
+        "id": "sonic_labyrinth",
+        "title": "Sonic Labyrinth",
+        "console": "Sega Game Gear",
+        "generation": "3rd Gen",
+        "year": "1995",
+        "image": "sonic_labyrinth.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"}
+        ]
+    },
+    {
+        "id": "sonic_blast",
+        "title": "Sonic Blast",
+        "console": "Sega Game Gear",
+        "generation": "3rd Gen",
+        "year": "1996",
+        "image": "sonic_blast.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"}
+        ]
+    },
+    {
+        "id": "sonic_advance",
+        "title": "Sonic Advance",
+        "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "generation": "6th Gen",
+        "year": "2001",
+        "image": "sonic_advance.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_chars", "name": "Clear with All Characters"}
+        ]
+    },
+    {
+        "id": "sonic_advance_2",
+        "title": "Sonic Advance 2",
+        "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "generation": "6th Gen",
+        "year": "2002",
+        "image": "sonic_advance_2.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_chars", "name": "Clear with All Characters"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+        ]
+    },
+    {
+        "id": "sonic_advance_3",
+        "title": "Sonic Advance 3",
+        "console": ["Nintendo Game Boy Advance", "Nintendo Switch"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "sonic_advance_3.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "all_teams", "name": "Clear with All Teams"}
+        ]
+    },
+    {
+        "id": "sonic_rush",
+        "title": "Sonic Rush",
+        "console": "Nintendo DS",
+        "generation": "7th Gen",
+        "year": "2005",
+        "image": "sonic_rush.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_sol_emeralds", "name": "All Sol Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "super_blaze", "name": "Unlock Burning Blaze"}
+        ]
+    },
+    {
+        "id": "sonic_rivals",
+        "title": "Sonic Rivals",
+        "console": "Sony PSP",
+        "generation": "7th Gen",
+        "year": "2006",
+        "image": "sonic_rivals.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Story Mode"},
+            {"id": "all_cards", "name": "Collect All Cards"},
+            {"id": "all_chars", "name": "Unlock All Characters"}
+        ]
+    },
+    {
+        "id": "sonic_rush_adventure",
+        "title": "Sonic Rush Adventure",
+        "console": "Nintendo DS",
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "sonic_rush_adventure.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_sol_emeralds", "name": "All Sol Emeralds"},
+            {"id": "all_materials", "name": "All Ship Materials"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+        ]
+    },
+    {
+        "id": "sonic_rivals_2",
+        "title": "Sonic Rivals 2",
+        "console": "Sony PSP",
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "sonic_rivals_2.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Story Mode"},
+            {"id": "all_cards", "name": "Collect All Cards"},
+            {"id": "all_chars", "name": "Unlock All Characters"}
+        ]
+    },
+    {
+        "id": "sonic_4_ep1",
+        "title": "Sonic the Hedgehog 4: Episode I",
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "iOS", "Android"],
+        "generation": "7th Gen",
+        "year": "2010",
+        "image": "sonic_4_ep1.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+        ]
+    },
+    {
+        "id": "sonic_colors_ds",
+        "title": "Sonic Colors (DS)",
+        "console": "Nintendo DS",
+        "generation": "7th Gen",
+        "year": "2010",
+        "image": "sonic_colors_ds.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"}
+        ]
+    },
+    {
+        "id": "sonic_generations_3ds",
+        "title": "Sonic Generations (3DS)",
+        "console": "Nintendo 3DS",
+        "generation": "7th Gen",
+        "year": "2011",
+        "image": "sonic_generations_3ds.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_red_rings", "name": "All Red Rings"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_art", "name": "Unlock All Art"}
+        ]
+    },
+    {
+        "id": "sonic_4_ep2",
+        "title": "Sonic the Hedgehog 4: Episode II",
+        "console": ["PlayStation 3", "Xbox 360", "iOS", "Android"],
+        "generation": "7th Gen",
+        "year": "2012",
+        "image": "sonic_4_ep2.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_rings", "name": "100 Rings"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"}
+        ]
+    },
+    {
+        "id": "sonic_jump",
+        "title": "Sonic Jump",
+        "console": ["iOS", "Android"],
+        "generation": "Mobile",
+        "year": "2012",
+        "image": "sonic_jump.png",
+        "categories": [
+            {"id": "clear", "name": "Complete All Zones"},
+            {"id": "all_chars", "name": "Unlock All Characters"},
+            {"id": "max_level", "name": "Max Level"}
+        ]
+    },
+    {
+        "id": "sonic_boom_shattered",
+        "title": "Sonic Boom: Shattered Crystal",
+        "console": "Nintendo 3DS",
+        "generation": "8th Gen",
+        "year": "2014",
+        "image": "sonic_boom_shattered.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_crystals", "name": "All Crystal Shards"},
+            {"id": "all_art", "name": "Unlock All Art"}
+        ]
+    },
+    {
+        "id": "sonic_boom_fire",
+        "title": "Sonic Boom: Fire & Ice",
+        "console": "Nintendo 3DS",
+        "generation": "8th Gen",
+        "year": "2016",
+        "image": "sonic_boom_fire.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_artifacts", "name": "All Artifacts"},
+            {"id": "all_chars", "name": "Max All Characters"}
+        ]
+    },
+    {
+        "id": "sonic_mania",
+        "title": "Sonic Mania",
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "generation": "8th Gen",
+        "year": "2017",
+        "image": "sonic_mania.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_medals", "name": "All Gold Medals"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "true_ending", "name": "Get True Ending"}
+        ]
+    },
+    {
+        "id": "sonic_mania_plus",
+        "title": "Sonic Mania Plus",
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
+        "generation": "8th Gen",
+        "year": "2018",
+        "image": "sonic_mania_plus.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_medals", "name": "All Gold Medals"},
+            {"id": "super_sonic", "name": "Unlock Super Sonic"},
+            {"id": "super_mighty", "name": "Unlock Super Mighty"},
+            {"id": "super_ray", "name": "Unlock Super Ray"}
+        ]
+    },
+    {
+        "id": "sonic_superstars",
+        "title": "Sonic Superstars",
+        "console": ["PlayStation 5", "Xbox Series X/S", "Nintendo Switch", "PC"],
+        "generation": "9th Gen",
+        "year": "2023",
+        "image": "sonic_superstars.png",
+        "categories": [
+            {"id": "clear", "name": "Clear Game"},
+            {"id": "all_emeralds", "name": "All Chaos Emeralds"},
+            {"id": "all_medals", "name": "All Gold Medals"},
+            {"id": "all_chars", "name": "Clear with All Characters"},
+            {"id": "super_forms", "name": "Unlock All Super Forms"}
         ]
     }
 ]
