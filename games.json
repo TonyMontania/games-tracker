@@ -164,7 +164,7 @@
     {
         "id": "sonic_knuckles",
         "title": "Sonic & Knuckles",
-        "console": ["Sega Genesis/Mega Drive", "Windows", "Nintendo Wii", "Xbox 360", "Steam"],
+        "console": ["Sega Genesis/Mega Drive", "Windows", "Nintendo Wii", "Xbox 360"],
         "category": "2d_platformer",
         "generation": "4th Gen",
         "year": "1994",
@@ -356,7 +356,7 @@
     {
         "id": "sonic_rivals",
         "title": "Sonic Rivals",
-        "console": "Sony PSP",
+        "console": "PlayStation Portable",
         "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2006",
@@ -390,7 +390,7 @@
     {
         "id": "sonic_rivals_2",
         "title": "Sonic Rivals 2",
-        "console": "Sony PSP",
+        "console": "PlayStation Portable",
         "category": "2d_platformer",
         "generation": "7th Gen",
         "year": "2007",
@@ -705,7 +705,7 @@
     {
         "id": "sonic_unleashed",
         "title": "Sonic Unleashed",
-        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "PlayStation 2", "Mobile"],
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "PlayStation 2", "BlackBerry 8900"],
         "category": "3d_action_adventure",
         "generation": "7th Gen",
         "year": "2008",
@@ -834,7 +834,7 @@
     {
         "id": "shadow_generations",
         "title": "Shadow Generations",
-        "console": ["PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One", "Steam", "Epic Game Store"],
+        "console": ["PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One", "Windows"],
         "category": "3d_action_adventure",
         "generation": "9th Gen",
         "year": "2024",
@@ -1159,7 +1159,7 @@
     {
         "id": "sonic_riders",
         "title": "Sonic Riders",
-        "console": ["PlayStation 2", "GameCube", "Xbox"],
+        "console": ["PlayStation 2", "Nintendo GameCube", "Xbox"],
         "category": "racing_vehicle",
         "generation": "6th Gen",
         "year": "2006",
@@ -1189,7 +1189,7 @@
     {
         "id": "allstars_racing",
         "title": "Sonic & Sega All-Stars Racing",
-        "console": ["PlayStation 3", "Xbox 360", "Wii", "Windows", "DS"],
+        "console": ["PlayStation 3", "Xbox 360", "Wii", "Windows", "Nintendo DS"],
         "category": "racing_vehicle",
         "generation": "7th Gen",
         "year": "2010",
@@ -1204,7 +1204,7 @@
     {
         "id": "transformed",
         "title": "Sonic & All-Stars Racing Transformed",
-        "console": ["PlayStation 3", "Xbox 360", "Wii U", "Windows", "Vita", "3DS"],
+        "console": ["PlayStation 3", "Xbox 360", "Wii U", "Windows", "PlayStation Vita", "Nintendo 3DS"],
         "category": "racing_vehicle",
         "generation": "7th Gen",
         "year": "2012",
@@ -1219,7 +1219,7 @@
     {
         "id": "team_sonic",
         "title": "Team Sonic Racing",
-        "console": ["PlayStation 4", "Xbox One", "Switch", "Windows"],
+        "console": ["PlayStation 4", "Xbox One", "Nintendo Switch", "Windows"],
         "category": "racing_vehicle",
         "generation": "8th Gen",
         "year": "2019",
@@ -1339,7 +1339,7 @@
     {
         "id": "sonic_fighters",
         "title": "Sonic the Fighters",
-        "console": ["Sega Arcade", "GameCube", "PlayStation 3", "Xbox 360"],
+        "console": ["Sega Arcade", "Nintendo GameCube", "PlayStation 3", "Xbox 360"],
         "category": "fighting",
         "generation": "Arcade",
         "year": "1996",
@@ -1355,7 +1355,7 @@
     {
         "id": "sonic_battle",
         "title": "Sonic Battle",
-        "console": "Game Boy Advance",
+        "console": "Nintendo Game Boy Advance",
         "category": ["fighting", "adventure_rpg"],
         "generation": "6th Gen",
         "year": "2003",

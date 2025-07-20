@@ -79,26 +79,31 @@ h1 {
     text-align: center;
 }
 
-.game-meta span {
-    display: inline-block;
-    text-align: center;
+/* Nuevos estilos para las consolas */
+.consoles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 10px;
+    margin-bottom: 5px;
+}
+
+.consoles-container span {
+    position: relative;
+    padding: 0 5px;
+}
+
+.consoles-container span:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -8px;
+    color: var(--primary-color);
 }
 
 .game-meta .year-gen {
     color: var(--primary-color);
     font-weight: bold;
     margin-top: 5px;
-}
-
-.game-meta span:not(:last-child)::after {
-    content: "|";
-    margin-left: 5px;
-    margin-right: 10px;
-    color: var(--primary-color);
-}
-
-.game-meta span:nth-last-child(2)::after {
-    color: var(--text-color);
 }
 
 .game-card img {
@@ -108,18 +113,6 @@ h1 {
     border-radius: 8px;
     border: 2px solid var(--primary-color);
     margin-bottom: 15px;
-}
-
-.game-meta {
-    font-size: 1em;
-    color: var(--text-color);
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    border-bottom: none;
-    text-align: center;
 }
 
 .game-categories {
