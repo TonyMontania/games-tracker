@@ -1,0 +1,105 @@
+@import url('./themes/light.css');
+@import url('./components/game-card.css');
+@import url('./components/sidebar.css');
+@import url('./components/search.css');
+@import url('./components/filters.css');
+
+/* Estilos base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.main-layout {
+    display: flex;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 1;
+    position: relative;
+}
+
+.current-category {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin: 15px 0;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toast {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    animation: slideIn 0.3s ease-out;
+}
+
+.toast.success {
+    border-left: 4px solid var(--emerald-green);
+}
+
+.toast.error {
+    border-left: 4px solid #ff4444;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+    
+    .main-content {
+        padding-top: 20px;
+    }
+}

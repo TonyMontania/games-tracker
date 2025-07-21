@@ -3,58 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonic Series Progress Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Games Series Progress Tracker</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/themes/dark.css" id="theme-style">
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <style>
+        .sidebar {
+            width: 200px;
+        }
+        .search-filters {
+            flex-wrap: wrap;
+        }
+        .filter-select {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="main-layout">
         <div class="sidebar">
-            <h3>CATEGORIES</h3>
-            <div class="category-buttons" id="categories-container">
-                <button class="category-btn active" data-category="all">All Games</button>
-                <button class="category-btn" data-category="2D_Platformer">2D Platformer</button>
-                <button class="category-btn" data-category="3D_Action_Adventure">3D Action-Adventure</button>
-                <button class="category-btn" data-category="Adventure_RPG">Adventure/RPG Games</button>
-                <button class="category-btn" data-category="Board">Board Games</button>
-                <button class="category-btn" data-category="Entertainment_Creative">Entertainment and Creative</button>
-                <button class="category-btn" data-category="Fighting">Fighting Games</button>
-                <button class="category-btn" data-category="Mobile">Mobile Games</button>
-                <button class="category-btn" data-category="Puzzle_Sporting_Party">Puzzle, Sporting and Party Games</button>
-                <button class="category-btn" data-category="Racing_Vehicle">Racing Games and Vehicle Simulators</button>
+            <h1>GAMES TRACKER</h1>
+            <div class="franchise-selector">
+                <select id="franchise-select" class="filter-select">
+                    <option value="sonic">Sonic Series</option>
+                </select>
             </div>
         </div>
+        
         <div class="main-content">
             <div class="container">
-                <h1>SONIC SERIES PROGRESS TRACKER</h1>
                 <div class="search-container">
                     <div class="search-box">
                         <input type="text" id="search-input" placeholder="Search Games...">
                         <button id="search-button">🔍</button>
                     </div>
+                    
                     <div class="search-filters">
                         <select id="console-filter" class="filter-select">
-                            <option value="">Todas las consolas</option>
+                            <option value="">All Consoles</option>
                         </select>
                         <select id="year-filter" class="filter-select">
-                            <option value="">Todos los años</option>
+                            <option value="">All Years</option>
                         </select>
-                        <select id="category-filter" class="filter-select">
-                            <option value="">Todas las categorías</option>
-                        </select>
+                        
                         <button id="reset-filters" class="filter-button">Reset filters</button>
                         <button id="import-button" class="filter-button">Import JSON</button>
                         <button id="export-button" class="filter-button">Export JSON</button>
                     </div>
+                    
                     <div id="search-suggestions" class="suggestions-container"></div>
                 </div>
                 
                 <h2 class="current-category">All Games</h2>
                 <div id="games-list" class="games-grid"></div>
             </div>
+            
             <button id="theme-toggle" class="theme-toggle">🌙</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module">
+        import { GameManager } from './js/core/GameManager.js';
+        import { ProgressManager } from './js/core/ProgressManager.js';
+        import { FilterManager } from './js/core/FilterManager.js';
+        import { UIManager } from './js/core/UIManager.js';
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const progressManager = new ProgressManager();
+                const gameManager = new GameManager();
+                await gameManager.loadFranchise('sonic');
+                const filterManager = new FilterManager(gameManager);
+                const uiManager = new UIManager(gameManager, filterManager, progressManager);
+                
+                await uiManager.initialize();
+
+            } catch (error) {
+                console.error('App initialization failed:', error);
+                const gamesList = document.getElementById('games-list');
+                if (gamesList) {
+                    gamesList.innerHTML = `
+                        <div class="error">
+                            <p>Error loading application</p>
+                            <button onclick="window.location.reload()">Try Again</button>
+                        </div>
+                    `;
+                }
+            }
+        });
+    </script>
 </body>
 </html>

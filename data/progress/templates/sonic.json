@@ -1,0 +1,26 @@
+{
+  "$schema": "../schemas/template.schema.json",
+  "name": "Sonic the Hedgehog Series",
+  "version": "1.0",
+  "commonCategories": {
+    "clear": {
+      "name": "Complete Game",
+      "description": "Finish the main story",
+      "difficulty": "easy"
+    },
+    "all_emeralds": {
+      "name": "All Chaos Emeralds",
+      "description": "Collect all chaos emeralds",
+      "difficulty": "hard",
+      "estimatedTime": 5
+    }
+  },
+  "gameSpecific": {
+    "sonic_mania": {
+      "all_medals": {
+        "name": "All Gold Medals",
+        "description": "Get gold in all special stages"
+      }
+    }
+  }
+}

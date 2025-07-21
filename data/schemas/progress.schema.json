@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://tonymontania.com/schemas/progress.schema.json",
+  "title": "Game Progress Tracker",
+  "description": "Esquema para el progreso del usuario en el tracker",
+  "type": "object",
+  "required": ["version", "franchises"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "Versión del formato del archivo",
+      "examples": ["1.0"]
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Última actualización del progreso"
+    },
+    "franchises": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/franchiseProgress"
+      },
+      "description": "Progreso organizado por franquicias"
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "autoBackup": {
+          "type": "boolean",
+          "default": false
+        },
+        "backupFrequency": {
+          "type": "string",
+          "enum": ["daily", "weekly", "monthly"]
+        },
+        "syncEnabled": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "franchiseProgress": {
+      "type": "object",
+      "properties": {
+        "lastPlayed": {
+          "type": "string",
+          "description": "ID del último juego jugado"
+        },
+        "games": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/gameProgress"
+          }
+        }
+      }
+    },
+    "gameProgress": {
+      "type": "object",
+      "properties": {
+        "lastPlayed": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "progress": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "completionPercentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    }
+  }
+}

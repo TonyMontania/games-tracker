@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://tonymontania.com/schemas/template.schema.json",
+  "title": "Game Template Schema",
+  "description": "Esquema para plantillas de categorías de juegos",
+  "type": "object",
+  "required": ["name", "version", "commonCategories"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nombre de la franquicia",
+      "examples": ["Sonic the Hedgehog Series"]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+    "commonCategories": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/categoryDefinition"
+      },
+      "description": "Categorías aplicables a todos los juegos de la franquicia"
+    },
+    "gameSpecific": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "#/definitions/categoryDefinition"
+        }
+      },
+      "description": "Categorías específicas para juegos individuales"
+    }
+  },
+  "definitions": {
+    "categoryDefinition": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Nombre visible de la categoría"
+        },
+        "description": {
+          "type": "string",
+          "description": "Explicación detallada del logro"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard", "insane"],
+          "default": "medium"
+        },
+        "estimatedTime": {
+          "type": "number",
+          "description": "Tiempo estimado en horas"
+        }
+      }
+    }
+  }
+}

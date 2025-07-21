@@ -1,0 +1,24 @@
+{
+  "$schema": "./schemas/progress.schema.json",
+  "version": "1.0",
+  "lastUpdated": "2023-11-20T00:00:00Z",
+  "franchises": {
+    "sonic": {
+      "lastPlayed": "sonic_mania",
+      "games": {
+        "sonic_mania": {
+          "lastPlayed": "2023-11-15T10:30:00Z",
+          "progress": {
+            "clear": true,
+            "all_emeralds": false,
+            "all_medals": true
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "autoBackup": true,
+    "backupFrequency": "weekly"
+  }
+}
