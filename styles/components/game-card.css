@@ -94,7 +94,7 @@
 }
 
 .emerald-checkbox:checked {
-    background-image: url('../../assets/emeralds/emerald-green.png"');
+    background-image: url('../../assets/emeralds/emerald-green.png');
     animation: pulse 0.5s;
 }
 
