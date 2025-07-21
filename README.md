@@ -9,7 +9,7 @@ A progress tracker that saves locally to complete all the games of the Sonic the
 - 🌙 Dark/Light mode
 
 ## 🛠️ How to Use
-1. Visit [the tracker page](https://tonymontania.github.io/sonic-tracker/)
+1. Visit [the tracker page](https://tonymontania.github.io/games-tracker/)
 2. Check the games you have completed
 3. Your progress is automatically saved with localStorage.
 
