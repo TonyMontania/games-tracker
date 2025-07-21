@@ -1,4 +1,4 @@
-# 🚀 Sonic Series Progress Tracker 
+# 🚀 Games Series Progress Tracker 
 
 A progress tracker that saves locally to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
 
