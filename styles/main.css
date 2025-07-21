@@ -1,10 +1,9 @@
-@import url('./themes/light.css');
-@import url('./components/game-card.css');
-@import url('./components/sidebar.css');
-@import url('./components/search.css');
-@import url('./components/filters.css');
+@import url('themes/dark.css');
+@import url('components/game-card.css');
+@import url('components/sidebar.css');
+@import url('components/search.css');
+@import url('components/filters.css');
 
-/* Estilos base */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
