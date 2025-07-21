@@ -1,50 +1,81 @@
-# 🚀 Sonic Series Progress Tracker 
+# 🎮 Multi-Game Franchise Tracker 
 
-A progress tracker that saves locally to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/bithub/stars/TonyMontania/sonic-tracker?style=social)](https://github.com/TonyMontania/sonic-tracker/stargazers)
 
-## 🎮 Features.
-- ✅ Track completion per game
-- 🏆 Special Achievements (All Chaos Emeralds, No Death Run, etc.)
-- 🔥 Filters by console and generation.
-- 🌙 Dark/Light mode
+**Track your completion progress across multiple game franchises** - Currently with full support for Sonic the Hedgehog and structure ready for Mario, Zelda and Kirby.
 
-## 🛠️ How to Use
-1. Visit [the tracker page](https://tonymontania.github.io/sonic-tracker/)
-2. Check the games you have completed
-3. Your progress is automatically saved with localStorage.
+## 🌟 Current Features
 
-## 📦 Games included
--	2D Platformer
--	3D Action-Adventure
--	Puzzle, Sporting and Party Games
--	Racing Games and Vehicle Simulators
--	Entertainment and Creative
--	Fighting Games
--	Adventure/RPG Games
--	Mobile Games
--	Board Games
+### 🦔 Sonic the Hedgehog (Complete)
+- 80+ games from 1991 to 2023
+- Per-game achievement system (Chaos Emeralds, Speedruns, etc.)
+- Filters by console, generation and year
+- Automatic localStorage saving
+- Light/dark theme toggle
 
-## 🎨 Screenshoots
-<img src="assets/github/screenshot1.png" width="400"> <img src="assets/github/screenshot2.png" width="400">
-<img src="assets/github/screenshot3.png" width="400"> <img src="assets/github/screenshot4.png" width="400">
+### 🚧 Other Franchises (Structure Ready)
+- JSON template system configured
+- User progress schemas
+- Interface adaptable for new series
 
-## 🛠️ Technologies
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
+## 🖥️ How to Use
 
-## 🤝 Contribute
-Contributions are welcome! Follow these steps:
-1. Make fork of the project.
-2. Create your branch (`git checkout -b feature/new-function`)
-3. Commit your changes (`git commit -m ‘Add new feature’`)
-4. Push to the branch (`git push origin feature/new-function`)
-5. Open a Pull Request
+1. **Online Version**:
+   Visit: [https://tonymontania.github.io/sonic-tracker/](https://tonymontania.github.io/sonic-tracker/)
 
-## 📄 License
-This project is licensed under the [MIT](LICENSE).
+2. **Local Installation**:
+   ```bash
+   git clone https://github.com/TonyMontania/sonic-tracker.git
+   cd sonic-tracker
+   # Open index.html in your browser
 
----
+## 🎨 Screenshots
+<img src="assets/github/screenshot1.png" width="300" alt="Main View"> <img src="assets/github/screenshot2.png" width="300" alt="Filters"> <img src="assets/github/screenshot3.png" width="300" alt="Dark Mode">
 
-⭐ Do you like the project? Give it a star on GitHub to support its development.
+## 🛠️ Tech Stack
+### Frontend:
+https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white
+https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white
+https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black
+
+## Key Features:
+- Vanilla JS component system
+- Responsive CSS Grid/Flexbox layout
+- localStorage persistence
+- JSON Schema validation
+- Export/import progress
+
+## 📅 Development Roadmap
+
+### ✔️ Implemented
+- Complete Sonic franchise tracking
+- Advanced filtering and search
+- Local progress saving
+- JSON export/import
+- Theme system
+
+### ➡️ Next Steps
+1. Migrate to multi-franchise structure
+2. Add user accounts system
+3. Implement cross-device sync
+4. Create franchise comparison view
+
+##🤝 How to Contribute
+
+1. For Developers:
+bash
+git clone https://github.com/TonyMontania/sonic-tracker.git
+cd sonic-tracker
+
+2. For Non-Coders:
+- Report bugs in Issues
+- Suggest new franchises
+- Propose UI improvements
+
+📜 License
+MIT License - See LICENSE for details.
+
+⭐ Enjoy the project? Give it a star to support development.
+🐞 Found a bug? Report it in Issues.
+💬 Suggestions? Open a new Discussion.
