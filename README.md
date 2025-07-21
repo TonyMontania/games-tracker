@@ -1,81 +1,105 @@
-# 🎮 Multi-Game Franchise Tracker 
+# Games Tracker
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/bithub/stars/TonyMontania/sonic-tracker?style=social)](https://github.com/TonyMontania/sonic-tracker/stargazers)
+🎮 A customizable web tracker to keep track of game progress by saga or franchise. Inspired by the style of [1ccTracker de Touhou](https://doopu.github.io/1ccTracker/), this project is completely **offline**, self-hosted and easy to modify.
 
-**Track your completion progress across multiple game franchises** - Currently with full support for Sonic the Hedgehog and structure ready for Mario, Zelda and Kirby.
+---
 
-## 🌟 Current Features
+## 📸 Screenshots
 
-### 🦔 Sonic the Hedgehog (Complete)
-- 80+ games from 1991 to 2023
-- Per-game achievement system (Chaos Emeralds, Speedruns, etc.)
-- Filters by console, generation and year
-- Automatic localStorage saving
-- Light/dark theme toggle
+![Screenshot1](assets/github/screenshot1.png)
+![Screenshot2](assets/github/screenshot2.png)
+![Screenshot3](assets/github/screenshot3.png)
+![Screenshot4](assets/github/screenshot4.png)
 
-### 🚧 Other Franchises (Structure Ready)
-- JSON template system configured
-- User progress schemas
-- Interface adaptable for new series
+---
 
-## 🖥️ How to Use
+## 🧩 Features.
 
-1. **Online Version**:
-   Visit: [https://tonymontania.github.io/sonic-tracker/](https://tonymontania.github.io/sonic-tracker/)
+- 🌙 Dark and light theme.
+- 🔎 Search and filtering by name, console and progress status.
+- 💾 Progress stored locally in `user_progress.json`.
+- 🧠 Separation between data, interface and logic.
+- ✏️ Easy to edit, add games or create new franchises.
+- 📁 Completely static: works in any browser.
 
-2. **Local Installation**:
-   ```bash
-   git clone https://github.com/TonyMontania/sonic-tracker.git
-   cd sonic-tracker
-   # Open index.html in your browser
+---
 
-## 🎨 Screenshots
-<img src="assets/github/screenshot1.png" width="300" alt="Main View"> <img src="assets/github/screenshot2.png" width="300" alt="Filters"> <img src="assets/github/screenshot3.png" width="300" alt="Dark Mode">
+## 🛠️ Project Structure.
 
-## 🛠️ Tech Stack
-### Frontend:
-https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white
-https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white
-https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black
+```
+├── index.html                  # Main HTML file
+├── js/                         # Main JavaScript code
+│   ├── components/            # Visual components
+│   ├── core/                  # Tracker main logic
+│   └── utils/                 # General utilities
+├── styles/                    # CSS files
+│   ├── components/           # Styles per component
+│   └── themes/               # Light and dark themes
+├── assets/                    # Graphic resources
+│   ├── covers/               # Game covers
+│   ├── emeralds/             # Progress icons
+│   ├── github/               # Project screenshots
+│   └── icons/                # General icons
+├── data/                      # JSON data of the project
+│   ├── franchises/           # Listing of games by franchise
+│   ├── progress/             # User progress and templates
+│   └── schemas/              # JSON schemas for validation
+└── README.md / LICENSE / .gitignore
+```
 
-## Key Features:
-- Vanilla JS component system
-- Responsive CSS Grid/Flexbox layout
-- localStorage persistence
-- JSON Schema validation
-- Export/import progress
+---
 
-## 📅 Development Roadmap
+## ⚙️ Tools and Technologies
 
-### ✔️ Implemented
-- Complete Sonic franchise tracking
-- Advanced filtering and search
-- Local progress saving
-- JSON export/import
-- Theme system
+- HTML5, CSS3 and modern JavaScript.
+- Data management with `.json` files.
+- LocalStorage for progress persistence.
+- No frameworks or external dependencies required.
 
-### ➡️ Next Steps
-1. Migrate to multi-franchise structure
-2. Add user accounts system
-3. Implement cross-device sync
-4. Create franchise comparison view
+---
 
-##🤝 How to Contribute
+## 🚀 Installation
 
-1. For Developers:
-bash
-git clone https://github.com/TonyMontania/sonic-tracker.git
-cd sonic-tracker
+1. Clone the repository:
 
-2. For Non-Coders:
-- Report bugs in Issues
-- Suggest new franchises
-- Propose UI improvements
+```bash
+git clone https://github.com/TonyMontania/games-tracker.git
+```
 
-📜 License
-MIT License - See LICENSE for details.
+2. Open `index.html` in your browser.
 
-⭐ Enjoy the project? Give it a star to support development.
-🐞 Found a bug? Report it in Issues.
-💬 Suggestions? Open a new Discussion.
+You are done! No server required.
+
+---
+
+## 🗃️ Customization
+
+- To modify the games of a franchise, edit the files in:
+
+```
+data/franchises/
+```
+
+- To create a new franchise, add a new `.json` file similar to the existing ones (`mario.json`, `sonic.json`).
+- To edit the progress directly: `data/progress/user_progress.json`.
+
+---
+
+## 🧪 Data Validation.
+
+JSON schemas are used to validate both templates and progress:
+
+- `data/schemas/progress.schema.json`
+- `data/schemas/template.schema.json`
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT license. See [LICENSE](LICENSE) for more details.
+
+---
+
+## ✍️ Author.
+
+Made with 💙 by [TonyMontania](https://github.com/TonyMontania)
