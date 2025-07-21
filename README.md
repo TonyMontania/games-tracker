@@ -1,105 +1,50 @@
-# Games Tracker
+# 🚀 Games Series Progress Tracker 
 
-🎮 A customizable web tracker to keep track of game progress by saga or franchise. Inspired by the style of [1ccTracker de Touhou](https://doopu.github.io/1ccTracker/), this project is completely **offline**, self-hosted and easy to modify.
+A progress tracker that saves locally to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
 
----
+## 🎮 Features.
+- ✅ Track completion per game
+- 🏆 Special Achievements (All Chaos Emeralds, No Death Run, etc.)
+- 🔥 Filters by console and generation.
+- 🌙 Dark/Light mode
 
-## 📸 Screenshots
+## 🛠️ How to Use
+1. Visit [the tracker page](https://tonymontania.github.io/sonic-tracker/)
+2. Check the games you have completed
+3. Your progress is automatically saved with localStorage.
 
-![Screenshot1](assets/github/screenshot1.png)
-![Screenshot2](assets/github/screenshot2.png)
-![Screenshot3](assets/github/screenshot3.png)
-![Screenshot4](assets/github/screenshot4.png)
+## 📦 Games included
+-	2D Platformer
+-	3D Action-Adventure
+-	Puzzle, Sporting and Party Games
+-	Racing Games and Vehicle Simulators
+-	Entertainment and Creative
+-	Fighting Games
+-	Adventure/RPG Games
+-	Mobile Games
+-	Board Games
 
----
+## 🎨 Screenshoots
+<img src="assets/github/screenshot1.png" width="400"> <img src="assets/github/screenshot2.png" width="400">
+<img src="assets/github/screenshot3.png" width="400"> <img src="assets/github/screenshot4.png" width="400">
 
-## 🧩 Features.
+## 🛠️ Technologies
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
 
-- 🌙 Dark and light theme.
-- 🔎 Search and filtering by name, console and progress status.
-- 💾 Progress stored locally in `user_progress.json`.
-- 🧠 Separation between data, interface and logic.
-- ✏️ Easy to edit, add games or create new franchises.
-- 📁 Completely static: works in any browser.
+## 🤝 Contribute
+Contributions are welcome! Follow these steps:
+1. Make fork of the project.
+2. Create your branch (`git checkout -b feature/new-function`)
+3. Commit your changes (`git commit -m ‘Add new feature’`)
+4. Push to the branch (`git push origin feature/new-function`)
+5. Open a Pull Request
 
----
-
-## 🛠️ Project Structure.
-
-```
-├── index.html                  # Main HTML file
-├── js/                         # Main JavaScript code
-│   ├── components/            # Visual components
-│   ├── core/                  # Tracker main logic
-│   └── utils/                 # General utilities
-├── styles/                    # CSS files
-│   ├── components/           # Styles per component
-│   └── themes/               # Light and dark themes
-├── assets/                    # Graphic resources
-│   ├── covers/               # Game covers
-│   ├── emeralds/             # Progress icons
-│   ├── github/               # Project screenshots
-│   └── icons/                # General icons
-├── data/                      # JSON data of the project
-│   ├── franchises/           # Listing of games by franchise
-│   ├── progress/             # User progress and templates
-│   └── schemas/              # JSON schemas for validation
-└── README.md / LICENSE / .gitignore
-```
+## 📄 License
+This project is licensed under the [MIT](LICENSE).
 
 ---
 
-## ⚙️ Tools and Technologies
-
-- HTML5, CSS3 and modern JavaScript.
-- Data management with `.json` files.
-- LocalStorage for progress persistence.
-- No frameworks or external dependencies required.
-
----
-
-## 🚀 Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/TonyMontania/games-tracker.git
-```
-
-2. Open `index.html` in your browser.
-
-You are done! No server required.
-
----
-
-## 🗃️ Customization
-
-- To modify the games of a franchise, edit the files in:
-
-```
-data/franchises/
-```
-
-- To create a new franchise, add a new `.json` file similar to the existing ones (`mario.json`, `sonic.json`).
-- To edit the progress directly: `data/progress/user_progress.json`.
-
----
-
-## 🧪 Data Validation.
-
-JSON schemas are used to validate both templates and progress:
-
-- `data/schemas/progress.schema.json`
-- `data/schemas/template.schema.json`
-
----
-
-## 📜 License
-
-This project is licensed under the MIT license. See [LICENSE](LICENSE) for more details.
-
----
-
-## ✍️ Author.
-
-Made with 💙 by [TonyMontania](https://github.com/TonyMontania)
+⭐ Do you like the project? Give it a star on GitHub to support its development.
