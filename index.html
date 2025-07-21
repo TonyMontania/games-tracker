@@ -13,21 +13,42 @@
             <h3>CATEGORIES</h3>
             <div class="category-buttons" id="categories-container">
                 <button class="category-btn active" data-category="all">All Games</button>
-                <button class="category-btn" data-category="2d_platformer">2D Platformer</button>
-                <button class="category-btn" data-category="3d_action_adventure">3D Action-Adventure</button>
-                <button class="category-btn" data-category="adventure_rpg">Adventure/RPG Games</button>
-                <button class="category-btn" data-category="board">Board Games</button>
-                <button class="category-btn" data-category="entertainment_creative">Entertainment and Creative</button>
-                <button class="category-btn" data-category="fighting">Fighting Games</button>
-                <button class="category-btn" data-category="mobile">Mobile Games</button>
-                <button class="category-btn" data-category="puzzle_sporting_party">Puzzle, Sporting and Party Games</button>
-                <button class="category-btn" data-category="racing_vehicle">Racing Games and Vehicle Simulators</button>
+                <button class="category-btn" data-category="2D_Platformer">2D Platformer</button>
+                <button class="category-btn" data-category="3D_Action_Adventure">3D Action-Adventure</button>
+                <button class="category-btn" data-category="Adventure_RPG">Adventure/RPG Games</button>
+                <button class="category-btn" data-category="Board">Board Games</button>
+                <button class="category-btn" data-category="Entertainment_Creative">Entertainment and Creative</button>
+                <button class="category-btn" data-category="Fighting">Fighting Games</button>
+                <button class="category-btn" data-category="Mobile">Mobile Games</button>
+                <button class="category-btn" data-category="Puzzle_Sporting_Party">Puzzle, Sporting and Party Games</button>
+                <button class="category-btn" data-category="Racing_Vehicle">Racing Games and Vehicle Simulators</button>
             </div>
         </div>
         <div class="main-content">
             <div class="container">
                 <h1>SONIC SERIES PROGRESS TRACKER</h1>
-                <div id="filters-container" class="filters-container"></div>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search Games...">
+                        <button id="search-button">🔍</button>
+                    </div>
+                    <div class="search-filters">
+                        <select id="console-filter" class="filter-select">
+                            <option value="">Todas las consolas</option>
+                        </select>
+                        <select id="year-filter" class="filter-select">
+                            <option value="">Todos los años</option>
+                        </select>
+                        <select id="category-filter" class="filter-select">
+                            <option value="">Todas las categorías</option>
+                        </select>
+                        <button id="reset-filters" class="filter-button">Reset filters</button>
+                        <button id="import-button" class="filter-button">Import JSON</button>
+                        <button id="export-button" class="filter-button">Export JSON</button>
+                    </div>
+                    <div id="search-suggestions" class="suggestions-container"></div>
+                </div>
+                
                 <h2 class="current-category">All Games</h2>
                 <div id="games-list" class="games-grid"></div>
             </div>
