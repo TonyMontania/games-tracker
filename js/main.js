@@ -3,26 +3,34 @@ import { ProgressManager } from './core/ProgressManager.js';
 import { UIManager } from './core/UIManager.js';
 import { FilterManager } from './core/FilterManager.js';
 
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        const progressManager = new ProgressManager();
-        const gameManager = new GameManager();
-        await gameManager.loadFranchise('sonic');
-        const filterManager = new FilterManager(gameManager);
-        const uiManager = new UIManager(gameManager, filterManager, progressManager);
+document.addEventListener('DOMContentLoaded', function() {
+    // Configuración inicial del tema
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    // Botón de cambio de tema
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        // Configura el ícono inicial
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
         
-        await uiManager.initialize();
-
-    } catch (error) {
-        console.error('App initialization failed:', error);
-        const gamesList = document.getElementById('games-list');
-        if (gamesList) {
-            gamesList.innerHTML = `
-                <div class="error">
-                    <p>Error loading application</p>
-                    <button onclick="window.location.reload()">Try Again</button>
-                </div>
-            `;
-        }
+        // Manejador del evento click
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            // Aplica el nuevo tema
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Cambia el ícono del botón
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            
+            // Actualiza la hoja de estilos
+            const themeStyle = document.getElementById('theme-style');
+            if (themeStyle) {
+                themeStyle.href = `styles/themes/${newTheme}.css`;
+            }
+        });
     }
 });

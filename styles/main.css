@@ -1,21 +1,24 @@
-@import url('themes/dark.css');
+@import url('themes/light.css');
 @import url('components/game-card.css');
 @import url('components/sidebar.css');
 @import url('components/search.css');
 @import url('components/filters.css');
 
+/* Estilos base consistentes para ambos temas */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: var(--bg-color);
 }
 
 h1 {
@@ -23,17 +26,20 @@ h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5em;
+    text-shadow: 1px 1px 2px var(--shadow-color);
 }
 
 .main-layout {
     display: flex;
     min-height: 100vh;
     gap: 20px;
+    background-color: var(--bg-color);
 }
 
 .main-content {
     flex: 1;
     position: relative;
+    background-color: var(--bg-color);
 }
 
 .current-category {
@@ -52,6 +58,7 @@ h1 {
     padding: 20px 0;
 }
 
+/* Estilos para el botón de cambio de tema */
 .theme-toggle {
     position: fixed;
     bottom: 20px;
@@ -65,8 +72,16 @@ h1 {
     font-size: 1.2em;
     cursor: pointer;
     z-index: 100;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: all 0.3s ease;
 }
 
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 8px var(--shadow-color);
+}
+
+/* Notificaciones toast */
 .toast {
     position: fixed;
     bottom: 80px;
@@ -75,17 +90,18 @@ h1 {
     border-radius: 6px;
     background-color: var(--card-bg);
     color: var(--text-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px var(--shadow-color);
     z-index: 100;
     animation: slideIn 0.3s ease-out;
+    border-left: 4px solid var(--primary-color);
 }
 
 .toast.success {
-    border-left: 4px solid var(--emerald-green);
+    border-left-color: var(--emerald-green);
 }
 
 .toast.error {
-    border-left: 4px solid #ff4444;
+    border-left-color: #ff4444;
 }
 
 @keyframes slideIn {
@@ -93,6 +109,18 @@ h1 {
     to { transform: translateX(0); }
 }
 
+/* Transiciones para elementos interactivos */
+input, select, button, .game-card {
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para tarjetas */
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
     .main-layout {
         flex-direction: column;
@@ -101,4 +129,42 @@ h1 {
     .main-content {
         padding-top: 20px;
     }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+}
+
+/* Estilos específicos para asegurar consistencia */
+[data-theme="light"], [data-theme="dark"] {
+    /* Fuerza la herencia de variables */
+    --bg-color: inherit;
+    --text-color: inherit;
+    --card-bg: inherit;
+    --primary-color: inherit;
+    --secondary-color: inherit;
+    --emerald-gray: inherit;
+    --emerald-green: inherit;
+    --border-color: inherit;
+    --shadow-color: inherit;
+}
+
+/* Corrección para inputs en ambos modos */
+input, select {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--secondary-color);
 }

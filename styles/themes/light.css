@@ -1,10 +1,44 @@
 :root {
-    --bg-color: #ffffff;
+    --bg-color: #f5f5f5;
     --text-color: #333333;
-    --card-bg: #f8f8f8;
+    --card-bg: #ffffff;
     --primary-color: #0066cc;
-    --secondary-color: #ffd700;
-    --emerald-gray: #aaaaaa;
-    --emerald-green: #00cc66;
-    --border-color: #ddd;
+    --secondary-color: #ffcc00;
+    --emerald-gray: #cccccc;
+    --emerald-green: #00aa55;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --completed-bg: rgba(255, 215, 0, 0.15);
+    --hover-color: rgba(0, 102, 204, 0.1);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.game-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.game-card.all-completed {
+    border-color: var(--secondary-color);
+    background-color: var(--completed-bg);
+}
+
+.search-container, .filters-container {
+    background-color: var(--card-bg);
+}
+
+input, select {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+}
+
+.theme-toggle {
+    background-color: var(--primary-color);
+    color: white;
 }

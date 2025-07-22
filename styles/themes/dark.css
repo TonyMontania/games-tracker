@@ -1,8 +1,13 @@
-[data-theme="dark"] {
+:root {
     --bg-color: #1a1a1a;
     --text-color: #f0f0f0;
     --card-bg: #2d2d2d;
     --primary-color: #4da6ff;
     --secondary-color: #ffcc00;
     --emerald-gray: #666666;
+    --emerald-green: #00cc66;
+    --border-color: #444444;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --completed-bg: rgba(255, 215, 0, 0.15);
+    --hover-color: rgba(77, 166, 255, 0.1);
 }
