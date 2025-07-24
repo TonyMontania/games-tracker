@@ -1,0 +1,1186 @@
+[
+    {
+        "id": "donkey_kong_arcade",
+        "title": "Donkey Kong (Arcade)",
+        "console": ["Arcade", "NES", "Game Boy", "Nintendo Switch"],
+        "generation": "Arcade",
+        "year": "1981",
+        "image": "donkey_kong_arcade.png",
+        "categories": [
+            {"id": "rescue_pauline", "name": "Rescue Pauline"},
+            {"id": "perfect_run", "name": "Complete a Level Without Missing"},
+            {"id": "high_score", "name": "Achieve 100,000 Points"}
+        ]
+    },
+    {
+        "id": "donkey_kong_jr",
+        "title": "Donkey Kong Jr.",
+        "console": ["Arcade", "NES", "Game Boy Advance"],
+        "generation": "Arcade",
+        "year": "1982",
+        "image": "donkey_kong_jr.png",
+        "categories": [
+            {"id": "rescue_dk", "name": "Rescue Donkey Kong"},
+            {"id": "all_fruits", "name": "Collect All Fruits in a Level"},
+            {"id": "no_death_run", "name": "Complete Game Without Dying"}
+        ]
+    },
+    {
+        "id": "mario_bros_arcade",
+        "title": "Mario Bros. (Arcade)",
+        "console": ["Arcade", "NES", "Atari 2600"],
+        "generation": "Arcade",
+        "year": "1983",
+        "image": "mario_bros_arcade.png",
+        "categories": [
+            {"id": "clear_waves", "name": "Clear 10 Waves"},
+            {"id": "double_koopas", "name": "Defeat 2 Koopas Simultaneously"},
+            {"id": "perfect_wave", "name": "Complete a Wave Without Damage"}
+        ]
+    },
+    {
+        "id": "wrecking_crew",
+        "title": "Wrecking Crew",
+        "console": ["NES", "Game Boy Advance"],
+        "generation": "3rd Gen",
+        "year": "1985",
+        "image": "wrecking_crew.png",
+        "categories": [
+            {"id": "clear_stages", "name": "Complete All 100 Stages"},
+            {"id": "all_wrenches", "name": "Collect All Wrenches"},
+            {"id": "perfect_demolition", "name": "Clear a Stage Without Missing"}
+        ]
+    },
+    {
+        "id": "super_mario_bros",
+        "title": "Super Mario Bros.",
+        "console": ["NES", "SNES", "Game Boy Advance", "Nintendo Switch"],
+        "generation": "3rd Gen",
+        "year": "1985",
+        "image": "super_mario_bros.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Princess Peach"},
+            {"id": "all_worlds", "name": "Complete All 8 Worlds"},
+            {"id": "no_warps", "name": "Beat Game Without Warp Pipes"},
+            {"id": "max_lives", "name": "Collect 99 Lives"},
+            {"id": "hidden_1ups", "name": "Find All Hidden 1-Up Mushrooms"}
+        ]
+    },
+    {
+        "id": "super_mario_bros_2_jp",
+        "title": "Super Mario Bros. 2 (Japanese)",
+        "console": ["Famicom Disk System", "SNES", "Nintendo Switch"],
+        "generation": "3rd Gen",
+        "year": "1986",
+        "image": "super_mario_bros_2_jp.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Worlds"},
+            {"id": "all_powerups", "name": "Collect All Power-Ups"},
+            {"id": "no_death_run", "name": "Complete Game Without Dying"}
+        ]
+    },
+    {
+        "id": "super_mario_bros_2_us",
+        "title": "Super Mario Bros. 2 (USA)",
+        "console": ["NES", "SNES", "Game Boy Advance", "Nintendo Switch"],
+        "generation": "3rd Gen",
+        "year": "1988",
+        "image": "super_mario_bros_2_us.png",
+        "categories": [
+            {"id": "clear_game", "name": "Defeat Wart"},
+            {"id": "all_characters", "name": "Complete Levels With All Characters"},
+            {"id": "all_vegetables", "name": "Collect All Vegetables"},
+            {"id": "hidden_doors", "name": "Find All Hidden Warp Doors"}
+        ]
+    },
+    {
+        "id": "super_mario_bros_3",
+        "title": "Super Mario Bros. 3",
+        "console": ["NES", "SNES", "Game Boy Advance", "Nintendo Switch"],
+        "generation": "3rd Gen",
+        "year": "1988",
+        "image": "super_mario_bros_3.png",
+        "categories": [
+            {"id": "clear_game", "name": "Defeat Bowser"},
+            {"id": "all_cards", "name": "Collect All Card Matches"},
+            {"id": "all_suits", "name": "Obtain All Suits (Tanooki, Frog, Hammer)"},
+            {"id": "no_p_wing", "name": "Complete Special World Without P-Wing"},
+            {"id": "whistle_run", "name": "Find All Warp Whistles"}
+        ]
+    },
+    {
+        "id": "super_mario_land",
+        "title": "Super Mario Land",
+        "console": ["Game Boy"],
+        "generation": "4th Gen",
+        "year": "1989",
+        "image": "super_mario_land.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Princess Daisy"},
+            {"id": "all_coins", "name": "Collect All Coins in a Level"},
+            {"id": "perfect_run", "name": "Complete a Level Without Damage"}
+        ]
+    },
+    {
+        "id": "super_mario_world",
+        "title": "Super Mario World",
+        "console": ["SNES", "Game Boy Advance", "Nintendo Switch"],
+        "generation": "4th Gen",
+        "year": "1990",
+        "image": "super_mario_world.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Princess Peach"},
+            {"id": "all_exits", "name": "Find All 96 Exits"},
+            {"id": "all_yoshis", "name": "Ride All Yoshi Colors"},
+            {"id": "star_road", "name": "Complete Star Road"},
+            {"id": "special_world", "name": "Finish Special World"}
+        ]
+    },
+    {
+        "id": "super_mario_land_2",
+        "title": "Super Mario Land 2: 6 Golden Coins",
+        "console": ["Game Boy"],
+        "generation": "4th Gen",
+        "year": "1992",
+        "image": "super_mario_land_2.png",
+        "categories": [
+            {"id": "clear_game", "name": "Defeat Wario"},
+            {"id": "all_coins", "name": "Collect All 6 Golden Coins"},
+            {"id": "all_zones", "name": "Complete All Zones"},
+            {"id": "secret_levels", "name": "Find All Secret Levels"}
+        ]
+    },
+    {
+        "id": "mario_is_missing",
+        "title": "Mario Is Missing!",
+        "console": ["NES", "SNES", "PC"],
+        "generation": "4th Gen",
+        "year": "1992",
+        "image": "mario_is_missing.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Luigi"},
+            {"id": "all_continents", "name": "Complete All Continents"},
+            {"id": "all_artifacts", "name": "Return All Stolen Artifacts"},
+            {"id": "geography_master", "name": "Answer All Trivia Correctly"}
+        ]
+    },
+    {
+        "id": "marios_time_machine",
+        "title": "Mario's Time Machine",
+        "console": ["NES", "SNES", "PC"],
+        "generation": "4th Gen",
+        "year": "1993",
+        "image": "marios_time_machine.png",
+        "categories": [
+            {"id": "clear_game", "name": "Restore All Artifacts"},
+            {"id": "all_eras", "name": "Visit All Time Periods"},
+            {"id": "history_expert", "name": "Answer All Historical Questions Correctly"}
+        ]
+    },
+    {
+        "id": "marios_early_years",
+        "title": "Mario's Early Years! Fun with Letters",
+        "console": ["SNES", "PC"],
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "marios_early_years.png",
+        "categories": [
+            {"id": "complete_alphabet", "name": "Complete All Letter Activities"},
+            {"id": "word_master", "name": "Form 50 Words"},
+            {"id": "perfect_scores", "name": "Get Perfect Scores in All Mini-Games"}
+        ]
+    },
+    {
+        "id": "hotel_mario",
+        "title": "Hotel Mario",
+        "console": ["CD-i"],
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "hotel_mario.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Hotels"},
+            {"id": "all_doors", "name": "Close All Doors in a Level"},
+            {"id": "perfect_chain", "name": "Create a 10-Door Chain"}
+        ]
+    },
+    {
+        "id": "super_mario_world_2",
+        "title": "Super Mario World 2: Yoshi's Island",
+        "console": ["SNES", "Game Boy Advance", "Nintendo Switch"],
+        "generation": "4th Gen",
+        "year": "1995",
+        "image": "yoshis_island.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Baby Mario"},
+            {"id": "all_stars", "name": "Get 100% in All Levels"},
+            {"id": "all_flowers", "name": "Collect All Red Coins and Flowers"},
+            {"id": "perfect_run", "name": "Complete a Level Without Taking Damage"}
+        ]
+    },
+    {
+        "id": "marios_game_gallery",
+        "title": "Mario's Game Gallery",
+        "console": ["PC", "Mac"],
+        "generation": "5th Gen",
+        "year": "1995",
+        "image": "marios_game_gallery.png",
+        "categories": [
+            {"id": "all_games", "name": "Play All 5 Games"},
+            {"id": "high_scores", "name": "Set High Scores in All Games"},
+            {"id": "perfect_wins", "name": "Win Perfect Games in All Modes"}
+        ]
+    },
+    {
+        "id": "super_mario_rpg",
+        "title": "Super Mario RPG: Legend of the Seven Stars",
+        "console": ["SNES", "Nintendo Switch"],
+        "generation": "4th Gen",
+        "year": "1996",
+        "image": "super_mario_rpg.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_star_pieces", "name": "Collect All 39 Star Pieces"},
+            {"id": "all_bosses", "name": "Defeat All Optional Bosses"},
+            {"id": "all_minigames", "name": "Complete All Mini-Games"},
+            {"id": "max_level", "name": "Reach Level 30 With All Characters"}
+        ]
+    },
+    {
+        "id": "super_mario_64",
+        "title": "Super Mario 64",
+        "console": ["Nintendo 64", "Nintendo DS", "Nintendo Switch"],
+        "generation": "5th Gen",
+        "year": "1996",
+        "image": "super_mario_64.png",
+        "categories": [
+            {"id": "clear_game", "name": "Collect 70 Stars"},
+            {"id": "all_stars", "name": "Collect All 120 Stars"},
+            {"id": "all_caps", "name": "Obtain All Cap Abilities"},
+            {"id": "secret_courses", "name": "Unlock All Secret Courses"},
+            {"id": "no_wing_cap", "name": "Collect 100 Coins in Tick Tock Clock Without Wing Cap"}
+        ]
+    },
+    {
+        "id": "mario_kart_64",
+        "title": "Mario Kart 64",
+        "console": ["Nintendo 64", "Nintendo Switch"],
+        "generation": "5th Gen",
+        "year": "1996",
+        "image": "mario_kart_64.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups (150cc)"},
+            {"id": "all_characters", "name": "Win With All Characters"},
+            {"id": "perfect_lap", "name": "Complete a Perfect Lap"},
+            {"id": "time_trials", "name": "Set Records on All Tracks"}
+        ]
+    },
+    {
+        "id": "mario_teaches_typing",
+        "title": "Mario Teaches Typing",
+        "console": ["PC", "Mac"],
+        "generation": "5th Gen",
+        "year": "1997",
+        "image": "mario_teaches_typing.png",
+        "categories": [
+            {"id": "complete_course", "name": "Complete All Typing Lessons"},
+            {"id": "wpm_master", "name": "Achieve 60 WPM"},
+            {"id": "perfect_scores", "name": "Get Perfect Scores in All Exercises"}
+        ]
+    },
+    {
+        "id": "mario_party",
+        "title": "Mario Party",
+        "console": ["Nintendo 64"],
+        "generation": "5th Gen",
+        "year": "1998",
+        "image": "mario_party.png",
+        "categories": [
+            {"id": "all_boards", "name": "Win on All Boards"},
+            {"id": "all_minigames", "name": "Play All 50 Minigames"},
+            {"id": "hidden_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_minigame", "name": "Get Perfect in 10 Minigames"}
+        ]
+    },
+    {
+        "id": "mario_golf",
+        "title": "Mario Golf",
+        "console": ["Nintendo 64", "Game Boy Color"],
+        "generation": "5th Gen",
+        "year": "1999",
+        "image": "mario_golf.png",
+        "categories": [
+            {"id": "all_courses", "name": "Win on All Courses"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "hole_in_one", "name": "Score a Hole-in-One"},
+            {"id": "tournament_wins", "name": "Win All Tournaments"}
+        ]
+    },
+    {
+        "id": "paper_mario",
+        "title": "Paper Mario",
+        "console": ["Nintendo 64", "Nintendo Switch"],
+        "generation": "5th Gen",
+        "year": "2000",
+        "image": "paper_mario.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_star_pieces", "name": "Collect All Star Pieces"},
+            {"id": "all_badges", "name": "Collect All Badges"},
+            {"id": "max_level", "name": "Reach Level 27"},
+            {"id": "hidden_chests", "name": "Find All Hidden Chests"}
+        ]
+    },
+    {
+        "id": "mario_tennis",
+        "title": "Mario Tennis",
+        "console": ["Nintendo 64", "Game Boy Color"],
+        "generation": "5th Gen",
+        "year": "2000",
+        "image": "mario_tennis.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_match", "name": "Win a Match Without Losing Points"},
+            {"id": "special_shots", "name": "Perform All Special Shots"}
+        ]
+    },
+    {
+        "id": "super_mario_sunshine",
+        "title": "Super Mario Sunshine",
+        "console": ["Nintendo GameCube", "Nintendo Switch"],
+        "generation": "6th Gen",
+        "year": "2002",
+        "image": "super_mario_sunshine.png",
+        "categories": [
+            {"id": "clear_game", "name": "Collect 50 Shines"},
+            {"id": "all_shines", "name": "Collect All 120 Shine Sprites"},
+            {"id": "blue_coins", "name": "Collect All 240 Blue Coins"},
+            {"id": "all_episodes", "name": "Complete All Level Episodes"},
+            {"id": "no_fludd", "name": "Complete a Level Without FLUDD"}
+        ]
+    },
+    {
+        "id": "mario_party_4",
+        "title": "Mario Party 4",
+        "console": ["Nintendo GameCube"],
+        "generation": "6th Gen",
+        "year": "2002",
+        "image": "mario_party_4.png",
+        "categories": [
+            {"id": "all_boards", "name": "Win on All Boards"},
+            {"id": "all_minigames", "name": "Play All 60 Minigames"},
+            {"id": "hidden_items", "name": "Unlock All Hidden Items"},
+            {"id": "perfect_minigame", "name": "Get Perfect in 15 Minigames"}
+        ]
+    },
+    {
+        "id": "mario_kart_double_dash",
+        "title": "Mario Kart: Double Dash!!",
+        "console": ["Nintendo GameCube"],
+        "generation": "6th Gen",
+        "year": "2003",
+        "image": "mario_kart_double_dash.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups (Mirror Mode)"},
+            {"id": "all_karts", "name": "Unlock All Karts"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_lap", "name": "Complete a Perfect Lap"}
+        ]
+    },
+    {
+        "id": "paper_mario_ttyd",
+        "title": "Paper Mario: The Thousand-Year Door",
+        "console": ["Nintendo GameCube", "Nintendo Switch"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "paper_mario_ttyd.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_crystal_stars", "name": "Collect All Crystal Stars"},
+            {"id": "all_badges", "name": "Collect All Badges"},
+            {"id": "all_recipes", "name": "Cook All Recipes"},
+            {"id": "pit_100", "name": "Complete the Pit of 100 Trials"}
+        ]
+    },
+    {
+        "id": "mario_power_tennis",
+        "title": "Mario Power Tennis",
+        "console": ["Nintendo GameCube"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "mario_power_tennis.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Tournaments"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_courts", "name": "Unlock All Courts"},
+            {"id": "perfect_game", "name": "Win a Game Without Losing Points"}
+        ]
+    },
+    {
+        "id": "super_mario_galaxy",
+        "title": "Super Mario Galaxy",
+        "console": ["Nintendo Wii", "Nintendo Switch"],
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "super_mario_galaxy.png",
+        "categories": [
+            {"id": "clear_game", "name": "Collect 60 Stars"},
+            {"id": "all_stars", "name": "Collect All 120 Stars"},
+            {"id": "comet_medals", "name": "Get All Comet Medals"},
+            {"id": "luigi_unlock", "name": "Unlock Luigi Mode"},
+            {"id": "perfect_run", "name": "Complete a Daredevil Comet Without Damage"}
+        ]
+    },
+    {
+        "id": "mario_kart_wii",
+        "title": "Mario Kart Wii",
+        "console": ["Nintendo Wii"],
+        "generation": "7th Gen",
+        "year": "2008",
+        "image": "mario_kart_wii.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups (Mirror Mode)"},
+            {"id": "all_vehicles", "name": "Unlock All Vehicles"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_wheelie", "name": "Perform a 10-Second Wheelie"}
+        ]
+    },
+    {
+        "id": "new_super_mario_bros_wii",
+        "title": "New Super Mario Bros. Wii",
+        "console": ["Nintendo Wii", "Nintendo Switch"],
+        "generation": "7th Gen",
+        "year": "2009",
+        "image": "new_super_mario_bros_wii.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Princess Peach"},
+            {"id": "all_star_coins", "name": "Collect All Star Coins"},
+            {"id": "all_paths", "name": "Unlock All World Paths"},
+            {"id": "all_characters", "name": "Complete Levels With All Characters"}
+        ]
+    },
+    {
+        "id": "super_mario_3d_land",
+        "title": "Super Mario 3D Land",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2011",
+        "image": "super_mario_3d_land.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Princess Peach"},
+            {"id": "all_stages", "name": "Complete All 96 Stages"},
+            {"id": "all_star_coins", "name": "Collect All Star Coins"},
+            {"id": "special_world", "name": "Complete Special World"},
+            {"id": "golden_flag", "name": "Get Golden Flags on All Levels"}
+        ]
+    },
+    {
+        "id": "mario_kart_7",
+        "title": "Mario Kart 7",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2011",
+        "image": "mario_kart_7.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups (150cc)"},
+            {"id": "all_karts", "name": "Unlock All Kart Parts"},
+            {"id": "all_gliders", "name": "Unlock All Gliders"},
+            {"id": "perfect_drift", "name": "Maintain a Drift for 10 Seconds"}
+        ]
+    },
+    {
+        "id": "paper_mario_sticker_star",
+        "title": "Paper Mario: Sticker Star",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2012",
+        "image": "paper_mario_sticker_star.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_stickers", "name": "Collect All Stickers"},
+            {"id": "all_battles", "name": "Win All Special Battles"},
+            {"id": "hidden_areas", "name": "Find All Hidden Areas"}
+        ]
+    },
+    {
+        "id": "super_mario_3d_world",
+        "title": "Super Mario 3D World",
+        "console": ["Nintendo Wii U", "Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2013",
+        "image": "super_mario_3d_world.png",
+        "categories": [
+            {"id": "clear_game", "name": "Reach World Crown"},
+            {"id": "all_stamps", "name": "Collect All Stamps"},
+            {"id": "all_stars", "name": "Collect All Green Stars"},
+            {"id": "all_characters", "name": "Complete Levels With All Characters"},
+            {"id": "champions_road", "name": "Complete Champion's Road"}
+        ]
+    },
+    {
+        "id": "mario_kart_8",
+        "title": "Mario Kart 8",
+        "console": ["Nintendo Wii U", "Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2014",
+        "image": "mario_kart_8.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups (200cc)"},
+            {"id": "all_vehicles", "name": "Unlock All Vehicles"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_combo", "name": "Maintain a Combo for 10 Seconds"}
+        ]
+    },
+    {
+        "id": "super_mario_maker",
+        "title": "Super Mario Maker",
+        "console": ["Nintendo Wii U", "Nintendo 3DS"],
+        "generation": "8th Gen",
+        "year": "2015",
+        "image": "super_mario_maker.png",
+        "categories": [
+            {"id": "all_themes", "name": "Create Levels in All Themes"},
+            {"id": "upload_level", "name": "Upload a Custom Level"},
+            {"id": "100_likes", "name": "Get 100 Likes on a Level"},
+            {"id": "all_tools", "name": "Unlock All Creation Tools"}
+        ]
+    },
+    {
+        "id": "paper_mario_color_splash",
+        "title": "Paper Mario: Color Splash",
+        "console": ["Nintendo Wii U"],
+        "generation": "8th Gen",
+        "year": "2016",
+        "image": "paper_mario_color_splash.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_paint", "name": "Restore All Color"},
+            {"id": "all_cards", "name": "Collect All Battle Cards"},
+            {"id": "hidden_areas", "name": "Find All Hidden Areas"}
+        ]
+    },
+    {
+        "id": "super_mario_odyssey",
+        "title": "Super Mario Odyssey",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2017",
+        "image": "super_mario_odyssey.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_moons", "name": "Collect All 880 Moons"},
+            {"id": "all_outfits", "name": "Unlock All Outfits"},
+            {"id": "all_kingdoms", "name": "100% Complete All Kingdoms"},
+            {"id": "darker_side", "name": "Complete Darker Side of the Moon"},
+            {"id": "all_captures", "name": "Use All Capture Abilities"}
+        ]
+    },
+    {
+        "id": "mario_rabbids_kingdom_battle",
+        "title": "Mario + Rabbids Kingdom Battle",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2017",
+        "image": "mario_rabbids.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_challenges", "name": "Complete All Challenge Stages"},
+            {"id": "all_weapons", "name": "Unlock All Weapons"},
+            {"id": "perfect_score", "name": "Get Perfect on 10 Battles"},
+            {"id": "hidden_chests", "name": "Find All Hidden Chests"}
+        ]
+    },
+    {
+        "id": "super_mario_maker_2",
+        "title": "Super Mario Maker 2",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2019",
+        "image": "super_mario_maker_2.png",
+        "categories": [
+            {"id": "clear_story", "name": "Complete Story Mode"},
+            {"id": "all_courses", "name": "Clear All Nintendo Courses"},
+            {"id": "upload_level", "name": "Upload a Custom Level"},
+            {"id": "100_likes", "name": "Get 100 Likes on a Level"},
+            {"id": "all_tools", "name": "Unlock All Creation Tools"}
+        ]
+    },
+    {
+        "id": "paper_mario_origami_king",
+        "title": "Paper Mario: The Origami King",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2020",
+        "image": "paper_mario_origami_king.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_toads", "name": "Rescue All Toads"},
+            {"id": "all_collectibles", "name": "Collect All Treasures"},
+            {"id": "all_bosses", "name": "Defeat All Optional Bosses"},
+            {"id": "perfect_rings", "name": "Solve 10 Ring Puzzles Perfectly"}
+        ]
+    },
+    {
+        "id": "mario_kart_live",
+        "title": "Mario Kart Live: Home Circuit",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2020",
+        "image": "mario_kart_live.png",
+        "categories": [
+            {"id": "all_cups", "name": "Complete All Cups"},
+            {"id": "all_tracks", "name": "Create and Race on 5 Custom Tracks"},
+            {"id": "perfect_lap", "name": "Complete a Perfect Lap"},
+            {"id": "all_items", "name": "Use All Power-Ups"}
+        ]
+    },
+    {
+        "id": "mario_golf_super_rush",
+        "title": "Mario Golf: Super Rush",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2021",
+        "image": "mario_golf_super_rush.png",
+        "categories": [
+            {"id": "clear_story", "name": "Complete Golf Adventure"},
+            {"id": "all_courses", "name": "Master All Courses"},
+            {"id": "all_clubs", "name": "Unlock All Club Sets"},
+            {"id": "hole_in_one", "name": "Score a Hole-in-One"},
+            {"id": "speedrun_golf", "name": "Complete a Course in Speed Golf Under Par"}
+        ]
+    },
+    {
+        "id": "mario_party_superstars",
+        "title": "Mario Party Superstars",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2021",
+        "image": "mario_party_superstars.png",
+        "categories": [
+            {"id": "all_boards", "name": "Win on All Boards"},
+            {"id": "all_minigames", "name": "Play All 100 Minigames"},
+            {"id": "perfect_minigame", "name": "Get Perfect in 10 Minigames"},
+            {"id": "hidden_items", "name": "Find All Hidden Items"},
+            {"id": "all_characters", "name": "Play With All Characters"}
+        ]
+    },
+    {
+        "id": "mario_strikers_battle_league",
+        "title": "Mario Strikers: Battle League",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2022",
+        "image": "mario_strikers.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_gear", "name": "Unlock All Gear Sets"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_goal", "name": "Score a Perfect Goal from Midfield"}
+        ]
+    },
+    {
+        "id": "super_mario_rpg_remake",
+        "title": "Super Mario RPG (Remake)",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2023",
+        "image": "super_mario_rpg_remake.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_star_pieces", "name": "Collect All Star Pieces"},
+            {"id": "all_bosses", "name": "Defeat All Optional Bosses"},
+            {"id": "all_minigames", "name": "Complete All Mini-Games"},
+            {"id": "max_level", "name": "Reach Level 30 With All Characters"}
+        ]
+    },
+    {
+        "id": "super_mario_bros_wonder",
+        "title": "Super Mario Bros. Wonder",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2023",
+        "image": "super_mario_bros_wonder.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_wonder_seeds", "name": "Collect All Wonder Seeds"},
+            {"id": "all_standees", "name": "Collect All Standees"},
+            {"id": "all_badges", "name": "Unlock All Badges"},
+            {"id": "special_world", "name": "Complete Special World"}
+        ]
+    },
+    {
+        "id": "dr_mario_world",
+        "title": "Dr. Mario World",
+        "console": ["iOS", "Android"],
+        "generation": "Mobile",
+        "year": "2019",
+        "image": "dr_mario_world.png",
+        "categories": [
+            {"id": "clear_stages", "name": "Clear 200 Stages"},
+            {"id": "all_docs", "name": "Unlock All Doctors"},
+            {"id": "all_viruses", "name": "Defeat All Virus Types"},
+            {"id": "perfect_clear", "name": "Achieve 10 Perfect Clears"},
+            {"id": "max_level", "name": "Max Level a Character"}
+        ]
+    },
+    {
+        "id": "mario_kart_tour",
+        "title": "Mario Kart Tour",
+        "console": ["iOS", "Android"],
+        "generation": "Mobile",
+        "year": "2019",
+        "image": "mario_kart_tour.png",
+        "categories": [
+            {"id": "all_cups", "name": "Complete All Tour Cups"},
+            {"id": "all_drivers", "name": "Unlock 50 Drivers"},
+            {"id": "all_karts", "name": "Unlock 50 Karts"},
+            {"id": "all_gliders", "name": "Unlock 50 Gliders"},
+            {"id": "perfect_combo", "name": "Achieve a 100x Combo"}
+        ]
+    },
+    {
+        "id": "super_mario_run",
+        "title": "Super Mario Run",
+        "console": ["iOS", "Android"],
+        "generation": "Mobile",
+        "year": "2016",
+        "image": "super_mario_run.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Worlds"},
+            {"id": "all_coins", "name": "Collect All Black/Purple Coins"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_run", "name": "Complete a Level Without Dying"}
+        ]
+    },
+    {
+        "id": "mario_clash",
+        "title": "Mario Clash",
+        "console": ["Virtual Boy"],
+        "generation": "5th Gen",
+        "year": "1995",
+        "image": "mario_clash.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All 99 Levels"},
+            {"id": "perfect_throws", "name": "Defeat 50 Enemies With Perfect Throws"},
+            {"id": "high_score", "name": "Achieve 1,000,000 Points"}
+        ]
+    },
+    {
+        "id": "mario_pinball_land",
+        "title": "Mario Pinball Land",
+        "console": ["Game Boy Advance"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "mario_pinball_land.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Princess Peach"},
+            {"id": "all_stars", "name": "Collect All Stars"},
+            {"id": "perfect_table", "name": "Complete a Table Without Losing Ball"}
+        ]
+    },
+    {
+        "id": "super_princess_peach",
+        "title": "Super Princess Peach",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2005",
+        "image": "super_princess_peach.png",
+        "categories": [
+            {"id": "clear_game", "name": "Rescue Mario"},
+            {"id": "all_vibes", "name": "Master All Vibe Powers"},
+            {"id": "all_puzzles", "name": "Solve All Puzzles"}
+        ]
+    },
+    {
+        "id": "mario_hoops_3on3",
+        "title": "Mario Hoops 3-on-3",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2006",
+        "image": "mario_hoops.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Tournaments"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_game", "name": "Win a Game Without Missing Shots"}
+        ]
+    },
+    {
+        "id": "mario_slam_basketball",
+        "title": "Mario Slam Basketball",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2006",
+        "image": "mario_slam_basketball.png",
+        "categories": [
+            {"id": "all_stadiums", "name": "Win in All Stadiums"},
+            {"id": "all_special_shots", "name": "Perform All Special Shots"},
+            {"id": "perfect_slam", "name": "Score 10 Slam Dunks in a Game"}
+        ]
+    },
+    {
+        "id": "mario_superstar_baseball",
+        "title": "Mario Superstar Baseball",
+        "console": ["Nintendo GameCube"],
+        "generation": "6th Gen",
+        "year": "2005",
+        "image": "mario_baseball.png",
+        "categories": [
+            {"id": "all_stadiums", "name": "Win in All Stadiums"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_game", "name": "Win a Game Without Allowing Runs"}
+        ]
+    },
+    {
+        "id": "mario_super_sluggers",
+        "title": "Mario Super Sluggers",
+        "console": ["Nintendo Wii"],
+        "generation": "7th Gen",
+        "year": "2008",
+        "image": "mario_sluggers.png",
+        "categories": [
+            {"id": "all_stadiums", "name": "Win in All Stadiums"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_homerun", "name": "Hit 5 Homeruns in a Game"}
+        ]
+    },
+    {
+        "id": "mario_sports_mix",
+        "title": "Mario Sports Mix",
+        "console": ["Nintendo Wii"],
+        "generation": "7th Gen",
+        "year": "2010",
+        "image": "mario_sports_mix.png",
+        "categories": [
+            {"id": "all_sports", "name": "Master All Sports"},
+            {"id": "all_cups", "name": "Win All Tournaments"},
+            {"id": "all_characters", "name": "Unlock All Characters"}
+        ]
+    },
+    {
+        "id": "mario_party_advance",
+        "title": "Mario Party Advance",
+        "console": ["Game Boy Advance"],
+        "generation": "6th Gen",
+        "year": "2005",
+        "image": "mario_party_advance.png",
+        "categories": [
+            {"id": "all_games", "name": "Play All Mini-Games"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_items", "name": "Collect All Items"}
+        ]
+    },
+    {
+        "id": "mario_party_ds",
+        "title": "Mario Party DS",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "mario_party_ds.png",
+        "categories": [
+            {"id": "all_boards", "name": "Win on All Boards"},
+            {"id": "all_minigames", "name": "Play All Mini-Games"},
+            {"id": "all_puzzle_pieces", "name": "Collect All Puzzle Pieces"}
+        ]
+    },
+    {
+        "id": "mario_party_island_tour",
+        "title": "Mario Party: Island Tour",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2013",
+        "image": "mario_party_island_tour.png",
+        "categories": [
+            {"id": "all_boards", "name": "Win on All Boards"},
+            {"id": "all_minigames", "name": "Play All Mini-Games"},
+            {"id": "all_cards", "name": "Collect All Cards"}
+        ]
+    },
+    {
+        "id": "mario_party_star_rush",
+        "title": "Mario Party: Star Rush",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2016",
+        "image": "mario_party_star_rush.png",
+        "categories": [
+            {"id": "all_modes", "name": "Complete All Game Modes"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_dice", "name": "Collect All Special Dice"}
+        ]
+    },
+    {
+        "id": "mario_party_top_100",
+        "title": "Mario Party: The Top 100",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2017",
+        "image": "mario_party_top_100.png",
+        "categories": [
+            {"id": "all_minigames", "name": "Play All 100 Mini-Games"},
+            {"id": "all_challenges", "name": "Complete All Challenges"},
+            {"id": "high_scores", "name": "Set High Scores in All Mini-Games"}
+        ]
+    },
+    {
+        "id": "mario_party_10",
+        "title": "Mario Party 10",
+        "console": ["Nintendo Wii U"],
+        "generation": "8th Gen",
+        "year": "2015",
+        "image": "mario_party_10.png",
+        "categories": [
+            {"id": "all_boards", "name": "Win on All Boards"},
+            {"id": "all_minigames", "name": "Play All Mini-Games"},
+            {"id": "all_amiibo", "name": "Unlock All Amiibo Content"}
+        ]
+    },
+    {
+        "id": "mario_tennis_open",
+        "title": "Mario Tennis Open",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2012",
+        "image": "mario_tennis_open.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_courts", "name": "Unlock All Courts"}
+        ]
+    },
+    {
+        "id": "mario_tennis_ultrasmash",
+        "title": "Mario Tennis: Ultra Smash",
+        "console": ["Nintendo Wii U"],
+        "generation": "8th Gen",
+        "year": "2015",
+        "image": "mario_tennis_ultrasmash.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_mega_mushrooms", "name": "Use All Mega Mushroom Types"},
+            {"id": "perfect_game", "name": "Win a Game Without Losing Points"}
+        ]
+    },
+    {
+        "id": "mario_tennis_aces",
+        "title": "Mario Tennis Aces",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2018",
+        "image": "mario_tennis_aces.png",
+        "categories": [
+            {"id": "clear_story", "name": "Complete Adventure Mode"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "all_rackets", "name": "Collect All Rackets"},
+            {"id": "perfect_shot", "name": "Win a Match With Perfect Shots Only"}
+        ]
+    },
+    {
+        "id": "mario_golf_world_tour",
+        "title": "Mario Golf: World Tour",
+        "console": ["Nintendo 3DS"],
+        "generation": "7th Gen",
+        "year": "2014",
+        "image": "mario_golf_world_tour.png",
+        "categories": [
+            {"id": "all_courses", "name": "Win on All Courses"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "hole_in_one", "name": "Score a Hole-in-One"}
+        ]
+    },
+    {
+        "id": "mario_golf_advance_tour",
+        "title": "Mario Golf: Advance Tour",
+        "console": ["Game Boy Advance"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "mario_golf_advance.png",
+        "categories": [
+            {"id": "all_tournaments", "name": "Win All Tournaments"},
+            {"id": "max_level", "name": "Reach Max Level"},
+            {"id": "all_clubs", "name": "Unlock All Club Sets"}
+        ]
+    },
+    {
+        "id": "mario_superstar_baseball",
+        "title": "Mario Superstar Baseball",
+        "console": ["Nintendo GameCube"],
+        "generation": "6th Gen",
+        "year": "2005",
+        "image": "mario_superstar_baseball.png",
+        "categories": [
+            {"id": "all_stadiums", "name": "Win in All Stadiums"},
+            {"id": "all_characters", "name": "Unlock All Characters"},
+            {"id": "perfect_game", "name": "Win a Game Without Allowing Runs"}
+        ]
+    },
+    {
+        "id": "mario_strikers_charged",
+        "title": "Mario Strikers Charged",
+        "console": ["Nintendo Wii"],
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "mario_strikers_charged.png",
+        "categories": [
+            {"id": "all_cups", "name": "Win All Cups"},
+            {"id": "all_megastrikes", "name": "Perform All Megastrike Types"},
+            {"id": "perfect_goal", "name": "Score 5 Goals in a Match"}
+        ]
+    },
+    {
+        "id": "mario_rabbids_sparks_of_hope",
+        "title": "Mario + Rabbids Sparks of Hope",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2022",
+        "image": "mario_rabbids_sparks.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete Main Story"},
+            {"id": "all_sparks", "name": "Collect All Sparks"},
+            {"id": "all_planets", "name": "100% Complete All Planets"},
+            {"id": "all_challenges", "name": "Complete All Battle Challenges"}
+        ]
+    },
+    {
+        "id": "mario_vs_donkey_kong",
+        "title": "Mario vs. Donkey Kong",
+        "console": ["Game Boy Advance"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "mario_vs_dk.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Levels"},
+            {"id": "all_minis", "name": "Rescue All Mini-Marios"},
+            {"id": "perfect_scores", "name": "Get Perfect Scores in All Levels"}
+        ]
+    },
+    {
+        "id": "mario_vs_donkey_kong_2",
+        "title": "Mario vs. Donkey Kong 2: March of the Minis",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2006",
+        "image": "mario_vs_dk_2.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Levels"},
+            {"id": "all_minis", "name": "Rescue All Mini-Marios"},
+            {"id": "all_stars", "name": "Collect All Star Coins"}
+        ]
+    },
+    {
+        "id": "mario_vs_donkey_kong_minis_march_again",
+        "title": "Mario vs. Donkey Kong: Minis March Again!",
+        "console": ["Nintendo DSi"],
+        "generation": "7th Gen",
+        "year": "2009",
+        "image": "mario_vs_dk_minis.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Levels"},
+            {"id": "all_minis", "name": "Rescue All Mini-Marios"},
+            {"id": "create_levels", "name": "Create 5 Custom Levels"}
+        ]
+    },
+    {
+        "id": "mario_vs_donkey_kong_mini_land_mayhem",
+        "title": "Mario vs. Donkey Kong: Mini-Land Mayhem!",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2010",
+        "image": "mario_vs_dk_mayhem.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Levels"},
+            {"id": "all_minis", "name": "Rescue All Mini-Marios"},
+            {"id": "all_pieces", "name": "Collect All Puzzle Pieces"}
+        ]
+    },
+    {
+        "id": "mario_vs_donkey_kong_tipping_stars",
+        "title": "Mario vs. Donkey Kong: Tipping Stars",
+        "console": ["Nintendo 3DS", "Wii U"],
+        "generation": "8th Gen",
+        "year": "2015",
+        "image": "mario_vs_dk_tipping.png",
+        "categories": [
+            {"id": "clear_game", "name": "Complete All Levels"},
+            {"id": "all_minis", "name": "Rescue All Mini-Marios"},
+            {"id": "all_stars", "name": "Collect All Tipping Stars"}
+        ]
+    },
+    {
+        "id": "mario_artist",
+        "title": "Mario Artist",
+        "console": ["Nintendo 64DD"],
+        "generation": "5th Gen",
+        "year": "1999",
+        "image": "mario_artist.png",
+        "categories": [
+            {"id": "all_tools", "name": "Use All Creation Tools"},
+            {"id": "create_art", "name": "Create 10 Art Pieces"},
+            {"id": "all_games", "name": "Play All Mini-Games"}
+        ]
+    },
+    {
+        "id": "mario_no_photopi",
+        "title": "Mario no Photopi",
+        "console": ["Nintendo 64"],
+        "generation": "5th Gen",
+        "year": "1998",
+        "image": "mario_photopi.png",
+        "categories": [
+            {"id": "all_frames", "name": "Create Photos in All Frames"},
+            {"id": "all_stickers", "name": "Use All Stickers"},
+            {"id": "create_album", "name": "Create a Complete Photo Album"}
+        ]
+    },
+    {
+        "id": "mario_family",
+        "title": "Mario Family",
+        "console": ["Super Famicom"],
+        "generation": "4th Gen",
+        "year": "1995",
+        "image": "mario_family.png",
+        "categories": [
+            {"id": "all_games", "name": "Play All Mini-Games"},
+            {"id": "high_scores", "name": "Set High Scores in All Games"},
+            {"id": "all_characters", "name": "Play As All Characters"}
+        ]
+    },
+    {
+        "id": "mario_paint",
+        "title": "Mario Paint",
+        "console": ["SNES"],
+        "generation": "4th Gen",
+        "year": "1992",
+        "image": "mario_paint.png",
+        "categories": [
+            {"id": "create_art", "name": "Create 10 Art Pieces"},
+            {"id": "all_tools", "name": "Use All Drawing Tools"},
+            {"id": "compose_song", "name": "Compose a Complete Song"}
+        ]
+    },
+    {
+        "id": "mario_clock",
+        "title": "Mario Clock",
+        "console": ["Game Boy Color"],
+        "generation": "5th Gen",
+        "year": "2000",
+        "image": "mario_clock.png",
+        "categories": [
+            {"id": "all_alarms", "name": "Set All Alarm Types"},
+            {"id": "all_minigames", "name": "Play All Mini-Games"},
+            {"id": "perfect_timing", "name": "Achieve Perfect Timing in All Games"}
+        ]
+    },
+    {
+        "id": "mario_calculator",
+        "title": "Mario Calculator",
+        "console": ["Game Boy Color"],
+        "generation": "5th Gen",
+        "year": "2000",
+        "image": "mario_calculator.png",
+        "categories": [
+            {"id": "all_functions", "name": "Use All Calculator Functions"},
+            {"id": "math_challenge", "name": "Complete All Math Challenges"},
+            {"id": "perfect_scores", "name": "Get Perfect Scores in All Mini-Games"}
+        ]
+    }
+]
