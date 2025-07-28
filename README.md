@@ -1,12 +1,13 @@
 # 🚀 Games Series Progress Tracker 
 
-A progress tracker that saves locally to complete all the games of the Sonic the Hedgehog saga. Mark your achievements and share your progress with the community.
+A progress tracker that saves locally to complete all games from different game series. Mark your achievements and share your progress with the community.
 
 ## 🎮 Features.
-- ✅ Track completion per game
-- 🏆 Special Achievements (All Chaos Emeralds, No Death Run, etc.)
-- 🔥 Filters by console and generation.
-- 🌙 Dark/Light mode
+- Track completion per game
+- Special Achievements (All Chaos Emeralds, No Death Run, etc.)
+- Filters by console and generation.
+- Dark/Light mode
+- Different series of games to complete
 
 ## 🛠️ How to Use
 1. Visit [the tracker page](https://tonymontania.github.io/games-tracker/)
@@ -14,15 +15,11 @@ A progress tracker that saves locally to complete all the games of the Sonic the
 3. Your progress is automatically saved with localStorage.
 
 ## 📦 Games included
--	2D Platformer
--	3D Action-Adventure
--	Puzzle, Sporting and Party Games
--	Racing Games and Vehicle Simulators
--	Entertainment and Creative
--	Fighting Games
--	Adventure/RPG Games
--	Mobile Games
--	Board Games
+- Sonic Series: Completed!
+- Mario Series: In Progress...
+- Zelda Series: In Progress...
+- Kirby Series: In Progress...
+- ...
 
 ## 🎨 Screenshoots
 <img src="assets/github/screenshot1.png" width="400"> <img src="assets/github/screenshot2.png" width="400">
