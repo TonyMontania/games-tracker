@@ -54,6 +54,10 @@ Contributions are welcome! Follow these steps:
 4. Push to the branch (`git push origin feature/new-function`)
 5. Open a Pull Request
 
+## 🧭 Roadmap
+¿Querés ver hacia dónde va el proyecto o proponer algo?  
+Mirá el [ROADMAP](./ROADMAP.md).
+
 ## 📄 License
 This project is licensed under the [MIT](LICENSE).
 
