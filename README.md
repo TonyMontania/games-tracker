@@ -8,6 +8,7 @@ A progress tracker that saves locally to complete all games from different game 
 - Filters by console and generation.
 - Dark/Light mode
 - Different series of games to complete
+- Export and import progress using a JSON file
 
 ## 🛠️ How to Use
 1. Visit [the tracker page](https://tonymontania.github.io/games-tracker/)
