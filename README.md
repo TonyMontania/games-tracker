@@ -55,8 +55,8 @@ Contributions are welcome! Follow these steps:
 5. Open a Pull Request
 
 ## 🧭 Roadmap
-¿Querés ver hacia dónde va el proyecto o proponer algo?  
-Mirá el [ROADMAP](./ROADMAP.md).
+Want to see where the project is headed or suggest something?  
+Check out the [ROADMAP](./ROADMAP.md).
 
 ## 📄 License
 This project is licensed under the [MIT](LICENSE).
