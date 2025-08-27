@@ -1,56 +1,56 @@
 # 🧭 Roadmap – Games Series Progress Tracker
 
-> Este roadmap es una guía de ideas y objetivos. No es un compromiso rígido: ¡PRs y sugerencias son bienvenidas!
+> This roadmap is a guide to ideas and goals. It is not a rigid commitment: PRs and suggestions are welcome!
 
-## 🎯 Objetivos (Short term)
-- **Nuevas franquicias**: Kirby (base de datos + portadas + categorías)
+## 🎯 Objectives (Short term)
+- **New franchises**: Kirby (database + covers + categories)
 - **UX**
-  - Guardado/recuperación de filtros entre sesiones
-  - Botón “Select all / Clear all” por juego
-  - Buscador con sugerencias (autocomplete simple)
+  - Saving/retrieving filters between sessions
+  - “Select all / Clear all” button per game
+  - Search engine with suggestions (simple autocomplete)
 - **Import/Export**
-  - Exportar **todas** las franquicias a un único JSON
-  - Validación visual de import (resumen de cambios)
-- **Accesibilidad**
-  - Navegación completa por teclado
-  - Focus visible mejorado
+  - Export **all** franchises to a single JSON file
+  - Visual import validation (summary of changes)
+- **Accessibility**
+  - Full keyboard navigation
+  - Improved visible focus
 
-## 🚀 Objetivos (Mid term)
-- **Estadísticas**
-  - % global por franquicia y total
-  - Gráficos simples (progreso por año / por generación)
-- **Plantillas**
-  - Editor visual de categorías por franquicia (UI para templates)
-  - Versión/Compatibilidad de templates (migraciones suaves)
-- **Sincronización** (opt-in)
-  - Backups a archivo y recordatorios
-  - Analizar proveedores de sincronización (Dropbox/GDrive) – *exploratorio*
+## 🚀 Objectives (Mid term)
+- **Statistics**
+  - Overall % per franchise and total
+  - Simple graphs (progress per year / per generation)
+- **Templates**
+  - Visual editor of categories per franchise (UI for templates)
+  - Template version/compatibility (smooth migrations)
+- **Synchronization** (opt-in)
+  - File backups and reminders
+  - Analyze synchronization providers (Dropbox/GDrive) – *exploratory*
 
-## 🌌 Objetivos (Long term)
-- **Más franquicias**: Metroid, Pokémon, Castlevania
-- **Perfil público** (opcional) con progreso compartible (requiere backend o gist)
-- **i18n** (multi-idioma) – español/inglés
-- **Modo “Speedrun”** con categorías especiales y tiempos estimados
+## 🌌 Objectives (Long term)
+- **More franchises**: Metroid, Pokémon, Castlevania
+- **Public profile** (optional) with shareable progress (requires backend or gist)
+- **i18n** (multi-language) – Spanish/English
+- **“Speedrun” mode** with special categories and estimated times
 
-## 🏗️ Infraestructura y Código
-- Mantener arquitectura modular (core / components / utils / data)
-- Tests básicos (unitarios para helpers y validación de import)
+## 🏗️ Infrastructure and Code
+- Maintain modular architecture (core / components / utils / data)
+- Basic tests (unit tests for helpers and import validation)
 - GitHub Actions
-  - Lint + build (estático)
-  - Deploy automático a GitHub Pages
+  - Lint + build (static)
+  - Automatic deployment to GitHub Pages
 
-## 🤝 Contribuciones
-- Mirar **Issues** con etiquetas:
+## 🤝 Contributions
+- Look at **Issues** with tags:
   - `good first issue`, `help wanted`, `enhancement`, `data:franchise`
-- Sugerir nuevas franquicias con:
-  - Lista de juegos (ID, título, año, generación, consolas)
-  - Portadas (PNG 280x400 aprox.) en `assets/covers/<franchise>/`
-  - Categorías comunes + específicas (ver `template.schema.json`)
+- Suggest new franchises with:
+  - List of games (ID, title, year, generation, consoles)
+  - Covers (PNG 280x400 approx.) in `assets/covers/<franchise>/`
+  - Common + specific categories (see `template.schema.json`)
 - PRs:
-  - Rama desde `main`: `feature/<nombre>`
-  - Describir cambios y adjuntar capturas cuando afecte UI
+  - Branch from `main`: `feature/<name>`
+  - Describe changes and attach screenshots when affecting UI
 
-## 🗂️ Documentos útiles
+## 🗂️ Useful documents
 - [README](./README.md)
 - [CHANGELOG](./CHANGELOG.md)
-- [Esquemas](./data/schemas) – `progress.schema.json` / `template.schema.json`
+- [Schemas](./data/schemas) – `progress.schema.json` / `template.schema.json`
