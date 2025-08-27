@@ -1,0 +1,8 @@
+:root[data-franchise="zelda"] {
+    --primary-color: #389438;
+    --secondary-color: #e6b800;
+    --emerald-gray: #5d4037;
+    --emerald-green: #fdd835;
+    --franchise-icon: url('/assets/icons/zelda/triforce-grey.png');
+    --franchise-icon-active: url('/assets/icons/zelda/triforce-gold.png');
+}

@@ -1,0 +1,563 @@
+[
+    {
+        "id": "zelda_nes",
+        "title": "The Legend of Zelda",
+        "console": ["Nintendo Entertainment System", "Game Boy Advance", "Nintendo Switch (NES Classic)"],
+        "generation": "3rd Gen",
+        "year": "1986",
+        "image": "zelda_nes.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete the Adventure"},
+            {"id": "all_hearts", "name": "Collect 50+ Heart Containers"},
+            {"id": "no_extra", "name": "Complete Without Extra Hearts/Arrows"},
+            {"id": "triforce_pieces", "name": "Collect All 8 Triforce Pieces"},
+            {"id": "min_time", "name": "Complete Under 10 Hours"},
+            {"id": "candle_run", "name": "Complete Using Only Blue Candle"},
+            {"id": "swordless", "name": "Beat Ganon Without Master Sword"}
+        ]
+    },
+    {
+        "id": "zelda_ii",
+        "title": "Zelda II: The Adventure of Link",
+        "console": ["Nintendo Entertainment System", "Game Boy Advance", "Nintendo Switch (NES Classic)"],
+        "generation": "3rd Gen",
+        "year": "1987",
+        "image": "zelda_ii.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete the Adventure"},
+            {"id": "max_stats", "name": "Reach Level 50 With All Stats"},
+            {"id": "crystal_6", "name": "Obtain Crystal 6"},
+            {"id": "no_magic", "name": "Complete Without Using Magic"},
+            {"id": "min_time", "name": "Complete Under 8 Hours"},
+            {"id": "hidden_caves", "name": "Find All Hidden Secret Areas"},
+            {"id": "swordless", "name": "Beat Dark Link Without Sword"}
+        ]
+    },
+    {
+        "id": "link_to_the_past",
+        "title": "The Legend of Zelda: A Link to the Past",
+        "console": ["Super Nintendo", "Game Boy Advance", "Nintendo Switch (Virtual Console)"],
+        "generation": "4th Gen",
+        "year": "1991",
+        "image": "link_to_the_past.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Light & Dark Worlds"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_swords", "name": "Obtain Master Sword & Golden Sword"},
+            {"id": "all_medallions", "name": "Collect All 7 Crystals"},
+            {"id": "min_time", "name": "Complete Under 6 Hours"},
+            {"id": "one_room", "name": "Complete Using Only One Room"},
+            {"id": "no_shield", "name": "Beat Ganon Without Shield"}
+        ]
+    },
+    {
+        "id": "link_awakening",
+        "title": "The Legend of Zelda: Link's Awakening",
+        "console": ["Game Boy", "Game Boy Color", "Nintendo Switch"],
+        "generation": "4th Gen",
+        "year": "1993",
+        "image": "link_awakening.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Koholint Island"},
+            {"id": "all_instruments", "name": "Collect All 8 Instruments"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "trading_sequence", "name": "Complete Full Trading Sequence"},
+            {"id": "min_time", "name": "Complete Under 5 Hours"},
+            {"id": "color_theme", "name": "Complete With Color Theme Challenge"},
+            {"id": "no_sword", "name": "Beat Nightmare Without Sword"}
+        ]
+    },
+    {
+        "id": "ocarina_of_time",
+        "title": "The Legend of Zelda: Ocarina of Time",
+        "console": ["Nintendo 64", "Nintendo 3DS", "Nintendo Switch (Switch Online)"],
+        "generation": "5th Gen",
+        "year": "1998",
+        "image": "ocarina_of_time.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Child & Adult Quests"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_medallions", "name": "Collect All 6 Spiritual Stones"},
+            {"id": "all_songs", "name": "Learn All Ocarina Songs"},
+            {"id": "min_time", "name": "Complete Under 10 Hours"},
+            {"id": "no_shield", "name": "Beat Ganon Without Hylian Shield"},
+            {"id": "master_quest", "name": "Complete Master Quest"}
+        ]
+    },
+    {
+        "id": "majoras_mask",
+        "title": "The Legend of Zelda: Majora's Mask",
+        "console": ["Nintendo 64", "Nintendo 3DS"],
+        "generation": "5th Gen",
+        "year": "2000",
+        "image": "majoras_mask.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All 3 Day Cycles"},
+            {"id": "all_masks", "name": "Collect All Transforming Masks"},
+            {"id": "all_stray_fairies", "name": "Rescue All Stray Fairies"},
+            {"id": "all_bosses", "name": "Defeat All Bosses"},
+            {"id": "min_time", "name": "Complete Under 8 Hours"},
+            {"id": "all_sidequests", "name": "Complete All Side Quests"},
+            {"id": "timeless", "name": "Complete Without Using Song of Time"}
+        ]
+    },
+    {
+        "id": "oracle_games",
+        "title": "Oracle of Seasons & Oracle of Ages",
+        "console": ["Game Boy Color", "Nintendo Switch (Switch Online)"],
+        "generation": "5th Gen",
+        "year": "2001",
+        "image": "oracle_games.png",
+        "categories": [
+            {"id": "complete_seasons", "name": "Complete Oracle of Seasons"},
+            {"id": "complete_ages", "name": "Complete Oracle of Ages"},
+            {"id": "linked_game", "name": "Complete Linked Game Sequence"},
+            {"id": "all_seals", "name": "Collect All Seals (Both Games)"},
+            {"id": "min_time", "name": "Complete Both Under 12 Hours"},
+            {"id": "no_items", "name": "Complete Seasons Without Rod"},
+            {"id": "no_magic", "name": "Complete Ages Without Magic"}
+        ]
+    },
+    {
+        "id": "four_swords",
+        "title": "The Legend of Zelda: Four Swords",
+        "console": ["Game Boy Advance", "Nintendo DS (Multiplayer)"],
+        "generation": "6th Gen",
+        "year": "2002",
+        "image": "four_swords.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_rupees", "name": "Collect 8,000+ Rupees"},
+            {"id": "all_keys", "name": "Find All 4 Keys"},
+            {"id": "all_treasures", "name": "Collect All Treasure Chests"},
+            {"id": "min_time", "name": "Complete Under 2 Hours"},
+            {"id": "no_death", "name": "Complete Without Dying"},
+            {"id": "team_challenge", "name": "Complete With Perfect Team Coordination"}
+        ]
+    },
+    {
+        "id": "wind_waker",
+        "title": "The Legend of Zelda: The Wind Waker",
+        "console": ["Nintendo GameCube", "Wii U", "Nintendo Switch (Enhanced)"],
+        "generation": "6th Gen",
+        "year": "2002",
+        "image": "wind_waker.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Islands"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_treasures", "name": "Collect All Treasure Charts"},
+            {"id": "all_sea_chart", "name": "Complete All Sea Charts"},
+            {"id": "min_time", "name": "Complete Under 15 Hours"},
+            {"id": "3_hearts", "name": "Complete With Only 3 Hearts"},
+            {"id": "master_sword", "name": "Collect Master Sword Without Dying"}
+        ]
+    },
+    {
+        "id": "four_swords_adv",
+        "title": "The Legend of Zelda: Four Swords Adventures",
+        "console": ["Nintendo GameCube"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "four_swords_adv.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Quests"},
+            {"id": "all_rupees", "name": "Collect 50,000+ Rupees"},
+            {"id": "all_medals", "name": "Collect All Medals"},
+            {"id": "all_keys", "name": "Find All Keys"},
+            {"id": "min_time", "name": "Complete Under 8 Hours"},
+            {"id": "no_death", "name": "Complete Without Dying"},
+            {"id": "team_challenge", "name": "Complete With Perfect Team Coordination"}
+        ]
+    },
+    {
+        "id": "minish_cap",
+        "title": "The Legend of Zelda: The Minish Cap",
+        "console": ["Game Boy Advance"],
+        "generation": "6th Gen",
+        "year": "2004",
+        "image": "minish_cap.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_hearts", "name": "Collect All Heart Pieces"},
+            {"id": "all_misfits", "name": "Help All Misfit Toys"},
+            {"id": "all_pendants", "name": "Collect All Pendants"},
+            {"id": "min_time", "name": "Complete Under 6 Hours"},
+            {"id": "picori_blade", "name": "Complete With Picori Blade Only"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"}
+        ]
+    },
+    {
+        "id": "twilight_princess",
+        "title": "The Legend of Zelda: Twilight Princess",
+        "console": ["Nintendo GameCube", "Wii", "Wii U", "Nintendo Switch"],
+        "generation": "7th Gen",
+        "year": "2006",
+        "image": "twilight_princess.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Light & Twilight Worlds"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_gratitude", "name": "Complete All Gratitude Crystals"},
+            {"id": "all_midna", "name": "Complete All Midna's Quests"},
+            {"id": "min_time", "name": "Complete Under 12 Hours"},
+            {"id": "3_hearts", "name": "Complete With Only 3 Hearts"},
+            {"id": "wolf_only", "name": "Complete As Wolf Link Only"}
+        ]
+    },
+    {
+        "id": "phantom_hourglass",
+        "title": "The Legend of Zelda: Phantom Hourglass",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "phantom_hourglass.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_triforce", "name": "Collect All Triforce Shards"},
+            {"id": "all_spirits", "name": "Free All Spirits"},
+            {"id": "min_time", "name": "Complete Under 8 Hours"},
+            {"id": "touch_only", "name": "Complete Using Only Touch Screen"},
+            {"id": "no_death", "name": "Complete Without Dying"}
+        ]
+    },
+    {
+        "id": "spirit_tracks",
+        "title": "The Legend of Zelda: Spirit Tracks",
+        "console": ["Nintendo DS"],
+        "generation": "7th Gen",
+        "year": "2009",
+        "image": "spirit_tracks.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_trains", "name": "Unlock All Train Cars"},
+            {"id": "all_songs", "name": "Learn All Spirit Flute Songs"},
+            {"id": "min_time", "name": "Complete Under 10 Hours"},
+            {"id": "touch_only", "name": "Complete Using Only Touch Screen"},
+            {"id": "no_death", "name": "Complete Without Dying"}
+        ]
+    },
+    {
+        "id": "skyward_sword",
+        "title": "The Legend of Zelda: Skyward Sword",
+        "console": ["Wii", "Wii U", "Nintendo Switch"],
+        "generation": "7th Gen",
+        "year": "2011",
+        "image": "skyward_sword.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Sky & Surface Quests"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_skyview", "name": "Complete All Skyview Temples"},
+            {"id": "all_secrets", "name": "Find All Goddess Chests"},
+            {"id": "min_time", "name": "Complete Under 15 Hours"},
+            {"id": "motion_only", "name": "Complete Using Motion Controls Only"},
+            {"id": "master_sword", "name": "Obtain Master Sword Without Dying"}
+        ]
+    },
+    {
+        "id": "a_link_between_worlds",
+        "title": "The Legend of Zelda: A Link Between Worlds",
+        "console": ["Nintendo 3DS"],
+        "generation": "8th Gen",
+        "year": "2013",
+        "image": "a_link_between_worlds.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Both Worlds"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_medals", "name": "Collect All 13 Pendants"},
+            {"id": "all_rupoor", "name": "Find All Rupoors"},
+            {"id": "min_time", "name": "Complete Under 8 Hours"},
+            {"id": "rental_run", "name": "Complete Using Only Rental Items"},
+            {"id": "no_merge", "name": "Complete Without Merging"}
+        ]
+    },
+    {
+        "id": "triforce_hunters",
+        "title": "The Legend of Zelda: Triforce Heroes",
+        "console": ["Nintendo 3DS"],
+        "generation": "8th Gen",
+        "year": "2015",
+        "image": "triforce_hunters.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Costumes"},
+            {"id": "all_stages", "name": "Complete All Outfit Stages"},
+            {"id": "all_triforce", "name": "Collect All Triforce Pieces"},
+            {"id": "all_secrets", "name": "Find All Secret Stages"},
+            {"id": "min_time", "name": "Complete Under 6 Hours"},
+            {"id": "no_death", "name": "Complete Without Dying"},
+            {"id": "team_challenge", "name": "Complete With Perfect Team Coordination"}
+        ]
+    },
+    {
+        "id": "breath_of_the_wild",
+        "title": "The Legend of Zelda: Breath of the Wild",
+        "console": ["Nintendo Switch", "Wii U"],
+        "generation": "8th Gen",
+        "year": "2017",
+        "image": "breath_of_the_wild.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_shrines", "name": "Complete All 120 Shrines"},
+            {"id": "all_hearts", "name": "Max Out Hearts/Stamina"},
+            {"id": "all_quests", "name": "Complete All Side Quests"},
+            {"id": "min_time", "name": "Complete Under 20 Hours"},
+            {"id": "no_weapon", "name": "Complete With Only Master Sword"},
+            {"id": "all_koroks", "name": "Find All 900 Koroks"}
+        ]
+    },
+    {
+        "id": "tears_of_the_kingdom",
+        "title": "The Legend of Zelda: Tears of the Kingdom",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2023",
+        "image": "tears_of_the_kingdom.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_shrines", "name": "Complete All 152 Shrines"},
+            {"id": "all_hearts", "name": "Max Out Hearts/Stamina"},
+            {"id": "all_quests", "name": "Complete All Side Quests"},
+            {"id": "min_time", "name": "Complete Under 25 Hours"},
+            {"id": "ultra_hand", "name": "Complete With Only Ultra Hand"},
+            {"id": "all_koroks", "name": "Find All 1,000+ Koroks"}
+        ]
+    },
+    {
+        "id": "echoes_of_wisdom",
+        "title": "The Legend of Zelda: Echoes of Wisdom",
+        "console": ["Nintendo Switch"],
+        "generation": "9th Gen",
+        "year": "2024",
+        "image": "echoes_of_wisdom.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_echoes", "name": "Master All Echo Abilities"},
+            {"id": "all_hearts", "name": "Max Out Hearts/Stamina"},
+            {"id": "all_quests", "name": "Complete All Side Quests"},
+            {"id": "min_time", "name": "Complete Under 15 Hours"},
+            {"id": "zelda_only", "name": "Complete Without Using Link"},
+            {"id": "all_secrets", "name": "Find All Hidden Echo Locations"}
+        ]
+    },
+    {
+        "id": "hmi",
+        "title": "Hyrule Warriors: Age of Calamity",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2020",
+        "image": "hmi.png",
+        "categories": [
+            {"id": "complete_story", "name": "Complete Main Story"},
+            {"id": "all_characters", "name": "Unlock All Playable Characters"},
+            {"id": "all_skills", "name": "Master All Skills"},
+            {"id": "all_weapons", "name": "Collect All Weapon Types"},
+            {"id": "min_time", "name": "Complete Under 10 Hours"},
+            {"id": "no_revive", "name": "Complete Without Reviving"},
+            {"id": "all_secrets", "name": "Find All Hidden Battlefields"}
+        ]
+    },
+    {
+        "id": "hwi",
+        "title": "Hyrule Warriors: Age of Imprisonment",
+        "console": ["Nintendo Switch 2"],
+        "generation": "9th Gen",
+        "year": "2025",
+        "image": "hwi.png",
+        "categories": [
+            {"id": "complete_story", "name": "Complete Main Story"},
+            {"id": "all_characters", "name": "Unlock All Playable Characters"},
+            {"id": "all_skills", "name": "Master All Skills"},
+            {"id": "all_weapons", "name": "Collect All Weapon Types"},
+            {"id": "min_time", "name": "Complete Under 12 Hours"},
+            {"id": "no_revive", "name": "Complete Without Reviving"},
+            {"id": "all_secrets", "name": "Find All Hidden Battlefields"}
+        ]
+    },
+    {
+        "id": "cadence_of_hyrule",
+        "title": "Cadence of Hyrule: Crypt of the NecroDancer",
+        "console": ["Nintendo Switch"],
+        "generation": "8th Gen",
+        "year": "2019",
+        "image": "cadence_of_hyrule.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_music", "name": "Collect All Music Pieces"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"},
+            {"id": "min_time", "name": "Complete Under 5 Hours"},
+            {"id": "rhythm_master", "name": "Complete With Perfect Rhythm"},
+            {"id": "all_characters", "name": "Complete With All Playable Characters"}
+        ]
+    },
+    {
+        "id": "link_crossbow_training",
+        "title": "Link's Crossbow Training",
+        "console": ["Wii"],
+        "generation": "7th Gen",
+        "year": "2007",
+        "image": "link_crossbow_training.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_medals", "name": "Earn All Gold Medals"},
+            {"id": "all_targets", "name": "Hit All Target Practice Targets"},
+            {"id": "all_secrets", "name": "Find All Secret Targets"},
+            {"id": "min_time", "name": "Complete Under 2 Hours"},
+            {"id": "no_miss", "name": "Complete Without Missing Shots"},
+            {"id": "perfect_score", "name": "Get Perfect Score in All Modes"}
+        ]
+    },
+    {
+        "id": "zelda_unlinked",
+        "title": "The Legend of Zelda: Unlinked",
+        "console": ["Game Boy Advance"],
+        "generation": "6th Gen",
+        "year": "2003",
+        "image": "zelda_unlinked.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_medals", "name": "Collect All Medals"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"},
+            {"id": "min_time", "name": "Complete Under 4 Hours"},
+            {"id": "no_sword", "name": "Complete Without Sword"},
+            {"id": "all_pendants", "name": "Collect All Pendants"}
+        ]
+    },
+    {
+        "id": "zelda_ancient_stone_tables",
+        "title": "The Legend of Zelda: Ancient Stone Tablets",
+        "console": ["Virtual Boy"],
+        "generation": "5th Gen",
+        "year": "1995",
+        "image": "zelda_ancient_stone_tables.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete All Areas"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_tablets", "name": "Collect All Ancient Stone Tablets"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"},
+            {"id": "min_time", "name": "Complete Under 3 Hours"},
+            {"id": "no_damage", "name": "Complete Without Taking Damage"},
+            {"id": "all_keys", "name": "Find All Keys"}
+        ]
+    },
+    {
+        "id": "zelda_the_wand_of_gamelon",
+        "title": "Zelda: The Wand of Gamelon",
+        "console": ["Philips CD-i"],
+        "generation": "4th Gen",
+        "year": "1993",
+        "image": "zelda_gamelon.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"},
+            {"id": "min_time", "name": "Complete Under 2 Hours"},
+            {"id": "no_damage", "name": "Complete Without Taking Damage"},
+            {"id": "all_keys", "name": "Find All Keys"},
+            {"id": "perfect_score", "name": "Get Perfect Score"}
+        ]
+    },
+    {
+        "id": "zelda_mystical_seed",
+        "title": "Zelda's Adventure",
+        "console": ["Philips CD-i"],
+        "generation": "4th Gen",
+        "year": "1996",
+        "image": "zelda_mystical_seed.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"},
+            {"id": "min_time", "name": "Complete Under 3 Hours"},
+            {"id": "no_damage", "name": "Complete Without Taking Damage"},
+            {"id": "all_keys", "name": "Find All Keys"},
+            {"id": "perfect_score", "name": "Get Perfect Score"}
+        ]
+    },
+    {
+        "id": "zelda_on_rail",
+        "title": "Zelda's Adventure: On Rail",
+        "console": ["Philips CD-i"],
+        "generation": "4th Gen",
+        "year": "1994",
+        "image": "zelda_on_rail.png",
+        "categories": [
+            {"id": "complete_game", "name": "Complete Main Story"},
+            {"id": "all_hearts", "name": "Collect All Heart Containers"},
+            {"id": "all_secrets", "name": "Find All Secret Areas"},
+            {"id": "min_time", "name": "Complete Under 2 Hours"},
+            {"id": "no_damage", "name": "Complete Without Taking Damage"},
+            {"id": "all_keys", "name": "Find All Keys"},
+            {"id": "perfect_score", "name": "Get Perfect Score"}
+        ]
+    },
+    {
+        "id": "zelda_25th",
+        "title": "The Legend of Zelda 25th Anniversary Orchestra Album",
+        "console": ["Special Release"],
+        "generation": "Special",
+        "year": "2011",
+        "image": "zelda_25th.png",
+        "categories": [
+            {"id": "complete_album", "name": "Listen to Full Album"},
+            {"id": "all_moments", "name": "Experience All Musical Moments"},
+            {"id": "concert_attend", "name": "Attend Live Concert"},
+            {"id": "collect_art", "name": "Collect All Artwork"},
+            {"id": "min_time", "name": "Complete Under 2 Hours"},
+            {"id": "all_languages", "name": "Experience All Language Versions"},
+            {"id": "perfect_score", "name": "Get Perfect Score"}
+        ]
+    },
+    {
+        "id": "zelda_30th",
+        "title": "The Legend of Zelda 30th Anniversary Symphony",
+        "console": ["Special Release"],
+        "generation": "Special",
+        "year": "2016",
+        "image": "zelda_30th.png",
+        "categories": [
+            {"id": "complete_album", "name": "Listen to Full Album"},
+            {"id": "all_moments", "name": "Experience All Musical Moments"},
+            {"id": "concert_attend", "name": "Attend Live Concert"},
+            {"id": "collect_art", "name": "Collect All Artwork"},
+            {"id": "min_time", "name": "Complete Under 2 Hours"},
+            {"id": "all_languages", "name": "Experience All Language Versions"},
+            {"id": "perfect_score", "name": "Get Perfect Score"}
+        ]
+    },
+    {
+        "id": "zelda_35th",
+        "title": "The Legend of Zelda 35th Anniversary Collection",
+        "console": ["Special Release"],
+        "generation": "Special",
+        "year": "2021",
+        "image": "zelda_35th.png",
+        "categories": [
+            {"id": "complete_collection", "name": "Experience Full Collection"},
+            {"id": "all_games", "name": "Play All Included Games"},
+            {"id": "collect_art", "name": "Collect All Artwork"},
+            {"id": "min_time", "name": "Complete Under 10 Hours"},
+            {"id": "all_languages", "name": "Experience All Language Versions"},
+            {"id": "perfect_score", "name": "Get Perfect Score"},
+            {"id": "all_secrets", "name": "Find All Hidden Features"}
+        ]
+    },
+    {
+        "id": "zelda_switch_2",
+        "title": "The Legend of Zelda: Switch 2 Editions",
+        "console": ["Nintendo Switch 2"],
+        "generation": "9th Gen",
+        "year": "2025",
+        "image": "zelda_switch_2.png",
+        "categories": [
+            {"id": "complete_breath", "name": "Complete Breath of the Wild"},
+            {"id": "complete_tears", "name": "Complete Tears of the Kingdom"},
+            {"id": "all_achievements", "name": "Earn All In-App Achievements"},
+            {"id": "all_voice_memories", "name": "Collect All Voice Memories"},
+            {"id": "all_autobuild", "name": "Create All Auto-Builds"},
+            {"id": "min_time", "name": "Complete Both Under 40 Hours"},
+            {"id": "all_secrets", "name": "Find All Hidden Features"}
+        ]
+    }
+]

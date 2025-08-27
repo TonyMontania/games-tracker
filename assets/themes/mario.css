@@ -1,0 +1,8 @@
+:root[data-franchise="mario"] {
+    --primary-color: #e52418;
+    --secondary-color: #ffcc00;
+    --emerald-gray: #8b4513;
+    --emerald-green: #ffd700;
+    --franchise-icon: url('/assets/icons/mario/star-grey.png');
+    --franchise-icon-active: url('/assets/icons/mario/star-yellow.png');
+}

@@ -1,0 +1,8 @@
+:root[data-franchise="sonic"] {
+    --primary-color: #0066cc;
+    --secondary-color: #ffcc00;
+    --emerald-gray: #666666;
+    --emerald-green: #00cc66;
+    --franchise-icon: url('/assets/icons/sonic/emerald-grey.png');
+    --franchise-icon-active: url('/assets/icons/sonic/emerald-green.png');
+}
