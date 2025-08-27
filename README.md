@@ -2,21 +2,35 @@
 
 A progress tracker that saves locally to complete all games from different game series. Mark your achievements and share your progress with the community.
 
-## 🎮 Features.
+## 🎮 Features
 - Track completion per game
 - Special Achievements (All Chaos Emeralds, No Death Run, etc.)
-- Filters by console and generation.
-- Dark/Light mode
-- Different series of games to complete
-- Export and import progress using a JSON file
+- Filters by console and generation
+- Dark/Light mode toggle 🌙☀️
+- Different series of games to complete (Sonic, Mario, Zelda…)
+- Progress and selected series are saved automatically in your browser (`localStorage`)
+- Import/Export your progress in JSON format (with validation)
+- Each franchise has its **own themed color**:
+  - Sonic → Blue
+  - Mario → Red
+  - Zelda → Green
+- Custom checkmarks per series:
+  - Sonic → Chaos Emeralds 💎
+  - Mario → Stars ⭐
+  - Zelda → Triforces 🔺
+- Responsive design for desktop and mobile
+- Accessibility improvements (`aria-label` on checkboxes)
+- Lazy-loading for images (faster load times)
 
 ## 🛠️ How to Use
 1. Visit [the tracker page](https://tonymontania.github.io/games-tracker/)
-2. Check the games you have completed
-3. Your progress is automatically saved with localStorage.
+2. Choose your favorite game series (Sonic, Mario, Zelda…)
+3. Check the achievements you have completed
+4. Your progress and selected series are saved automatically with localStorage
+5. Optionally, **Export** your progress to a JSON file or **Import** it later
 
 ## 📦 Games included
-- Sonic Series: Completed!
+- Sonic Series: Completed ✔️
 - Mario Series: In Progress...
 - Zelda Series: In Progress...
 - Kirby Series: In Progress...
@@ -34,9 +48,9 @@ A progress tracker that saves locally to complete all games from different game 
 
 ## 🤝 Contribute
 Contributions are welcome! Follow these steps:
-1. Make fork of the project.
+1. Fork the project
 2. Create your branch (`git checkout -b feature/new-function`)
-3. Commit your changes (`git commit -m ‘Add new feature’`)
+3. Commit your changes (`git commit -m "Add new feature"`)
 4. Push to the branch (`git push origin feature/new-function`)
 5. Open a Pull Request
 
