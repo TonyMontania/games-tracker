@@ -1,7 +1,3 @@
-/**
- * Wrapper para localStorage con manejo de errores
- */
-
 export const Storage = {
   get(key, defaultValue = null) {
     try {

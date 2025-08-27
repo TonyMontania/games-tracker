@@ -98,7 +98,6 @@ export class FilterManager {
             return matchesSearch && matchesConsole && matchesYear;
         });
         
-        // Disparar evento personalizado con los resultados filtrados
         const event = new CustomEvent('filtersApplied', { detail: filtered });
         document.dispatchEvent(event);
         

@@ -1,49 +1,168 @@
 .game-card 
 { 
-    background-color: var(--card-bg); 
-    border-radius: 10px; 
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    border: 2px solid var(--primary-color); 
-    text-align: center; 
-    transition: all 0.3s ease; 
+  background-color: var(--card-bg); 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  border: 2px solid var(--primary-color); 
+  text-align: center; 
+  transition: all 0.3s ease; 
 }
 
-.game-card.all-completed { border-color: var(--secondary-color); background-color: rgba(255, 215, 0, 0.1); }
-.game-card h3 { color: var(--primary-color); margin: 15px 0 10px; font-size: 1.5em; }
+.game-card.all-completed { 
+  border-color: var(--secondary-color); 
+  background-color: rgba(255, 215, 0, 0.1); 
+}
 
-.game-meta { font-size: 1em; color: var(--text-color); margin-bottom: 15px; display: flex; flex-direction: column; align-items: center; gap: 5px; border-bottom: none; text-align: center; }
-.consoles-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 10px; margin-bottom: 5px; }
-.consoles-container span { position: relative; padding: 0 5px; }
-.consoles-container span:not(:last-child)::after { content: "|"; position: absolute; right: -8px; color: var(--primary-color); }
-.game-meta .year-gen { color: var(--primary-color); font-weight: bold; margin-top: 5px; }
+.game-card h3 { 
+  color: var(--primary-color); 
+  margin: 15px 0 10px; 
+  font-size: 1.5em; 
+}
 
-.game-card img { width: 280px; height: 400px; object-fit: cover; border-radius: 8px; border: 2px solid var(--primary-color); margin-bottom: 15px; }
+.game-meta { 
+  font-size: 1em; 
+  color: var(--text-color); 
+  margin-bottom: 15px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 5px; 
+  border-bottom: none; 
+  text-align: center; 
+}
 
-.progress-options { margin-top: 15px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.consoles-container { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 0 10px; 
+  margin-bottom: 5px; 
+}
 
-/* Checkbox universal con icono por franquicia */
+.consoles-container span { 
+  position: relative; 
+  padding: 0 5px; 
+}
+
+.consoles-container span:not(:last-child)::after { 
+  content: "|"; 
+  position: absolute; 
+  right: -8px; 
+  color: var(--primary-color); 
+}
+
+.game-meta .year-gen { 
+  color: var(--primary-color); 
+  font-weight: bold; 
+  margin-top: 5px; 
+}
+
+.game-card img { 
+  width: 280px; 
+  height: 400px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  border: 2px solid var(--primary-color); 
+  margin-bottom: 15px; 
+}
+
+.progress-options { 
+  margin-top: 15px; 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+}
+
 .progress-checkbox {
-  -webkit-appearance: none; appearance: none; width: 32px; height: 32px; background-size: contain; background-repeat: no-repeat; background-position: center;
-  margin-right: 10px; cursor: pointer; transition: all 0.3s ease; border: none; background-color: transparent; outline: none;
+  -webkit-appearance: none; 
+  appearance: none; 
+  width: 32px; 
+  height: 32px; 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  border: none; 
+  background-color: transparent; 
+  outline: none;
 }
-.progress-checkbox:hover { transform: scale(1.1); filter: drop-shadow(0 0 4px rgba(0,0,0,0.2)); }
 
-[data-series="sonic"] .progress-checkbox { background-image: url('../../assets/emeralds/emerald-grey.png'); }
-[data-series="sonic"] .progress-checkbox:checked { background-image: url('../../assets/emeralds/emerald-green.png'); animation: pulse 0.5s; }
+.progress-checkbox:hover { 
+  transform: scale(1.1); 
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.2)); 
+}
 
-[data-series="mario"] .progress-checkbox { background-image: url('../../assets/stars/star-grey.png'); }
-[data-series="mario"] .progress-checkbox:checked { background-image: url('../../assets/stars/star-yellow.png'); animation: pulse 0.5s; }
+[data-series="sonic"] .progress-checkbox { 
+  background-image: url('../../assets/emeralds/emerald-grey.png'); 
+}
 
-[data-series="zelda"] .progress-checkbox { background-image: url('../../assets/triforces/triforce-grey.png'); }
-[data-series="zelda"] .progress-checkbox:checked { background-image: url('../../assets/triforces/triforce-gold.png'); animation: pulse 0.5s; }
+[data-series="sonic"] .progress-checkbox:checked { 
+  background-image: url('../../assets/emeralds/emerald-green.png'); animation: pulse 0.5s; 
+}
 
-@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.15); } 100% { transform: scale(1); } }
+[data-series="mario"] .progress-checkbox { 
+  background-image: url('../../assets/stars/star-grey.png'); 
+}
 
-.progress-options label span { color: var(--text-color); font-size: 0.95em; transition: all 0.3s; position: relative; top: -1px; }
-.progress-checkbox:checked + span { color: var(--secondary-color); font-weight: bold; text-shadow: 0 0 5px rgba(0,0,0,0.15); }
+[data-series="mario"] .progress-checkbox:checked { 
+  background-image: url('../../assets/stars/star-yellow.png'); animation: pulse 0.5s; 
+}
 
-.progress-options label { display: flex; align-items: center; cursor: pointer; width: 100%; justify-content: center; }
+[data-series="zelda"] .progress-checkbox { 
+  background-image: url('../../assets/triforces/triforce-grey.png'); 
+}
 
-.game-card.all-completed { border-color: var(--secondary-color); background-color: rgba(255, 215, 0, 0.15); box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); }
-.completed-badge { background-color: var(--secondary-color); color: #333; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin: 10px 0; display: inline-block; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+[data-series="zelda"] .progress-checkbox:checked { 
+  background-image: url('../../assets/triforces/triforce-gold.png'); animation: pulse 0.5s; 
+}
+
+@keyframes pulse { 
+  0% { transform: scale(1); } 50% { transform: scale(1.15); } 100% { transform: scale(1); } 
+}
+
+.progress-options label span { 
+  color: var(--text-color); 
+  font-size: 0.95em; 
+  transition: all 0.3s; 
+  position: relative; 
+  top: -1px; 
+}
+
+.progress-checkbox:checked + span { 
+  color: var(--secondary-color); 
+  font-weight: bold; 
+  text-shadow: 0 0 5px rgba(0,0,0,0.15); 
+}
+
+.progress-options label { 
+  display: flex; 
+  align-items: center; 
+  cursor: pointer; 
+  width: 100%; 
+  justify-content: center; 
+}
+
+.game-card.all-completed { 
+  border-color: var(--secondary-color); 
+  background-color: rgba(255, 215, 0, 0.15); 
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); 
+}
+
+.completed-badge { 
+  background-color: var(--secondary-color); 
+  color: #333; 
+  padding: 5px 15px; 
+  border-radius: 20px; 
+  font-weight: bold; 
+  margin: 10px 0; 
+  display: inline-block; 
+  text-transform: uppercase; 
+  font-size: 0.8em; 
+  letter-spacing: 1px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}

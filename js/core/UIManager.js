@@ -14,7 +14,6 @@ export class UIManager {
       this.setupFranchiseUI(this.gameManager.getCurrentFranchise());
       this.filterManager.setupFilters();
       this.setupEventListeners();
-      // Render inicial una sola vez
       this.displayGames(this.gameManager.getGames());
     } catch (error) {
       console.error('UI initialization failed:', error);
@@ -22,19 +21,16 @@ export class UIManager {
     }
   }
 
-  /* ===== Tema claro/oscuro ===== */
   setupTheme() {
     const toggle = document.getElementById('theme-toggle');
     const themeLink = document.getElementById('theme-style');
     if (!themeLink) return;
 
-    // Estado inicial
     this.applyThemeLink(this.currentTheme, themeLink);
     document.documentElement.setAttribute('data-theme', this.currentTheme);
     document.documentElement.setAttribute('data-series', this.gameManager.getCurrentFranchise());
     if (toggle) toggle.textContent = this.currentTheme === 'dark' ? '☀️' : '🌙';
 
-    // Toggle
     toggle?.addEventListener('click', () => {
       this.currentTheme = this.currentTheme === 'dark' ? 'light' : 'dark';
       this.applyThemeLink(this.currentTheme, themeLink);
@@ -45,17 +41,14 @@ export class UIManager {
   }
 
   applyThemeLink(theme, themeLink) {
-    themeLink.href = `styles/themes/${theme}.css?v=${Date.now()}`; // cache-busting
+    themeLink.href = `styles/themes/${theme}.css?v=${Date.now()}`;
   }
 
-  /* ===== Eventos y UI ===== */
   setupEventListeners() {
-    // Filtros aplicados
     document.addEventListener('filtersApplied', (e) => {
       this.displayGames(e.detail);
     });
 
-    // Checkbox de progreso
     document.addEventListener('change', (e) => {
       if (e.target.classList.contains('progress-checkbox')) {
         const gameId = e.target.dataset.game;
@@ -65,26 +58,21 @@ export class UIManager {
       }
     });
 
-    // Export / Import
     document.getElementById('export-button')?.addEventListener('click', () => this.exportProgress());
     document.getElementById('import-button')?.addEventListener('click', () => this.importProgress());
 
-    // Reset filtros
     document.getElementById('reset-filters')?.addEventListener('click', () => {
       this.filterManager.currentFilters = { searchQuery: '', console: '', year: '' };
       this.displayGames(this.filterManager.applyFilters());
     });
 
-    // Cambio de franquicia por BOTONES
     document.querySelectorAll('.btn-franchise').forEach(btn => {
       btn.addEventListener('click', () => this.switchFranchise(btn.dataset.franchise));
     });
 
-    // Cambio de franquicia por SELECT (si existe en tu HTML actual)
     const select = document.getElementById('franchise-select');
     if (select) {
       select.addEventListener('change', (e) => this.switchFranchise(e.target.value));
-      // Sincronizar select con lo que se cargó
       select.value = this.gameManager.getCurrentFranchise();
     }
   }
@@ -97,23 +85,18 @@ export class UIManager {
       await this.gameManager.loadFranchise(franchiseId);
       this.progressManager.setFranchise(franchiseId);
 
-      // Cambiar variables CSS por franquicia
       document.documentElement.setAttribute('data-series', franchiseId);
 
-      // Persistir franquicia elegida
       localStorage.setItem('franchise', franchiseId);
 
-      // UI (botones activos y select sincronizado si existe)
       this.setupFranchiseUI(franchiseId);
       const select = document.getElementById('franchise-select');
       if (select) select.value = franchiseId;
 
-      // Refrescar filtros y resultados
       this.filterManager.currentFilters = { searchQuery: '', console: '', year: '' };
       this.filterManager.populateConsoleFilter();
       this.filterManager.populateYearFilter();
 
-      // Render
       this.displayGames(this.gameManager.getGames());
     } catch (err) {
       console.error('[UIManager] switchFranchise error:', err);

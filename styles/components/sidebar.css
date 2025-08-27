@@ -1,16 +1,54 @@
 .sidebar {
-  width: 250px; background: var(--card-bg); padding: 20px; border-right: 2px solid var(--primary-color);
-  position: sticky; top: 0; height: 100vh; overflow-y: auto; box-shadow: 2px 0 10px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease;
+  width: 250px; 
+  background: var(--card-bg); 
+  padding: 20px; 
+  border-right: 2px solid var(--primary-color);
+  position: sticky; 
+  top: 0; 
+  height: 100vh; 
+  overflow-y: auto; 
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1); 
+  transition: box-shadow 0.3s ease;
 }
 
-.franchise-buttons { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-.btn-franchise {
-  border: none; color: #fff; font-weight: 700; padding: 10px 12px; border-radius: 8px; cursor: pointer;
-  box-shadow: 0 2px 6px var(--shadow-color); transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease; opacity: .95;
+.franchise-buttons { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+  margin-bottom: 16px; 
 }
-.btn-franchise:hover { transform: translateY(-2px); opacity: 1; }
-.btn-franchise.active { outline: 2px solid var(--secondary-color); }
-.btn-sonic { background: #1e90ff; } .btn-mario { background: #e52521; } .btn-zelda { background: #2e7d32; }
+
+.btn-franchise {
+  border: none; 
+  color: #fff; 
+  font-weight: 700; 
+  padding: 10px 12px; 
+  border-radius: 8px; 
+  cursor: pointer;
+  box-shadow: 0 2px 6px var(--shadow-color); 
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease; 
+  opacity: .95;
+}
+
+.btn-franchise:hover { 
+  transform: translateY(-2px); 
+  opacity: 1; 
+}
+
+.btn-franchise.active { 
+  outline: 2px solid var(--secondary-color); 
+}
+
+.btn-sonic { 
+  background: #1e90ff; } 
+
+.btn-mario { 
+  background: #e52521;
+} 
+
+.btn-zelda { 
+  background: #2e7d32; 
+}
 
 @media (max-width: 768px) {
   .sidebar { width: 100%; border-right: none; border-bottom: 2px solid var(--primary-color); position: static; height: auto; }

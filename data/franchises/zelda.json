@@ -138,7 +138,7 @@
     {
         "id": "wind_waker",
         "title": "The Legend of Zelda: The Wind Waker",
-        "console": ["Nintendo GameCube", "Wii U", "Nintendo Switch (Enhanced)"],
+        "console": ["Nintendo GameCube", "Nintendo Wii U", "Nintendo Switch (Enhanced)"],
         "generation": "6th Gen",
         "year": "2002",
         "image": "wind_waker.png",
@@ -189,7 +189,7 @@
     {
         "id": "twilight_princess",
         "title": "The Legend of Zelda: Twilight Princess",
-        "console": ["Nintendo GameCube", "Wii", "Wii U", "Nintendo Switch"],
+        "console": ["Nintendo GameCube", "Nintendo Wii", "Nintendo Wii U", "Nintendo Switch"],
         "generation": "7th Gen",
         "year": "2006",
         "image": "twilight_princess.png",
@@ -240,7 +240,7 @@
     {
         "id": "skyward_sword",
         "title": "The Legend of Zelda: Skyward Sword",
-        "console": ["Wii", "Wii U", "Nintendo Switch"],
+        "console": ["Nintendo Wii", "Nintendo Wii U", "Nintendo Switch"],
         "generation": "7th Gen",
         "year": "2011",
         "image": "skyward_sword.png",
@@ -291,7 +291,7 @@
     {
         "id": "breath_of_the_wild",
         "title": "The Legend of Zelda: Breath of the Wild",
-        "console": ["Nintendo Switch", "Wii U"],
+        "console": ["Nintendo Switch", "Nintendo Wii U"],
         "generation": "8th Gen",
         "year": "2017",
         "image": "breath_of_the_wild.png",
@@ -393,7 +393,7 @@
     {
         "id": "link_crossbow_training",
         "title": "Link's Crossbow Training",
-        "console": ["Wii"],
+        "console": ["Nintendo Wii"],
         "generation": "7th Gen",
         "year": "2007",
         "image": "link_crossbow_training.png",

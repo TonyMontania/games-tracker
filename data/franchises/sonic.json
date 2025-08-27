@@ -1103,7 +1103,7 @@
     {
         "id": "sonic_riders_zero",
         "title": "Sonic Riders: Zero Gravity",
-        "console": ["PlayStation 2", "Wii"],
+        "console": ["PlayStation 2", "Nintendo Wii"],
         "generation": "7th Gen",
         "year": "2008",
         "image": "sonic_riders_zero.png",
@@ -1117,7 +1117,7 @@
     {
         "id": "allstars_racing",
         "title": "Sonic & Sega All-Stars Racing",
-        "console": ["PlayStation 3", "Xbox 360", "Wii", "Windows", "Nintendo DS"],
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii", "Windows", "Nintendo DS"],
         "generation": "7th Gen",
         "year": "2010",
         "image": "allstars_racing.png",
@@ -1131,7 +1131,7 @@
     {
         "id": "transformed",
         "title": "Sonic & All-Stars Racing Transformed",
-        "console": ["PlayStation 3", "Xbox 360", "Wii U", "Windows", "PlayStation Vita", "Nintendo 3DS"],
+        "console": ["PlayStation 3", "Xbox 360", "Nintendo Wii U", "Windows", "PlayStation Vita", "Nintendo 3DS"],
         "generation": "7th Gen",
         "year": "2012",
         "image": "transformed.png",
