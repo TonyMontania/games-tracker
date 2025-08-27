@@ -1,96 +1,98 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-series="sonic">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Series Progress Tracker</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/themes/light.css" id="theme-style">
-    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <style>
-        .sidebar {
-            width: 200px;
-        }
-        .search-filters {
-            flex-wrap: wrap;
-        }
-        .filter-select {
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Games Series Progress Tracker</title>
+
+  <!-- Tema primero -->
+  <link rel="stylesheet" href="styles/themes/light.css" id="theme-style"/>
+  <!-- Estilos después (override de variables del tema) -->
+  <link rel="stylesheet" href="styles/main.css"/>
+
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+  <style>
+    .sidebar{width:200px}
+    .search-filters{flex-wrap:wrap}
+    .filter-select{margin-bottom:10px}
+  </style>
 </head>
 <body>
-    <div class="main-layout">
-        <div class="sidebar">
-            <h1>GAMES TRACKER</h1>
-            <div class="franchise-selector">
-                <select id="franchise-select" class="filter-select">
-                    <option value="sonic">Sonic Series</option>
-                </select>
-            </div>
-        </div>
-        
-        <div class="main-content">
-            <div class="container">
-                <div class="search-container">
-                    <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Search Games...">
-                        <button id="search-button">🔍</button>
-                    </div>
-                    
-                    <div class="search-filters">
-                        <select id="console-filter" class="filter-select">
-                            <option value="">All Consoles</option>
-                        </select>
-                        <select id="year-filter" class="filter-select">
-                            <option value="">All Years</option>
-                        </select>
-                        
-                        <button id="reset-filters" class="filter-button">Reset filters</button>
-                        <button id="import-button" class="filter-button">Import JSON</button>
-                        <button id="export-button" class="filter-button">Export JSON</button>
-                    </div>
-                    
-                    <div id="search-suggestions" class="suggestions-container"></div>
-                </div>
-                
-                <h2 class="current-category">All Games</h2>
-                <div id="games-list" class="games-grid"></div>
-            </div>
-            
-            <button id="theme-toggle" class="theme-toggle">🌙</button>
-        </div>
+  <div class="main-layout">
+    <div class="sidebar">
+      <h1>GAMES TRACKER</h1>
+
+      <!-- Botones de franquicia -->
+      <div class="franchise-buttons">
+        <button class="btn-franchise btn-sonic active" data-franchise="sonic">Sonic</button>
+        <button class="btn-franchise btn-mario" data-franchise="mario">Mario</button>
+        <button class="btn-franchise btn-zelda" data-franchise="zelda">Zelda</button>
+      </div>
     </div>
-    <script type="module">
-        import { GameManager } from './js/core/GameManager.js';
-        import { ProgressManager } from './js/core/ProgressManager.js';
-        import { FilterManager } from './js/core/FilterManager.js';
-        import { UIManager } from './js/core/UIManager.js';
 
-        document.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const progressManager = new ProgressManager();
-                const gameManager = new GameManager();
-                await gameManager.loadFranchise('sonic');
-                const filterManager = new FilterManager(gameManager);
-                const uiManager = new UIManager(gameManager, filterManager, progressManager);
-                
-                await uiManager.initialize();
+    <div class="main-content">
+      <div class="container">
+        <div class="search-container">
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Games..." />
+            <button id="search-button">🔍</button>
+          </div>
 
-            } catch (error) {
-                console.error('App initialization failed:', error);
-                const gamesList = document.getElementById('games-list');
-                if (gamesList) {
-                    gamesList.innerHTML = `
-                        <div class="error">
-                            <p>Error loading application</p>
-                            <button onclick="window.location.reload()">Try Again</button>
-                        </div>
-                    `;
-                }
-            }
-        });
-    </script>
-    <script src="js/themeSwitcher.js"></script>
+          <div class="search-filters">
+            <select id="console-filter" class="filter-select">
+              <option value="">All Consoles</option>
+            </select>
+            <select id="year-filter" class="filter-select">
+              <option value="">All Years</option>
+            </select>
+
+            <button id="reset-filters" class="filter-button">Reset filters</button>
+            <button id="import-button" class="filter-button">Import JSON</button>
+            <button id="export-button" class="filter-button">Export JSON</button>
+          </div>
+
+          <div id="search-suggestions" class="suggestions-container"></div>
+        </div>
+
+        <h2 class="current-category">All Games</h2>
+        <div id="games-list" class="games-grid"></div>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import { GameManager } from './js/core/GameManager.js';
+    import { ProgressManager } from './js/core/ProgressManager.js';
+    import { FilterManager } from './js/core/FilterManager.js';
+    import { UIManager } from './js/core/UIManager.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const initialFranchise = localStorage.getItem('franchise') || 'sonic';
+
+        const gameManager = new GameManager();
+        await gameManager.loadFranchise(initialFranchise);
+
+        const progressManager = new ProgressManager(gameManager.getCurrentFranchise());
+        const filterManager = new FilterManager(gameManager);
+        const uiManager = new UIManager(gameManager, filterManager, progressManager);
+
+        await uiManager.initialize();
+      } catch (error) {
+        console.error('App initialization failed:', error);
+        const gamesList = document.getElementById('games-list');
+        if (gamesList) {
+          gamesList.innerHTML = `
+            <div class="error">
+              <p>Error loading application</p>
+              <button onclick="window.location.reload()">Try Again</button>
+            </div>
+          `;
+        }
+      }
+    });
+  </script>
 </body>
 </html>

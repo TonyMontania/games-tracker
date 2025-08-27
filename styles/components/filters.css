@@ -1,71 +1,20 @@
-.filters-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-    align-items: center; /* Añade esto para alinear verticalmente todos los elementos */
-}
+.filters-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; align-items: center; }
 
 .filter-select {
-    padding: 8px 12px;
-    border: 2px solid var(--primary-color);
-    border-radius: 6px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-size: 1em;
-    min-width: 180px;
-    height: 40px; /* Altura fija para que coincida con los botones */
-    box-sizing: border-box; /* Incluye padding en el cálculo del tamaño */
+  padding: 8px 12px; border: 2px solid var(--primary-color); border-radius: 6px; background-color: var(--bg-color);
+  color: var(--text-color); font-size: 1em; min-width: 180px; height: 40px; box-sizing: border-box;
 }
 
 .filter-button {
-    padding: 8px 16px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: all 0.3s;
-    height: 40px; /* Igual altura que los selects */
-    box-sizing: border-box;
-    min-width: 120px; /* Ancho mínimo para mantener consistencia */
+  padding: 8px 16px; background-color: var(--primary-color); color: white; border: none; border-radius: 6px;
+  cursor: pointer; font-size: 1em; transition: all 0.3s; height: 40px; box-sizing: border-box; min-width: 120px;
 }
+.filter-button:hover { background-color: var(--secondary-color); color: #333; }
 
-.filter-button:hover {
-    background-color: var(--secondary-color);
-    color: #333;
-}
+/* Amarillo para Import/Export */
+#export-button { background-color: var(--secondary-color); color: #333; margin-left: 0; }
+#export-button:hover { background-color: var(--primary-color); color: #fff; }
+#import-button { background-color: var(--secondary-color); color: #333; margin-left: 0; }
+#import-button:hover { background-color: var(--primary-color); color: #fff; }
 
-#export-button {
-    background-color: var(--secondary-color);
-    color: #333;
-    margin-left: 0; /* Eliminamos el margen izquierdo ya que usamos gap en el contenedor */
-}
-
-#export-button:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-#import-button {
-    background-color: var(--secondary-color);
-    color: #333;
-    margin-left: 0; /* Eliminamos el margen izquierdo ya que usamos gap en el contenedor */
-}
-
-#import-button:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .filter-select {
-        width: 100%;
-    }
-    
-    .filter-button {
-        width: 100%;
-    }
-}
+@media (max-width: 768px) { .filter-select { width: 100%; } .filter-button { width: 100%; } }

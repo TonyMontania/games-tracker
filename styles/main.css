@@ -1,170 +1,110 @@
-@import url('themes/light.css');
 @import url('components/game-card.css');
 @import url('components/sidebar.css');
 @import url('components/search.css');
 @import url('components/filters.css');
 
-/* Estilos base consistentes para ambos temas */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--bg-color);
+.container 
+{ 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: var(--bg-color); 
 }
 
-h1 {
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 2px var(--shadow-color);
+h1 
+{ 
+    color: var(--primary-color); 
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 2.5em; 
+    text-shadow: 1px 1px 2px var(--shadow-color); 
 }
 
-.main-layout {
-    display: flex;
-    min-height: 100vh;
-    gap: 20px;
-    background-color: var(--bg-color);
+.main-layout 
+{ 
+    display: flex; 
+    min-height: 100vh; 
+    gap: 20px; 
+    background-color: var(--bg-color); 
+}
+.main-content 
+{ 
+    flex: 1; position: relative; 
+    background-color: var(--bg-color); 
 }
 
-.main-content {
-    flex: 1;
-    position: relative;
-    background-color: var(--bg-color);
+.current-category 
+{ 
+    color: var(--primary-color); 
+    font-size: 1.8em; 
+    margin: 15px 0; 
+    text-align: center; 
+    padding-bottom: 10px; 
+    border-bottom: 2px solid var(--primary-color); 
 }
 
-.current-category {
-    color: var(--primary-color);
-    font-size: 1.8em;
-    margin: 15px 0;
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--primary-color);
+.games-grid 
+{ 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 30px; padding: 20px 0; 
 }
 
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 20px 0;
+.theme-toggle 
+{
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  background-color: var(--primary-color); 
+  color: white; 
+  border: none; 
+  font-size: 1.2em; 
+  cursor: pointer; 
+  z-index: 100;
+  box-shadow: 0 2px 5px var(--shadow-color); 
+  transition: all 0.3s ease;
 }
+.theme-toggle:hover { transform: scale(1.1); box-shadow: 0 3px 8px var(--shadow-color); }
 
-/* Estilos para el botón de cambio de tema */
-.theme-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    z-index: 100;
-    box-shadow: 0 2px 5px var(--shadow-color);
-    transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 3px 8px var(--shadow-color);
-}
-
-/* Notificaciones toast */
 .toast {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    padding: 12px 20px;
-    border-radius: 6px;
-    background-color: var(--card-bg);
-    color: var(--text-color);
-    box-shadow: 0 4px 8px var(--shadow-color);
-    z-index: 100;
-    animation: slideIn 0.3s ease-out;
-    border-left: 4px solid var(--primary-color);
+  position: fixed; bottom: 80px; right: 20px; padding: 12px 20px; border-radius: 6px;
+  background-color: var(--card-bg); color: var(--text-color); box-shadow: 0 4px 8px var(--shadow-color);
+  z-index: 100; animation: slideIn 0.3s ease-out; border-left: 4px solid var(--primary-color);
 }
+.toast.success { border-left-color: var(--emerald-green); }
+.toast.error { border-left-color: #ff4444; }
+@keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
 
-.toast.success {
-    border-left-color: var(--emerald-green);
-}
+input, select, button, .game-card { transition: all 0.3s ease; }
+.game-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px var(--shadow-color); }
 
-.toast.error {
-    border-left-color: #ff4444;
-}
-
-@keyframes slideIn {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
-}
-
-/* Transiciones para elementos interactivos */
-input, select, button, .game-card {
-    transition: all 0.3s ease;
-}
-
-/* Efecto hover para tarjetas */
-.game-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px var(--shadow-color);
-}
-
-/* Responsive design */
 @media (max-width: 768px) {
-    .main-layout {
-        flex-direction: column;
-    }
-    
-    .main-content {
-        padding-top: 20px;
-    }
-    
-    .games-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .theme-toggle {
-        width: 40px;
-        height: 40px;
-        font-size: 1em;
-    }
+  .main-layout { flex-direction: column; }
+  .main-content { padding-top: 20px; }
+  .games-grid { grid-template-columns: 1fr; }
+  .theme-toggle { width: 40px; height: 40px; font-size: 1em; }
 }
 
-/* Estilos específicos para asegurar consistencia */
-[data-theme="light"], [data-theme="dark"] {
-    /* Fuerza la herencia de variables */
-    --bg-color: inherit;
-    --text-color: inherit;
-    --card-bg: inherit;
-    --primary-color: inherit;
-    --secondary-color: inherit;
-    --emerald-gray: inherit;
-    --emerald-green: inherit;
-    --border-color: inherit;
-    --shadow-color: inherit;
-}
+input, select { background-color: var(--card-bg); color: var(--text-color); border: 2px solid var(--primary-color); padding: 8px 12px; border-radius: 6px; }
+input:focus, select:focus { outline: none; box-shadow: 0 0 0 2px var(--secondary-color); }
 
-/* Corrección para inputs en ambos modos */
-input, select {
-    background-color: var(--card-bg);
-    color: var(--text-color);
-    border: 2px solid var(--primary-color);
-    padding: 8px 12px;
-    border-radius: 6px;
-}
+/* Colores por franquicia */
+[data-series="sonic"] { --primary-color: #1e90ff; --secondary-color: #ffd200; --hover-color: rgba(30,144,255,.12); }
+[data-series="mario"] { --primary-color: #e52521; --secondary-color: #ffc400; --hover-color: rgba(229,37,33,.12); }
+[data-series="zelda"] { --primary-color: #2e7d32; --secondary-color: #f4d35e; --hover-color: rgba(46,125,50,.12); }
 
-input:focus, select:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--secondary-color);
-}
+/* Import/Export amarillos */
+#import-button.filter-button, #export-button.filter-button { background-color: var(--secondary-color) !important; color: #333 !important; }
+#import-button.filter-button:hover, #export-button.filter-button:hover { background-color: var(--primary-color) !important; color: #fff !important; }
