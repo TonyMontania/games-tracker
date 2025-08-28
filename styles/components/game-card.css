@@ -52,7 +52,6 @@
   margin-bottom: 15px;
 }
 
-/* NUEVO: acciones masivas */
 .bulk-actions {
   display: flex;
   justify-content: center;
@@ -73,10 +72,7 @@
   background: var(--hover-color);
   transform: translateY(-1px);
 }
-.btn-select-all { }
-.btn-clear-all { }
 
-/* Opciones de progreso */
 .progress-options {
   margin-top: 12px;
   text-align: center;
@@ -86,7 +82,6 @@
   gap: 10px;
 }
 
-/* Checkbox universal con icono por franquicia */
 .progress-checkbox {
   -webkit-appearance: none;
   appearance: none;
@@ -104,15 +99,12 @@
 }
 .progress-checkbox:hover { transform: scale(1.1); filter: drop-shadow(0 0 4px rgba(0,0,0,0.2)); }
 
-/* Sonic checkboxes */
 [data-series="sonic"] .progress-checkbox { background-image: url('../../assets/emeralds/emerald-grey.png'); }
 [data-series="sonic"] .progress-checkbox:checked { background-image: url('../../assets/emeralds/emerald-green.png'); animation: pulse 0.5s; }
 
-/* Mario checkboxes */
 [data-series="mario"] .progress-checkbox { background-image: url('../../assets/stars/star-grey.png'); }
 [data-series="mario"] .progress-checkbox:checked { background-image: url('../../assets/stars/star-yellow.png'); animation: pulse 0.5s; }
 
-/* Zelda checkboxes */
 [data-series="zelda"] .progress-checkbox { background-image: url('../../assets/triforces/triforce-grey.png'); }
 [data-series="zelda"] .progress-checkbox:checked { background-image: url('../../assets/triforces/triforce-gold.png'); animation: pulse 0.5s; }
 
@@ -126,19 +118,18 @@
   top: -1px;
 }
 
-/* Texto coloreado según franquicia */
 [data-series="sonic"] .progress-checkbox:checked + span {
-  color: #00c853; /* verde esmeralda */
+  color: #00c853;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(0,200,83,0.4);
 }
 [data-series="mario"] .progress-checkbox:checked + span {
-  color: #FFD700; /* amarillo estrella */
+  color: #FFD700;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(255,215,0,0.4);
 }
 [data-series="zelda"] .progress-checkbox:checked + span {
-  color: #DAA520; /* dorado trifuerza */
+  color: #DAA520;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(218,165,32,0.4);
 }
