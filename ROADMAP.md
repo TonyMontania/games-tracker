@@ -5,8 +5,8 @@
 ## 🎯 Objectives (Short term)
 - **New franchises**: Kirby (database + covers + categories)
 - **UX**
-  - Saving/retrieving filters between sessions
-  - “Select all / Clear all” button per game
+  - ~~Saving/retrieving filters between sessions~~
+  - ~~“Select all / Clear all” button per game~~
   - Search engine with suggestions (simple autocomplete)
 - **Import/Export**
   - Export **all** franchises to a single JSON file

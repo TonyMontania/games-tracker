@@ -14,6 +14,8 @@ It is complemented by `ROADMAP.md` (short/medium/long-term ideas).
 - [x] Theme and franchise persistence in `localStorage`
 - [x] Select All / Clear All per game
 - [x] Persistence of filters (search / console / year) per franchise
+- [x] Saving/retrieving filters between sessions
+- [x] Select all / Clear all” button per game
 
 ---
 
