@@ -1,106 +1,159 @@
-import { SearchComponent } from '../components/SearchComponent.js';
-
 export class FilterManager {
-    constructor(gameManager) {
-        this.gameManager = gameManager;
+  constructor(gameManager) {
+    this.gameManager = gameManager;
+    this.currentFilters = { searchQuery: '', console: '', year: '' };
+
+    // refs DOM
+    this.searchInput = null;
+    this.searchButton = null;
+    this.consoleFilter = null;
+    this.yearFilter = null;
+  }
+
+  getStorageKey() {
+    const franchiseId = this.gameManager.getCurrentFranchise() || 'sonic';
+    return `filters:${franchiseId}`;
+  }
+
+  setupFilters() {
+    this.searchInput   = document.getElementById('search-input');
+    this.searchButton  = document.getElementById('search-button');
+    this.consoleFilter = document.getElementById('console-filter');
+    this.yearFilter    = document.getElementById('year-filter');
+
+    this.populateConsoleFilter();
+    this.populateYearFilter();
+
+    // Cargar filtros guardados (por franquicia) y aplicarlos
+    this.loadSavedFilters();  // setea controles y emite 'filtersApplied'
+
+    // Listeners
+    this.searchInput?.addEventListener('input', () => {
+      this.currentFilters.searchQuery = (this.searchInput.value || '').trim();
+      this.saveFilters();
+      this.emitFiltersApplied();
+    });
+
+    this.searchButton?.addEventListener('click', () => {
+      this.currentFilters.searchQuery = (this.searchInput?.value || '').trim();
+      this.saveFilters();
+      this.emitFiltersApplied();
+    });
+
+    this.consoleFilter?.addEventListener('change', () => {
+      this.currentFilters.console = this.consoleFilter.value || '';
+      this.saveFilters();
+      this.emitFiltersApplied();
+    });
+
+    this.yearFilter?.addEventListener('change', () => {
+      this.currentFilters.year = this.yearFilter.value || '';
+      this.saveFilters();
+      this.emitFiltersApplied();
+    });
+  }
+
+  loadSavedFilters() {
+    try {
+      const raw = localStorage.getItem(this.getStorageKey());
+      const parsed = raw ? JSON.parse(raw) : null;
+      if (parsed && typeof parsed === 'object') {
         this.currentFilters = {
-            searchQuery: '',
-            console: '',
-            year: ''
+          searchQuery: parsed.searchQuery || '',
+          console: parsed.console || '',
+          year: parsed.year || ''
         };
-        this.searchComponent = new SearchComponent(this);
+      } else {
+        this.currentFilters = { searchQuery: '', console: '', year: '' };
+      }
+    } catch {
+      this.currentFilters = { searchQuery: '', console: '', year: '' };
     }
 
-    setupFilters() {
-        this.populateConsoleFilter();
-        this.populateYearFilter();
-        this.setupFilterEvents();
-        this.setupReset();
-    }
+    // Sincronizar UI
+    if (this.searchInput)   this.searchInput.value   = this.currentFilters.searchQuery;
+    if (this.consoleFilter) this.consoleFilter.value = this.currentFilters.console;
+    if (this.yearFilter)    this.yearFilter.value    = this.currentFilters.year;
 
-    populateConsoleFilter() {
-        const filter = document.getElementById('console-filter');
-        if (!filter) return;
-        
-        filter.innerHTML = '<option value="">All Consoles</option>';
-        
-        const consoles = new Set();
-        this.gameManager.getGames().forEach(game => {
-            const platforms = Array.isArray(game.console) ? game.console : [game.console];
-            platforms.forEach(c => consoles.add(c));
-        });
-        
-        Array.from(consoles).sort().forEach(console => {
-            filter.appendChild(new Option(console, console));
-        });
-    }
+    // Render inicial según filtros guardados
+    this.emitFiltersApplied();
+  }
 
-    populateYearFilter() {
-        const filter = document.getElementById('year-filter');
-        if (!filter) return;
-        
-        filter.innerHTML = '<option value="">All Years</option>';
-        
-        const years = new Set(this.gameManager.getGames().map(g => g.year));
-        Array.from(years).sort((a, b) => b - a).forEach(year => {
-            filter.appendChild(new Option(year, year));
-        });
-    }
+  saveFilters() {
+    try {
+      localStorage.setItem(this.getStorageKey(), JSON.stringify(this.currentFilters));
+    } catch {}
+  }
 
-    setupFilterEvents() {
-        const consoleFilter = document.getElementById('console-filter');
-        const yearFilter = document.getElementById('year-filter');
-        
-        if (consoleFilter) {
-            consoleFilter.addEventListener('change', (e) => {
-                this.currentFilters.console = e.target.value;
-                this.applyFilters();
-            });
+  resetFilters() {
+    this.currentFilters = { searchQuery: '', console: '', year: '' };
+    this.saveFilters();
+    if (this.searchInput)   this.searchInput.value   = '';
+    if (this.consoleFilter) this.consoleFilter.value = '';
+    if (this.yearFilter)    this.yearFilter.value    = '';
+    this.emitFiltersApplied();
+  }
+
+  populateConsoleFilter() {
+    if (!this.consoleFilter) return;
+    const games = this.gameManager.getGames();
+    const set = new Set();
+
+    games.forEach(g => {
+      if (Array.isArray(g.console)) g.console.forEach(c => set.add(String(c)));
+      else if (g.console) set.add(String(g.console));
+    });
+
+    const options = [''].concat(Array.from(set).sort((a,b)=>a.localeCompare(b)));
+    this.consoleFilter.innerHTML = options.map(val =>
+      `<option value="${val}">${val || 'All Consoles'}</option>`
+    ).join('');
+  }
+
+  populateYearFilter() {
+    if (!this.yearFilter) return;
+    const games = this.gameManager.getGames();
+    const set = new Set();
+
+    games.forEach(g => { if (g.year != null) set.add(String(g.year)); });
+
+    const options = [''].concat(Array.from(set).sort((a,b)=>Number(a)-Number(b)));
+    this.yearFilter.innerHTML = options.map(val =>
+      `<option value="${val}">${val || 'All Years'}</option>`
+    ).join('');
+  }
+
+  applyFilters() {
+    const games = this.gameManager.getGames() || [];
+    const { searchQuery, console: consoleVal, year } = this.currentFilters;
+
+    const q = (searchQuery || '').toLowerCase();
+
+    const filtered = games.filter(g => {
+      // título
+      const titleOk = !q || String(g.title || '').toLowerCase().includes(q);
+
+      // consola
+      let consoleOk = true;
+      if (consoleVal) {
+        if (Array.isArray(g.console)) {
+          consoleOk = g.console.map(String).some(c => c === consoleVal);
+        } else {
+          consoleOk = String(g.console || '') === consoleVal;
         }
-        
-        if (yearFilter) {
-            yearFilter.addEventListener('change', (e) => {
-                this.currentFilters.year = e.target.value;
-                this.applyFilters();
-            });
-        }
-    }
+      }
 
-    setupReset() {
-        const button = document.getElementById('reset-filters');
-        if (!button) return;
-        
-        button.addEventListener('click', () => {
-            this.currentFilters = { searchQuery: '', console: '', year: '' };
-            document.getElementById('search-input').value = '';
-            document.getElementById('console-filter').value = '';
-            document.getElementById('year-filter').value = '';
-            this.applyFilters();
-        });
-    }
+      // año
+      const yearOk = !year || String(g.year || '') === year;
 
-    applyFilters() {
-        const filtered = this.gameManager.getGames().filter(game => {
-            const matchesSearch = !this.currentFilters.searchQuery || 
-                game.title.toLowerCase().includes(this.currentFilters.searchQuery) ||
-                (Array.isArray(game.console) ? 
-                    game.console.some(c => c.toLowerCase().includes(this.currentFilters.searchQuery)) :
-                    game.console.toLowerCase().includes(this.currentFilters.searchQuery));
-            
-            const matchesConsole = !this.currentFilters.console || 
-                (Array.isArray(game.console) ? 
-                    game.console.includes(this.currentFilters.console) :
-                    game.console === this.currentFilters.console);
-            
-            const matchesYear = !this.currentFilters.year || 
-                game.year.toString() === this.currentFilters.year;
-            
-            return matchesSearch && matchesConsole && matchesYear;
-        });
-        
-        const event = new CustomEvent('filtersApplied', { detail: filtered });
-        document.dispatchEvent(event);
-        
-        return filtered;
-    }
+      return titleOk && consoleOk && yearOk;
+    });
+
+    return filtered;
+  }
+
+  emitFiltersApplied() {
+    const result = this.applyFilters();
+    document.dispatchEvent(new CustomEvent('filtersApplied', { detail: result }));
+  }
 }

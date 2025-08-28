@@ -279,7 +279,7 @@
         "title": "Mario Teaches Typing",
         "console": ["PC", "Mac"],
         "generation": "5th Gen",
-        "year": "1997",
+        "year": "1992",
         "image": "mario_teaches_typing.png",
         "categories": [
             {"id": "complete_course", "name": "Complete All Typing Lessons"},
@@ -818,19 +818,6 @@
         ]
     },
     {
-        "id": "mario_superstar_baseball",
-        "title": "Mario Superstar Baseball",
-        "console": ["Nintendo GameCube"],
-        "generation": "6th Gen",
-        "year": "2005",
-        "image": "mario_baseball.png",
-        "categories": [
-            {"id": "all_stadiums", "name": "Win in All Stadiums"},
-            {"id": "all_characters", "name": "Unlock All Characters"},
-            {"id": "perfect_game", "name": "Win a Game Without Allowing Runs"}
-        ]
-    },
-    {
         "id": "mario_super_sluggers",
         "title": "Mario Super Sluggers",
         "console": ["Nintendo Wii"],
@@ -1129,19 +1116,6 @@
             {"id": "all_frames", "name": "Create Photos in All Frames"},
             {"id": "all_stickers", "name": "Use All Stickers"},
             {"id": "create_album", "name": "Create a Complete Photo Album"}
-        ]
-    },
-    {
-        "id": "mario_family",
-        "title": "Mario Family",
-        "console": ["Super Famicom"],
-        "generation": "4th Gen",
-        "year": "1995",
-        "image": "mario_family.png",
-        "categories": [
-            {"id": "all_games", "name": "Play All Mini-Games"},
-            {"id": "high_scores", "name": "Set High Scores in All Games"},
-            {"id": "all_characters", "name": "Play As All Characters"}
         ]
     },
     {

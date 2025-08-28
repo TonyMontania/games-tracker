@@ -120,7 +120,7 @@
     },
     {
         "id": "four_swords",
-        "title": "The Legend of Zelda: Four Swords",
+        "title": "The Legend of Zelda: A Link to the Past & Four Swords",
         "console": ["Game Boy Advance", "Nintendo DS (Multiplayer)"],
         "generation": "6th Gen",
         "year": "2002",
@@ -357,23 +357,6 @@
         ]
     },
     {
-        "id": "hwi",
-        "title": "Hyrule Warriors: Age of Imprisonment",
-        "console": ["Nintendo Switch 2"],
-        "generation": "9th Gen",
-        "year": "2025",
-        "image": "hwi.png",
-        "categories": [
-            {"id": "complete_story", "name": "Complete Main Story"},
-            {"id": "all_characters", "name": "Unlock All Playable Characters"},
-            {"id": "all_skills", "name": "Master All Skills"},
-            {"id": "all_weapons", "name": "Collect All Weapon Types"},
-            {"id": "min_time", "name": "Complete Under 12 Hours"},
-            {"id": "no_revive", "name": "Complete Without Reviving"},
-            {"id": "all_secrets", "name": "Find All Hidden Battlefields"}
-        ]
-    },
-    {
         "id": "cadence_of_hyrule",
         "title": "Cadence of Hyrule: Crypt of the NecroDancer",
         "console": ["Nintendo Switch"],
@@ -405,23 +388,6 @@
             {"id": "min_time", "name": "Complete Under 2 Hours"},
             {"id": "no_miss", "name": "Complete Without Missing Shots"},
             {"id": "perfect_score", "name": "Get Perfect Score in All Modes"}
-        ]
-    },
-    {
-        "id": "zelda_unlinked",
-        "title": "The Legend of Zelda: Unlinked",
-        "console": ["Game Boy Advance"],
-        "generation": "6th Gen",
-        "year": "2003",
-        "image": "zelda_unlinked.png",
-        "categories": [
-            {"id": "complete_game", "name": "Complete All Areas"},
-            {"id": "all_hearts", "name": "Collect All Heart Containers"},
-            {"id": "all_medals", "name": "Collect All Medals"},
-            {"id": "all_secrets", "name": "Find All Secret Areas"},
-            {"id": "min_time", "name": "Complete Under 4 Hours"},
-            {"id": "no_sword", "name": "Complete Without Sword"},
-            {"id": "all_pendants", "name": "Collect All Pendants"}
         ]
     },
     {
@@ -473,91 +439,6 @@
             {"id": "no_damage", "name": "Complete Without Taking Damage"},
             {"id": "all_keys", "name": "Find All Keys"},
             {"id": "perfect_score", "name": "Get Perfect Score"}
-        ]
-    },
-    {
-        "id": "zelda_on_rail",
-        "title": "Zelda's Adventure: On Rail",
-        "console": ["Philips CD-i"],
-        "generation": "4th Gen",
-        "year": "1994",
-        "image": "zelda_on_rail.png",
-        "categories": [
-            {"id": "complete_game", "name": "Complete Main Story"},
-            {"id": "all_hearts", "name": "Collect All Heart Containers"},
-            {"id": "all_secrets", "name": "Find All Secret Areas"},
-            {"id": "min_time", "name": "Complete Under 2 Hours"},
-            {"id": "no_damage", "name": "Complete Without Taking Damage"},
-            {"id": "all_keys", "name": "Find All Keys"},
-            {"id": "perfect_score", "name": "Get Perfect Score"}
-        ]
-    },
-    {
-        "id": "zelda_25th",
-        "title": "The Legend of Zelda 25th Anniversary Orchestra Album",
-        "console": ["Special Release"],
-        "generation": "Special",
-        "year": "2011",
-        "image": "zelda_25th.png",
-        "categories": [
-            {"id": "complete_album", "name": "Listen to Full Album"},
-            {"id": "all_moments", "name": "Experience All Musical Moments"},
-            {"id": "concert_attend", "name": "Attend Live Concert"},
-            {"id": "collect_art", "name": "Collect All Artwork"},
-            {"id": "min_time", "name": "Complete Under 2 Hours"},
-            {"id": "all_languages", "name": "Experience All Language Versions"},
-            {"id": "perfect_score", "name": "Get Perfect Score"}
-        ]
-    },
-    {
-        "id": "zelda_30th",
-        "title": "The Legend of Zelda 30th Anniversary Symphony",
-        "console": ["Special Release"],
-        "generation": "Special",
-        "year": "2016",
-        "image": "zelda_30th.png",
-        "categories": [
-            {"id": "complete_album", "name": "Listen to Full Album"},
-            {"id": "all_moments", "name": "Experience All Musical Moments"},
-            {"id": "concert_attend", "name": "Attend Live Concert"},
-            {"id": "collect_art", "name": "Collect All Artwork"},
-            {"id": "min_time", "name": "Complete Under 2 Hours"},
-            {"id": "all_languages", "name": "Experience All Language Versions"},
-            {"id": "perfect_score", "name": "Get Perfect Score"}
-        ]
-    },
-    {
-        "id": "zelda_35th",
-        "title": "The Legend of Zelda 35th Anniversary Collection",
-        "console": ["Special Release"],
-        "generation": "Special",
-        "year": "2021",
-        "image": "zelda_35th.png",
-        "categories": [
-            {"id": "complete_collection", "name": "Experience Full Collection"},
-            {"id": "all_games", "name": "Play All Included Games"},
-            {"id": "collect_art", "name": "Collect All Artwork"},
-            {"id": "min_time", "name": "Complete Under 10 Hours"},
-            {"id": "all_languages", "name": "Experience All Language Versions"},
-            {"id": "perfect_score", "name": "Get Perfect Score"},
-            {"id": "all_secrets", "name": "Find All Hidden Features"}
-        ]
-    },
-    {
-        "id": "zelda_switch_2",
-        "title": "The Legend of Zelda: Switch 2 Editions",
-        "console": ["Nintendo Switch 2"],
-        "generation": "9th Gen",
-        "year": "2025",
-        "image": "zelda_switch_2.png",
-        "categories": [
-            {"id": "complete_breath", "name": "Complete Breath of the Wild"},
-            {"id": "complete_tears", "name": "Complete Tears of the Kingdom"},
-            {"id": "all_achievements", "name": "Earn All In-App Achievements"},
-            {"id": "all_voice_memories", "name": "Collect All Voice Memories"},
-            {"id": "all_autobuild", "name": "Create All Auto-Builds"},
-            {"id": "min_time", "name": "Complete Both Under 40 Hours"},
-            {"id": "all_secrets", "name": "Find All Hidden Features"}
         ]
     }
 ]

@@ -29,13 +29,19 @@ export class GameCard {
       <div class="game-card ${allCompleted ? 'all-completed' : ''}" data-game-id="${escapeHTML(this.game.id)}">
         <h3>${safeTitle}</h3>
         <div class="game-meta">
-          <div class="consoles-container">
-            ${consoles}
-          </div>
+          <div class="consoles-container">${consoles}</div>
           <div class="year-gen">${safeYear} | ${safeGeneration}</div>
         </div>
         <img src="${imagePath}" alt="${safeTitle}" loading="lazy" onerror="this.src='assets/no-image.png'">
+
         ${allCompleted ? '<div class="completed-badge">Completed!</div>' : ''}
+
+        <!-- NUEVO: acciones masivas -->
+        <div class="bulk-actions">
+          <button class="btn-bulk btn-select-all" data-game="${escapeHTML(this.game.id)}">Select all</button>
+          <button class="btn-bulk btn-clear-all" data-game="${escapeHTML(this.game.id)}">Clear all</button>
+        </div>
+
         <div class="progress-options">
           ${this.game.categories?.map(cat => this.renderCheckbox(cat)).join('') || ''}
         </div>

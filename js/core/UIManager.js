@@ -12,15 +12,15 @@ export class UIManager {
     try {
       this.setupTheme();
       this.setupFranchiseUI(this.gameManager.getCurrentFranchise());
-      this.filterManager.setupFilters();
+      this.filterManager.setupFilters();     // emite "filtersApplied" inicial
       this.setupEventListeners();
-      this.displayGames(this.gameManager.getGames());
     } catch (error) {
       console.error('UI initialization failed:', error);
       throw error;
     }
   }
 
+  /* ===== Tema claro/oscuro ===== */
   setupTheme() {
     const toggle = document.getElementById('theme-toggle');
     const themeLink = document.getElementById('theme-style');
@@ -44,6 +44,7 @@ export class UIManager {
     themeLink.href = `styles/themes/${theme}.css?v=${Date.now()}`;
   }
 
+  /* ===== Eventos y UI ===== */
   setupEventListeners() {
     document.addEventListener('filtersApplied', (e) => {
       this.displayGames(e.detail);
@@ -58,12 +59,24 @@ export class UIManager {
       }
     });
 
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('btn-select-all') || e.target.closest('.btn-select-all')) {
+        const btn = e.target.closest('.btn-select-all');
+        const gameId = btn?.dataset.game;
+        this.bulkSetGame(gameId, true);
+      }
+      if (e.target.classList.contains('btn-clear-all') || e.target.closest('.btn-clear-all')) {
+        const btn = e.target.closest('.btn-clear-all');
+        const gameId = btn?.dataset.game;
+        this.bulkSetGame(gameId, false);
+      }
+    });
+
     document.getElementById('export-button')?.addEventListener('click', () => this.exportProgress());
     document.getElementById('import-button')?.addEventListener('click', () => this.importProgress());
 
     document.getElementById('reset-filters')?.addEventListener('click', () => {
-      this.filterManager.currentFilters = { searchQuery: '', console: '', year: '' };
-      this.displayGames(this.filterManager.applyFilters());
+      this.filterManager.resetFilters();
     });
 
     document.querySelectorAll('.btn-franchise').forEach(btn => {
@@ -77,6 +90,17 @@ export class UIManager {
     }
   }
 
+  bulkSetGame(gameId, completed) {
+    if (!gameId) return;
+    const game = this.gameManager.getGames().find(g => g.id === gameId);
+    if (!game || !Array.isArray(game.categories)) return;
+
+    for (const cat of game.categories) {
+      this.progressManager.updateProgress(gameId, cat.id, completed);
+    }
+    this.updateGameCard(gameId);
+  }
+
   async switchFranchise(franchiseId) {
     const current = this.gameManager.getCurrentFranchise();
     if (current === franchiseId) return;
@@ -86,21 +110,21 @@ export class UIManager {
       this.progressManager.setFranchise(franchiseId);
 
       document.documentElement.setAttribute('data-series', franchiseId);
-
       localStorage.setItem('franchise', franchiseId);
 
       this.setupFranchiseUI(franchiseId);
       const select = document.getElementById('franchise-select');
       if (select) select.value = franchiseId;
 
-      this.filterManager.currentFilters = { searchQuery: '', console: '', year: '' };
       this.filterManager.populateConsoleFilter();
       this.filterManager.populateYearFilter();
-
-      this.displayGames(this.gameManager.getGames());
+      this.filterManager.loadSavedFilters(); // << acá estaba el error, ahora ok
     } catch (err) {
       console.error('[UIManager] switchFranchise error:', err);
-      this.showToast(`No pude cargar la franquicia "${franchiseId}". Revisá que exista data/franchises/${franchiseId}.json`, 'error');
+      this.showToast(
+        `No pude cargar la franquicia "${franchiseId}". Revisá que exista data/franchises/${franchiseId}.json`,
+        'error'
+      );
     }
   }
 
@@ -183,7 +207,7 @@ export class UIManager {
 
             this.progressManager.progress = parsed;
             this.progressManager.saveProgress();
-            this.displayGames(this.filterManager.applyFilters());
+            this.filterManager.emitFiltersApplied();
             this.showToast('Progress imported successfully!', 'success');
             resolve(true);
           };
